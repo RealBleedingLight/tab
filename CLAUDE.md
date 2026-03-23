@@ -21,10 +21,35 @@ A guitar learning workspace for Leo — an intermediate guitarist learning solos
   - `practice.md` — practice plan with tempo milestones and section order
   - `theory.md` — scales, modes, and theory behind the solo
   - `.context.md` — Leo's current progress on this song (for Claude context)
+  - `lessons/` — numbered step-by-step lesson files (self-contained, one per session)
+  - `practice-log.md` — append-only log of practice sessions
 - `concepts/techniques/` — reusable technique guides (alternate picking, sweep picking, legato, etc.)
 - `concepts/scales/` — scale/mode references (Japanese pentatonic, harmonic minor, modes, etc.)
 - `concepts/theory/` — music theory lessons
 - `concepts/.context.md` — progress on theory/concept learning
+
+## Practice Session Protocol (for any model)
+
+When Leo says "let's practice [song]" or "continue practicing":
+
+1. **Read `.context.md`** for that song — find current lesson number
+2. **Read the current lesson file** from `lessons/XX-name.md`
+3. **Walk Leo through the steps** one at a time — read each step, wait for his response
+4. **At checkpoints**, ask Leo to self-assess each item
+5. **After the session**, do these three things:
+   - Append an entry to `practice-log.md` with date, lesson, duration, tempo, what worked, what's stuck
+   - Update `.context.md` with new current lesson, tempo, stuck points, completed lessons
+   - Commit and push to GitHub
+
+**IMPORTANT for context efficiency:**
+- Only read the ONE lesson file needed for this session
+- Do NOT read all lessons, breakdown.md, theory.md, or practice.md during a session
+- The lesson file contains everything needed — it is self-contained
+- If Leo asks about theory or techniques mid-session, THEN read the relevant concept file
+
+**If Leo finishes a lesson mid-session**, read the next lesson and continue if Leo wants.
+
+**If Leo is stuck on a lesson for 3+ sessions**, suggest breaking it into smaller pieces or dropping tempo further. Note this in .context.md.
 
 ## How to Work in This Repo
 

@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(export PATH=\"/opt/homebrew/bin:$PATH\")",
+      "Bash(pdfinfo \"/Users/leo/hobby/tab/songs/guthrie-govan/man-of-steel/Guthrie Hans.pdf\")",
+      "Bash(pdftoppm -png -r 200 -f 2 -l 4 \"/Users/leo/hobby/tab/songs/guthrie-govan/man-of-steel/Guthrie Hans.pdf\" /tmp/mos_page)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(ls /Users/leo/hobby/tab/songs/guthrie-govan/man-of-steel/lessons/*.md)"
+    ]
+  }
+}
