@@ -174,6 +174,24 @@ Add the new concept to INDEX.md and link it from relevant song files.
 - Song breakdowns should link to concept files: `[alternate picking](../../concepts/techniques/alternate-picking.md)`
 - Concept files should list related songs that use them
 
+## Auto-Sync
+
+A `Stop` hook in `.claude/settings.json` automatically commits and pushes all changes to GitHub when Claude finishes responding. This means:
+- Progress is never lost — every session auto-saves
+- No need to manually commit
+- Works on any computer that has the repo cloned
+
+The sync script is at `scripts/auto-sync.sh`. It only commits if there are actual changes.
+
+## Setting Up on a New Computer
+
+1. Install Claude Code: `npm install -g @anthropic-ai/claude-code`
+2. Clone the repo: `git clone https://github.com/RealBleedingLight/tab.git && cd tab`
+3. Authenticate GitHub: `gh auth login` (install gh first: `brew install gh` on Mac)
+4. Start Claude: `claude`
+
+That's it. CLAUDE.md gives Claude all the context it needs. The Stop hook handles syncing. Your progress is in `.context.md` files — pick up right where you left off.
+
 ## Current Song List
 - Tornado of Souls — Megadeth (relearning)
 - Octavarium (solo) — Dream Theater
