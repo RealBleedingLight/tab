@@ -18,7 +18,8 @@
       "Bash(pip3 install:*)",
       "Bash(mkdir -p /tmp/gp_extract)",
       "Bash(unzip -o \"/Users/leo/hobby/tab/songs/guthrie-govan/man-of-steel/Guthrie Hans.gp\")",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(pip3 list:*)"
     ]
   }
 }
