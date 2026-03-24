@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: guitar-teacher
+Version: 0.1.0
+Summary: Local guitar learning tool - theory analysis, lesson generation, fretboard reference
+Requires-Python: >=3.9
+Requires-Dist: click>=8.0
+Requires-Dist: jinja2>=3.0
+Requires-Dist: pyyaml>=6.0
+Provides-Extra: llm
+Requires-Dist: anthropic>=0.40; extra == "llm"
+Requires-Dist: openai>=1.0; extra == "llm"
+Requires-Dist: httpx>=0.27; extra == "llm"

@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: gp2tab
+Version: 0.1.0
+Summary: Convert Guitar Pro files to ASCII tab, JSON, and LLM-optimized formats
+Requires-Python: >=3.9
+Requires-Dist: pyguitarpro>=0.9

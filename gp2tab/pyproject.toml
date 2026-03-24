@@ -1,0 +1,14 @@
+[project]
+name = "gp2tab"
+version = "0.1.0"
+description = "Convert Guitar Pro files to ASCII tab, JSON, and LLM-optimized formats"
+requires-python = ">=3.9"
+dependencies = ["pyguitarpro>=0.9"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["gp2tab"]
+py-modules = ["cli"]

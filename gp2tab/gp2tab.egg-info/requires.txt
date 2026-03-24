@@ -1,0 +1,1 @@
+pyguitarpro>=0.9

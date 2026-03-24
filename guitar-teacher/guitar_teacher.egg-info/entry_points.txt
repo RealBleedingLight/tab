@@ -1,0 +1,2 @@
+[console_scripts]
+guitar-teacher = guitar_teacher.cli:main
