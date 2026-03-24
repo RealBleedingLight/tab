@@ -25,7 +25,8 @@
       "Bash(find /Users/leo/hobby/tab -name gp2tab* -o -name *.py -o -name *.js -o -name *.ts)",
       "Bash(pip3 --version)",
       "Bash(pip --version)",
-      "Bash(brew list:*)"
+      "Bash(brew list:*)",
+      "Bash(ls /Users/leo/hobby/tab/guitar-teacher/theory/*.yaml)"
     ]
   }
 }
