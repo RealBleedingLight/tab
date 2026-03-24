@@ -8,7 +8,17 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(git push:*)",
-      "Bash(ls /Users/leo/hobby/tab/songs/guthrie-govan/man-of-steel/lessons/*.md)"
+      "Bash(ls /Users/leo/hobby/tab/songs/guthrie-govan/man-of-steel/lessons/*.md)",
+      "Bash(pdftoppm -png -r 600 -f 1 -l 1 \"/Users/leo/hobby/tab/songs/guthrie-govan/man-of-steel/Guthrie Hans.pdf\" /tmp/mos_hires)",
+      "Bash(convert /tmp/mos_ultra-1.png -crop 6612x1560+0+600 /tmp/mos_crop_sys1.png)",
+      "Bash(convert /tmp/mos_ultra-1.png -crop 6612x1560+0+2100 /tmp/mos_crop_sys2.png)",
+      "Bash(convert /tmp/mos_ultra-1.png -crop 6612x1560+0+3600 /tmp/mos_crop_sys3.png)",
+      "Bash(ls -lh /tmp/mos_crop_sys*.png)",
+      "Bash(brew install:*)",
+      "Bash(pip3 install:*)",
+      "Bash(mkdir -p /tmp/gp_extract)",
+      "Bash(unzip -o \"/Users/leo/hobby/tab/songs/guthrie-govan/man-of-steel/Guthrie Hans.gp\")",
+      "Bash(python3:*)"
     ]
   }
 }
