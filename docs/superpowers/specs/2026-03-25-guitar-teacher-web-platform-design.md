@@ -99,6 +99,7 @@ Note: `/analyze` accepts a direct file upload for CLI and API usage. The web UI 
 ### Environment variables (backend)
 
 - `GITHUB_TOKEN` — personal access token scoped to the tab repo
+- `GITHUB_REPO` — repo in `owner/name` format (e.g., `RealBleedingLight/tab`)
 - `AUTH_PIN` — the login pin (validated server-side only)
 - `AUTH_SECRET` — secret key for signing JWT tokens
 - `ANTHROPIC_API_KEY`
