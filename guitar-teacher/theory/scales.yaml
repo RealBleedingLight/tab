@@ -1,0 +1,273 @@
+scales:
+  major:
+    name: "Major"
+    aliases: ["ionian"]
+    category: "mode"
+    intervals: [2, 2, 1, 2, 2, 2, 1]
+    parent_scale: null
+    parent_degree: null
+    character: "Bright, happy, resolved — the most stable and consonant of all scales"
+    common_in: ["pop", "rock", "country", "classical", "jazz"]
+    chord_fit: ["maj", "maj7", "6", "add9"]
+    teaching_note: "The foundation scale — all other modes are derived from it. Learn this shape cold before moving to modes."
+    improvisation_tip: "Emphasize the major 3rd and major 7th for the characteristic bright sound. Resolve phrases to the root for a strong sense of home."
+
+  dorian:
+    name: "Dorian"
+    aliases: ["dorian mode"]
+    category: "mode"
+    intervals: [2, 1, 2, 2, 2, 1, 2]
+    parent_scale: "major"
+    parent_degree: 2
+    character: "Minor but with a brighter, jazzy edge due to the raised 6th"
+    common_in: ["jazz", "blues", "funk", "classic rock", "prog rock"]
+    chord_fit: ["min", "min7", "min9", "min13"]
+    teaching_note: "Think of it as natural minor with a raised 6th. The raised 6th (major 6th) is the color note that distinguishes it from plain minor."
+    improvisation_tip: "Hit the major 6th over minor chords to get that Santana/Dorian flavor. Works beautifully over static minor vamps — try it over Am7 grooves."
+
+  phrygian:
+    name: "Phrygian"
+    aliases: ["phrygian mode"]
+    category: "mode"
+    intervals: [1, 2, 2, 2, 1, 2, 2]
+    parent_scale: "major"
+    parent_degree: 3
+    character: "Dark, exotic, Spanish/flamenco flavor — the b2 gives it tension right from the start"
+    common_in: ["metal", "flamenco", "prog metal", "film scores"]
+    chord_fit: ["min", "min7", "sus4b9"]
+    teaching_note: "The flat 2nd is the defining interval. One semitone above the root creates instant tension. Metallica and prog metal bands love this sound."
+    improvisation_tip: "Use the b2 as a tension note — resolve it down to the root for a dark, dramatic effect. Try droning the open low E and playing Phrygian shapes over it."
+
+  lydian:
+    name: "Lydian"
+    aliases: ["lydian mode"]
+    category: "mode"
+    intervals: [2, 2, 2, 1, 2, 2, 1]
+    parent_scale: "major"
+    parent_degree: 4
+    character: "Dreamy, floating, ethereal — the raised 4th removes the only point of tension in the major scale"
+    common_in: ["prog rock", "prog metal", "jazz fusion", "film scores", "ambient"]
+    chord_fit: ["maj", "maj7", "maj7#11", "add9"]
+    teaching_note: "Major scale with a raised 4th (#4). Steve Vai and Joe Satriani use this constantly. The #4 creates a tritone with the root, giving it a floating quality."
+    improvisation_tip: "Lean into the #4 to create that dreamy, Satriani-like quality. Works great over sustained major chords — let the #11 ring out."
+
+  mixolydian:
+    name: "Mixolydian"
+    aliases: ["mixolydian mode", "dominant scale"]
+    category: "mode"
+    intervals: [2, 2, 1, 2, 2, 1, 2]
+    parent_scale: "major"
+    parent_degree: 5
+    character: "Bluesy major — bright but with a laid-back, unresolved quality from the b7"
+    common_in: ["blues", "classic rock", "southern rock", "country", "funk"]
+    chord_fit: ["7", "9", "13", "sus4"]
+    teaching_note: "Major scale with a flat 7th. This is the sound of dominant 7th chords and classic rock. Think AC/DC, Allman Brothers, Grateful Dead."
+    improvisation_tip: "The b7 gives you that classic rock/blues swagger over dominant 7th chords. Mix with pentatonic major for an authentic blues-rock sound."
+
+  natural_minor:
+    name: "Natural Minor"
+    aliases: ["minor", "aeolian", "aeolian mode"]
+    category: "mode"
+    intervals: [2, 1, 2, 2, 1, 2, 2]
+    parent_scale: "major"
+    parent_degree: 6
+    character: "Sad, dark, melancholic — the standard minor sound"
+    common_in: ["rock", "metal", "pop", "classical", "prog rock"]
+    chord_fit: ["min", "min7", "min9", "min11"]
+    teaching_note: "The relative minor of the major scale. If you know your major scale, you already know this — just start from the 6th degree. This is the foundation for all minor key music."
+    improvisation_tip: "Emphasize the b3 and b7 for the classic minor sound. For emotional solos, use the b6 to root resolution for maximum sadness."
+
+  locrian:
+    name: "Locrian"
+    aliases: ["locrian mode"]
+    category: "mode"
+    intervals: [1, 2, 2, 1, 2, 2, 2]
+    parent_scale: "major"
+    parent_degree: 7
+    character: "Extremely unstable and dissonant — the b5 removes any sense of rest"
+    common_in: ["metal", "prog metal", "jazz", "avant-garde"]
+    chord_fit: ["dim", "min7b5"]
+    teaching_note: "The most dissonant mode of the major scale. Rarely used as a tonal center, but essential for playing over min7b5 chords in jazz and metal."
+    improvisation_tip: "Hard to use melodically due to the b5 — try pedaling on the root and using chromatic approach tones. Works well for brief, tense passages in metal."
+
+  harmonic_minor:
+    name: "Harmonic Minor"
+    aliases: ["har min"]
+    category: "scale"
+    intervals: [2, 1, 2, 2, 1, 3, 1]
+    parent_scale: null
+    parent_degree: null
+    character: "Classical, dark, exotic — the augmented 2nd between b6 and 7 gives it a Middle Eastern/neoclassical flavor"
+    common_in: ["neoclassical", "metal", "classical", "prog metal", "shred"]
+    chord_fit: ["min", "minMaj7", "dim", "aug"]
+    teaching_note: "Natural minor with a raised 7th. The 3-semitone gap (augmented 2nd) between the b6 and natural 7 is the signature sound. Yngwie Malmsteen built a career on this scale."
+    improvisation_tip: "The raised 7th creates a strong pull to the root — use it for dramatic ascending runs. The b6 to natural 7 leap is the money interval for neoclassical shred."
+
+  melodic_minor:
+    name: "Melodic Minor"
+    aliases: ["jazz minor", "mel min"]
+    category: "scale"
+    intervals: [2, 1, 2, 2, 2, 2, 1]
+    parent_scale: null
+    parent_degree: null
+    character: "Sophisticated, smooth minor — like natural minor with both 6th and 7th raised"
+    common_in: ["jazz", "fusion", "prog metal", "contemporary"]
+    chord_fit: ["minMaj7", "min6", "min9"]
+    teaching_note: "In jazz, it's played the same ascending and descending (unlike classical melodic minor). It's the parent scale for many important jazz modes including altered and lydian dominant."
+    improvisation_tip: "Use over minMaj7 chords for a sophisticated jazz sound. Think of it as a major scale with a b3 — the smoothest of all minor scales."
+
+  pentatonic_major:
+    name: "Major Pentatonic"
+    aliases: ["penta major", "pentatonic"]
+    category: "pentatonic"
+    intervals: [2, 2, 3, 2, 3]
+    parent_scale: null
+    parent_degree: null
+    character: "Bright, open, universally pleasing — the major scale stripped to its most consonant notes"
+    common_in: ["rock", "blues", "country", "pop", "folk"]
+    chord_fit: ["maj", "7", "6", "add9"]
+    teaching_note: "The major scale minus the 4th and 7th — removing all semitone tension. This is the first scale most guitarists learn to solo with. Five shapes cover the whole neck."
+    improvisation_tip: "Almost impossible to sound bad with this scale. Great for country bends and double stops. Mix with the minor pentatonic for blues crossover licks."
+
+  pentatonic_minor:
+    name: "Minor Pentatonic"
+    aliases: ["penta minor", "pentatonic minor"]
+    category: "pentatonic"
+    intervals: [3, 2, 2, 3, 2]
+    parent_scale: null
+    parent_degree: null
+    character: "Raw, gritty, bluesy — the most used rock/blues soloing scale"
+    common_in: ["rock", "blues", "metal", "classic rock", "hard rock"]
+    chord_fit: ["min", "min7", "7"]
+    teaching_note: "The first scale every rock guitarist should master. Learn all five positions. This is the backbone of almost every classic rock and blues solo ever recorded."
+    improvisation_tip: "Bend the b3 up to the major 3rd for that classic blues sound. Add the b5 (blue note) for extra grit. Position 1 (root on 6th string) is your home base."
+
+  blues:
+    name: "Blues Scale"
+    aliases: ["blues minor"]
+    category: "blues"
+    intervals: [3, 2, 1, 1, 3, 2]
+    parent_scale: null
+    parent_degree: null
+    character: "Gritty, soulful, expressive — minor pentatonic plus the 'blue note' (b5)"
+    common_in: ["blues", "rock", "classic rock", "jazz", "funk"]
+    chord_fit: ["min", "min7", "7"]
+    teaching_note: "Minor pentatonic with an added b5 (the blue note). The blue note is a passing tone — don't sit on it, slide or bend through it for maximum effect."
+    improvisation_tip: "The b5 is a chromatic passing tone between the 4th and 5th — slide through it, don't land on it. Combine with major pentatonic licks for a BB King style."
+
+  chromatic:
+    name: "Chromatic"
+    aliases: ["chromatic scale"]
+    category: "symmetric"
+    intervals: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    parent_scale: null
+    parent_degree: null
+    character: "No tonal center — every note equally spaced. Tense, unsettled, useful as a technical exercise and passing tone vocabulary"
+    common_in: ["jazz", "shred", "classical", "prog metal"]
+    chord_fit: []
+    teaching_note: "All 12 notes. Not really a scale for soloing but essential for technique building (finger independence, speed) and for chromatic passing tones in solos."
+    improvisation_tip: "Use chromatic approach notes to target chord tones — approach from a half step below or above for jazzy sophistication. Great for connecting pentatonic positions."
+
+  whole_tone:
+    name: "Whole Tone"
+    aliases: ["whole tone scale"]
+    category: "symmetric"
+    intervals: [2, 2, 2, 2, 2, 2]
+    parent_scale: null
+    parent_degree: null
+    character: "Dreamy, ambiguous, floating — no resolution possible due to symmetry"
+    common_in: ["jazz", "fusion", "film scores", "impressionist"]
+    chord_fit: ["aug", "7#5"]
+    teaching_note: "Only two whole tone scales exist (starting on C and C#). Every note is a whole step apart, creating total symmetry — no strong pull to any note. Debussy loved this sound."
+    improvisation_tip: "Use over augmented or dominant 7#5 chords. Keep phrases short — the symmetry becomes monotonous quickly. Great for creating a sense of floating or dreaming."
+
+  diminished_whole_half:
+    name: "Diminished (Whole-Half)"
+    aliases: ["whole-half diminished", "diminished scale", "octatonic"]
+    category: "symmetric"
+    intervals: [2, 1, 2, 1, 2, 1, 2, 1]
+    parent_scale: null
+    parent_degree: null
+    character: "Tense, symmetrical, dark — repeating pattern creates an unstable, mysterious quality"
+    common_in: ["jazz", "fusion", "prog metal", "classical"]
+    chord_fit: ["dim7", "7b9"]
+    teaching_note: "Eight-note scale alternating whole and half steps. Only three unique diminished scales exist due to the repeating symmetry. Used over diminished 7th chords."
+    improvisation_tip: "The symmetry means any lick you play can be repeated up in minor 3rds (3 frets). Use this to create patterns that climb the neck quickly."
+
+  diminished_half_whole:
+    name: "Diminished (Half-Whole)"
+    aliases: ["half-whole diminished", "dominant diminished"]
+    category: "symmetric"
+    intervals: [1, 2, 1, 2, 1, 2, 1, 2]
+    parent_scale: null
+    parent_degree: null
+    character: "Tense and exotic but with dominant function — great for adding tension over dom7 chords"
+    common_in: ["jazz", "fusion", "bebop", "prog"]
+    chord_fit: ["7", "7b9", "13b9", "7#9"]
+    teaching_note: "The dominant version of the diminished scale — use over dominant 7th chords for outside tension. Same symmetry principle as whole-half, just shifted."
+    improvisation_tip: "Play over dom7 chords for instant jazz fusion tension. Like its sibling, licks repeat every minor 3rd. Mix with mixolydian to go in and out of tension."
+
+  phrygian_dominant:
+    name: "Phrygian Dominant"
+    aliases: ["spanish phrygian", "freygish", "hijaz"]
+    category: "mode"
+    intervals: [1, 3, 1, 2, 1, 2, 2]
+    parent_scale: "harmonic_minor"
+    parent_degree: 5
+    character: "Exotic, dramatic, Middle Eastern/Spanish — the major 3rd over a Phrygian framework creates intense flavor"
+    common_in: ["flamenco", "metal", "neoclassical", "prog metal", "film scores"]
+    chord_fit: ["7", "7b9", "sus4b9"]
+    teaching_note: "5th mode of harmonic minor. It's Phrygian with a major 3rd instead of minor — giving you both the exotic b2 and a strong dominant function. Marty Friedman uses this extensively."
+    improvisation_tip: "The b2 to major 3rd leap (3 semitones) is the signature move. Use over dominant chords resolving to minor for an authentic exotic sound. Killer for metal solos."
+
+  lydian_dominant:
+    name: "Lydian Dominant"
+    aliases: ["lydian b7", "overtone scale", "acoustic scale"]
+    category: "mode"
+    intervals: [2, 2, 2, 1, 2, 1, 2]
+    parent_scale: "melodic_minor"
+    parent_degree: 4
+    character: "Bright yet unresolved — Lydian's dreaminess combined with the dominant 7th's tension"
+    common_in: ["jazz", "fusion", "prog rock", "funk"]
+    chord_fit: ["7", "7#11", "9#11", "13#11"]
+    teaching_note: "4th mode of melodic minor. Combines the #4 of Lydian with the b7 of Mixolydian. It's the sound of dominant chords that don't want to resolve — tritone subs use this."
+    improvisation_tip: "Play over non-resolving dom7 chords or tritone substitutions. The #4 adds sophistication to your dominant chord vocabulary. Sounds great over funk dom7 vamps."
+
+  super_locrian:
+    name: "Super Locrian"
+    aliases: ["altered", "altered scale", "altered dominant", "diminished whole tone"]
+    category: "mode"
+    intervals: [1, 2, 1, 2, 2, 2, 2]
+    parent_scale: "melodic_minor"
+    parent_degree: 7
+    character: "Maximum tension over dominant chords — every extension is altered (b9, #9, b5, #5)"
+    common_in: ["jazz", "fusion", "bebop", "prog"]
+    chord_fit: ["7alt", "7b9b13", "7#9b13", "7b5", "7#5"]
+    teaching_note: "7th mode of melodic minor. Contains all possible altered tensions over a dominant chord. This is THE scale for playing over altered dominant chords in jazz."
+    improvisation_tip: "Use on V7 chords right before they resolve to I. Play melodic minor a half step up from the dominant root — that's the shortcut. Instant jazz credibility."
+
+  hungarian_minor:
+    name: "Hungarian Minor"
+    aliases: ["double harmonic minor", "gypsy minor"]
+    category: "scale"
+    intervals: [2, 1, 3, 1, 1, 3, 1]
+    parent_scale: null
+    parent_degree: null
+    character: "Intensely exotic, dramatic — two augmented 2nds give it a powerful Eastern European/Romani flavor"
+    common_in: ["classical", "neoclassical", "prog metal", "world music", "film scores"]
+    chord_fit: ["min", "minMaj7", "dim"]
+    teaching_note: "Harmonic minor with a raised 4th. The two augmented 2nd intervals (b3-#4 and b6-7) create a uniquely dramatic sound. Think Django Reinhardt and Romani music."
+    improvisation_tip: "The #4 and natural 7 are your color notes — lean into both augmented 2nd leaps for maximum drama. Sounds incredible in neoclassical shred passages."
+
+  japanese:
+    name: "Japanese"
+    aliases: ["hirajoshi", "in scale"]
+    category: "pentatonic"
+    intervals: [2, 1, 4, 1, 4]
+    parent_scale: null
+    parent_degree: null
+    character: "Haunting, sparse, mysterious — wide intervals create an unmistakably Japanese/Asian atmosphere"
+    common_in: ["world music", "prog metal", "ambient", "film scores", "neoclassical"]
+    chord_fit: ["min", "minb6", "sus2"]
+    teaching_note: "A 5-note scale with two large 4-semitone gaps. Marty Friedman's signature sound — he blends this with pentatonic minor and Phrygian dominant constantly."
+    improvisation_tip: "The wide intervals (4 semitones) create dramatic leaps — use them for emotional impact. Combine with bends and vibrato for that Friedman-style expressiveness. Try it over a droning minor chord."
