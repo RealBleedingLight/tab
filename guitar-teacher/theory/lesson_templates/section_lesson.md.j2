@@ -1,0 +1,63 @@
+# Lesson {{ "%02d"|format(ctx.lesson_number) }}: {{ ctx.section_name }} — Bars {{ ctx.bar_start }}-{{ ctx.bar_end }}
+**Phase:** {{ ctx.phase }}
+**Prerequisites:** {{ ctx.prerequisites }}
+**Estimated time:** {{ ctx.estimated_time }} minutes
+**You'll need:** Guitar, metronome, tuner
+
+## Goal
+{{ ctx.goal_techniques }} at {{ ctx.target_tempo_pct }}% tempo ({{ ctx.target_tempo_bpm }} bpm) with clean execution and musical phrasing.
+
+## Warm-Up (5 min)
+{% for exercise in ctx.warmup_exercises %}
+- {{ exercise.description }}{{ ' (from ' + exercise.source_lesson + ')' if exercise.source_lesson else '' }}
+{% endfor %}
+
+## Concept: {{ ctx.primary_concept.name }}
+{{ ctx.primary_concept.teaching_note }}
+{% if ctx.primary_scale %}
+
+### Scale Context: {{ ctx.primary_scale.name }}
+{% if ctx.primary_scale.root and ctx.primary_scale.notes %}
+- Root: {{ ctx.primary_scale.root }}
+- Notes: {{ ctx.primary_scale.notes|join(", ") }}
+{% endif %}
+{% if ctx.primary_scale.teaching_note %}
+{{ ctx.primary_scale.teaching_note }}
+{% endif %}
+{% if ctx.primary_scale.improvisation_tip %}
+
+*Improvisation tip: {{ ctx.primary_scale.improvisation_tip }}*
+{% endif %}
+{% endif %}
+
+## Steps
+{% for step in ctx.steps %}
+
+### Step {{ loop.index }}: {{ step.title }}
+{{ step.body }}
+{% if step.tab_excerpt %}
+
+```
+{{ step.tab_excerpt }}
+```
+{% endif %}
+- **Do this:** {{ step.instruction }}
+- **Listen for:** {{ step.listen_for }}
+- **Repeat:** {{ step.repeat_instruction }}
+{% endfor %}
+
+## Checkpoint
+{% for item in ctx.checkpoints %}
+- [ ] {{ item }}
+{% endfor %}
+
+**All checked?** {% if ctx.next_lesson %}Move to Lesson {{ "%02d"|format(ctx.next_lesson) }}{% else %}You've completed this lesson sequence!{% endif %}
+
+**Not yet?** Repeat this lesson next session. Focus on whichever checkpoint isn't passing.
+
+## Session Log
+At the end of your session, tell Claude:
+- How long you practiced
+- Which checkpoints you passed
+- What tempo you reached
+- What felt difficult

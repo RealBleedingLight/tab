@@ -1,0 +1,64 @@
+# {{ analysis.title }} — Practice Plan
+## {{ analysis.artist }}
+
+### Phase 1: Foundation (Sessions 1-{{ foundation_sessions }})
+**Goal:** Nail the prerequisite techniques and easiest sections
+
+**Daily routine ({{ daily_time }} min):**
+{% for item in foundation_routine %}
+- {{ item }}
+{% endfor %}
+
+**Milestone:** Play foundation sections cleanly at {{ foundation_tempo }}% tempo
+**Sections covered:** {{ foundation_sections|join(", ") }}
+
+### Phase 2: Building (Sessions {{ foundation_sessions + 1 }}-{{ building_end }})
+**Goal:** Tackle medium-difficulty sections and start connecting parts
+
+**Daily routine ({{ daily_time }} min):**
+{% for item in building_routine %}
+- {{ item }}
+{% endfor %}
+
+**Milestone:** Play all learned sections at {{ building_tempo }}% tempo
+**Sections covered:** {{ building_sections|join(", ") }}
+
+### Phase 3: Peak (Sessions {{ building_end + 1 }}-{{ peak_end }})
+**Goal:** Conquer the hardest sections
+
+**Daily routine ({{ daily_time }} min):**
+{% for item in peak_routine %}
+- {{ item }}
+{% endfor %}
+
+**Milestone:** Play all sections individually at {{ peak_tempo }}% tempo
+**Sections covered:** {{ peak_sections|join(", ") }}
+
+### Phase 4: Assembly (Sessions {{ peak_end + 1 }}-{{ assembly_end }})
+**Goal:** Connect all sections into the complete solo
+
+**Daily routine ({{ daily_time }} min):**
+{% for item in assembly_routine %}
+- {{ item }}
+{% endfor %}
+
+**Milestone:** Play the complete solo at {{ assembly_tempo }}% tempo
+
+### Phase 5: Performance (Sessions {{ assembly_end + 1 }}+)
+**Goal:** Bring the solo to full tempo with expression and confidence
+
+**Daily routine ({{ daily_time }} min):**
+- 5 min: Technique warm-up
+- 5 min: Weakest section at current max tempo
+- {{ daily_time - 10 }} min: Full solo run-throughs, increasing tempo by 5 bpm when 3 clean passes achieved
+
+**Milestone:** Full solo at 100% tempo ({{ analysis.tempo }} bpm)
+
+### Tempo Milestones
+| Phase | Target | BPM |
+|-------|--------|-----|
+| Foundation | {{ foundation_tempo }}% | {{ (analysis.tempo * foundation_tempo / 100)|int }} bpm |
+| Building | {{ building_tempo }}% | {{ (analysis.tempo * building_tempo / 100)|int }} bpm |
+| Peak | {{ peak_tempo }}% | {{ (analysis.tempo * peak_tempo / 100)|int }} bpm |
+| Assembly | {{ assembly_tempo }}% | {{ (analysis.tempo * assembly_tempo / 100)|int }} bpm |
+| Performance | 100% | {{ analysis.tempo }} bpm |

@@ -1,0 +1,62 @@
+# Lesson {{ "%02d"|format(ctx.lesson_number) }}: {{ ctx.section_name }}
+**Phase:** Foundation
+**Prerequisites:** {{ ctx.prerequisites }}
+**Estimated time:** {{ ctx.estimated_time }} minutes
+**You'll need:** Guitar, metronome, tuner
+
+## Goal
+Build a solid foundation in the techniques needed for this solo: {{ ctx.goal_techniques }}.
+
+## Warm-Up (5 min)
+{% for exercise in ctx.warmup_exercises %}
+- {{ exercise.description }}
+{% endfor %}
+
+{% for technique in ctx.techniques %}
+## {{ technique.name }}
+{{ technique.description }}
+
+{% if technique.teaching_template %}
+{{ technique.teaching_template }}
+{% endif %}
+
+{% if technique.common_mistakes %}
+### Common Mistakes
+{% for mistake in technique.common_mistakes %}
+- {{ mistake }}
+{% endfor %}
+{% endif %}
+
+{% if technique.variants %}
+### Variants to Practice
+{% for variant in technique.variants %}
+- **{{ variant.name }}**{{ ' (notation: ' + variant.notation + ')' if variant.notation else '' }}{{ ' — ' + variant.semitones|string + (' semitone' if variant.semitones == 1 else ' semitones') if variant.semitones else '' }}
+{% endfor %}
+{% endif %}
+
+{% endfor %}
+
+## Steps
+{% for step in ctx.steps %}
+
+### Step {{ loop.index }}: {{ step.title }}
+{{ step.body }}
+- **Do this:** {{ step.instruction }}
+- **Listen for:** {{ step.listen_for }}
+- **Repeat:** {{ step.repeat_instruction }}
+{% endfor %}
+
+## Checkpoint
+{% for item in ctx.checkpoints %}
+- [ ] {{ item }}
+{% endfor %}
+
+**All checked?** {% if ctx.next_lesson %}Move to Lesson {{ "%02d"|format(ctx.next_lesson) }}{% else %}You've completed this lesson!{% endif %}
+
+**Not yet?** Repeat this lesson next session. These techniques are foundational — take the time to get them right.
+
+## Session Log
+At the end of your session, tell Claude:
+- How long you practiced
+- Which checkpoints you passed
+- What felt difficult

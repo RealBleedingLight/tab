@@ -1,71 +1,114 @@
-# Man of Steel — Technique Breakdown
-## Guthrie Govan (from Hans Zimmer Live)
+# Man Of Steel — Technique Breakdown
+## Guthrie Govan
 
 ### Overview
-- The solo is approximately 4:22 long
-- Standard tuning
-- Primarily played on the B and high E strings in higher positions (frets 12-22)
-- Guthrie uses a mix of legato, alternate picking, bending, vibrato, and some hybrid picking
-- The solo follows an arc: melodic opening → building intensity → shredding peak → melodic resolution
+- Tempo: 128 bpm
+- Key: C# Diminished (Whole-Half)
+- Tuning: E A D G B E
+- Total sections: 16
 
-### Techniques Used (in order of prominence)
+### Techniques Used (by frequency)
 
-**1. Vibrato**
-- Guthrie's vibrato is wide, controlled, and vocal-like
-- Appears on nearly every sustained note
-- Practice tip: Use wrist-based vibrato, not finger vibrato. Think of turning a doorknob. Aim for even, consistent oscillation. Start slow — 1 cycle per beat at 60bpm — and gradually speed up while keeping it even.
-- Where it appears: Throughout, but especially the opening theme (bars 1-8) and closing (bars 49-56)
+**1. Hammer On**
+- Appears in 96 bars: 4, 4, 5, 5, 7, 11, 15, 16, 16, 18, 18, 19, 20, 20, 20, 20, 20, 20, 20, 20, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 23, 23, 26, 27, 27, 28, 28, 28, 28, 28, 29, 29, 29, 29, 31, 31, 31, 33, 34, 38, 38, 38, 38, 39, 40, 40, 45, 45, 45, 45, 45, 51, 51, 52, 52, 53, 55, 60, 60, 60, 61, 61, 61, 61, 61, 61, 62, 62
+- Difficulty: 3/10
+- Sound a higher note by forcefully fretting it with a finger without picking — the fretting hand generates the note
 
-**2. Bending**
-- Full bends (1 whole step) and some 1.5 step bends
-- Pre-bends and bend-releases
-- Bends with vibrato applied at the top — this is a Guthrie signature
-- Practice tip: Support the bending finger with fingers behind it. Use your ear — bend to the target pitch and check against the fretted note. Practice bending on the B string at fret 15 up to match fret 17.
-- Where it appears: Bars 1-8 (theme), bars 37-48 (climax), bars 49-56 (outro)
+**2. Pull Off**
+- Appears in 96 bars: 4, 4, 5, 5, 7, 11, 15, 16, 16, 18, 18, 19, 20, 20, 20, 20, 20, 20, 20, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 23, 23, 26, 27, 27, 28, 28, 28, 28, 29, 29, 29, 29, 29, 31, 31, 31, 33, 34, 38, 38, 38, 38, 39, 40, 40, 45, 45, 45, 45, 45, 51, 51, 52, 52, 53, 55, 60, 60, 61, 61, 61, 61, 61, 61, 61, 62, 62
+- Difficulty: 3/10
+- Sound a lower note by plucking the string with the fretting finger as it lifts off
 
-**3. Legato (Hammer-ons & Pull-offs)**
-- Extended legato runs spanning 2-3 strings
-- Hammer-on from nowhere (starting a note with a hammer-on, no pick attack)
-- Pull-off sequences that maintain even volume
-- Practice tip: Focus on evenness. Each hammered/pulled note should be as loud as picked notes. Practice 4-note-per-string legato patterns starting at 60bpm. The fretting hand does all the work.
-- Where it appears: Bars 9-16 (building section), bars 25-36 (sequences)
+**3. Slide**
+- Appears in 54 bars: 4, 8, 8, 10, 11, 11, 13, 14, 14, 15, 16, 17, 17, 17, 17, 18, 18, 18, 20, 20, 20, 20, 21, 21, 21, 21, 22, 22, 22, 23, 23, 24, 27, 28, 28, 29, 29, 29, 31, 33, 39, 40, 42, 47, 51, 51, 60, 61, 61, 62, 62, 62, 62, 63
+- Difficulty: 2/10
+- Smoothly glide from one fret to another while maintaining pressure on the string
 
-**4. Alternate Picking**
-- Fast scalar runs use strict alternate picking
-- Needed for the chromatic passages in bars 17-24
-- Practice tip: Keep the pick motion small and relaxed. Tension is the enemy of speed. Practice with a metronome — increase by 5bpm only when the current tempo feels effortless.
-- Where it appears: Bars 17-24 (chromatic runs), mixed throughout faster passages
+**4. Pre Bend**
+- Appears in 41 bars: 4, 6, 6, 7, 7, 8, 10, 18, 18, 18, 19, 19, 27, 29, 30, 32, 33, 35, 41, 47, 47, 47, 49, 49, 50, 51, 53, 53, 53, 54, 54, 55, 56, 56, 57, 57, 58, 59, 59, 60, 60
+- Difficulty: 6/10
+- Bend the string to the target pitch silently before picking, then pick the already-bent note
 
-**5. Slides**
-- Used for position shifts — keeps the legato feel while moving up/down the neck
-- Some expressive slides into notes (grace note slides)
-- Where it appears: Throughout for position changes
+**5. Bend**
+- Appears in 34 bars: 4, 6, 8, 9, 9, 12, 17, 17, 18, 19, 26, 27, 27, 27, 28, 29, 30, 31, 32, 32, 32, 33, 34, 35, 45, 46, 47, 49, 50, 51, 53, 55, 61, 61
+- Difficulty: 5/10
+- Push or pull the string to raise the pitch smoothly to a target note
 
-**6. Hybrid Picking**
-- Guthrie occasionally uses middle finger to pluck strings while holding the pick
-- Allows for wider string skips without awkward pick jumps
-- Practice tip: Hold pick normally, use middle (and ring) finger to pluck higher strings. Start with simple arpeggios alternating pick and finger.
-- Where it appears: Bars 25-36 (string-crossing passages)
+**6. Vibrato**
+- Appears in 34 bars: 5, 7, 7, 10, 12, 14, 18, 19, 19, 20, 20, 25, 26, 28, 30, 32, 33, 35, 40, 41, 42, 46, 47, 48, 50, 52, 53, 53, 53, 54, 54, 57, 58, 59
+- Difficulty: 5/10
+- Rapidly oscillate the pitch of a note by repeatedly bending and releasing the string in a controlled manner
 
-### Section-by-Section Difficulty
+**7. Bend Release**
+- Appears in 25 bars: 4, 6, 7, 9, 12, 19, 19, 26, 27, 29, 32, 32, 32, 34, 41, 45, 46, 49, 49, 51, 53, 55, 60, 61, 61
+- Difficulty: 6/10
+- Bend the string up to a target pitch, then release it back down to the original note
 
-| Section | Bars | Difficulty | Main Challenge |
-|---------|------|-----------|----------------|
-| A - Opening Theme | 1-8 | 6/10 | Vibrato quality, bend accuracy |
-| B - Building | 9-16 | 7/10 | Legato evenness, position shifts |
-| C - Chromatic Runs | 17-24 | 9/10 | Speed, accuracy, stamina |
-| D - Sequences | 25-36 | 9/10 | String crossing, pattern consistency |
-| E - Climax | 37-48 | 8/10 | Sustained bends, dynamic control |
-| F - Outro | 49-56 | 6/10 | Emotional delivery, vibrato |
+**8. Mute**
+- Appears in 2 bars: 25, 38
 
-### Suggested Practice Order
-1. **Start with Section A and F** — nail the melodic playing, vibrato, and bending first. These are the emotional core.
-2. **Then Section B** — bridge the gap to faster playing with legato work.
-3. **Then Section E** — climactic bends and dynamics.
-4. **Then Sections C and D** — the hardest parts. Only tackle these once the rest feels solid.
+**9. Trill**
+- Appears in 2 bars: 44, 44
 
-### Key Concept Links
-- [Vibrato & Bending](../../../concepts/techniques/vibrato-and-bending.md)
-- [Legato](../../../concepts/techniques/legato.md)
-- [Alternate Picking](../../../concepts/techniques/alternate-picking.md)
-- [Hybrid Picking](../../../concepts/techniques/hybrid-picking.md)
+**10. Tapping**
+- Appears in 1 bar: 21
+- Difficulty: 6/10
+- Use a picking-hand finger to hammer onto the fretboard, enabling wide interval legato lines impossible with one hand
+
+### Section Difficulty Map
+
+| Section | Bars | Difficulty | Key Techniques | Practice Priority |
+|---------|------|-----------|----------------|-------------------|
+| Section A | 4-7 | 6.1/10 | pre_bend, pull_off, hammer_on | 1 |
+| Section B | 8-11 | 6.2/10 | slide, bend, pre_bend | 2 |
+| Section C | 12-15 | 5.6/10 | slide, vibrato, bend | 3 |
+| Section D | 16-19 | 6.1/10 | slide, pull_off, hammer_on | 4 |
+| Section E | 20-23 | 5.7/10 | slide, pull_off, hammer_on | 5 |
+| Section F | 24-27 | 6.2/10 | slide, vibrato, bend | 6 |
+| Section G | 28-31 | 6.0/10 | bend, slide, pull_off | 7 |
+| Section H | 32-35 | 6.0/10 | bend, pre_bend, vibrato | 8 |
+| Section I | 36-39 | 5.3/10 | pull_off, hammer_on, mute | 9 |
+| Section J | 40-43 | 5.8/10 | vibrato, slide, pull_off | 10 |
+| Section K | 44-47 | 5.2/10 | bend, bend_release, vibrato | 11 |
+| Section L | 48-51 | 6.1/10 | bend, pre_bend, vibrato | 12 |
+| Section M | 52-55 | 5.9/10 | pull_off, hammer_on, vibrato | 13 |
+| Section N | 56-59 | 4.3/10 | pre_bend, vibrato | 14 |
+| Section O | 60-63 | 5.1/10 | slide, pull_off, hammer_on | 15 |
+| Section P | 64-65 | 2.0/10 |  | 16 |
+
+### Recommended Practice Order
+Learn sections in this order (easiest first):
+1. Section P
+2. Section N
+3. Section O
+4. Section K
+5. Section I
+6. Section C
+7. Section E
+8. Section J
+9. Section M
+10. Section G
+11. Section H
+12. Section A
+13. Section D
+14. Section L
+15. Section B
+16. Section F
+
+### Difficulty Arc
+- **Section A**: ======     6.1
+- **Section B**: ======     6.2
+- **Section C**: =====      5.6
+- **Section D**: ======     6.1
+- **Section E**: =====      5.7
+- **Section F**: ======     6.2
+- **Section G**: ======     6.0
+- **Section H**: ======     6.0
+- **Section I**: =====      5.3
+- **Section J**: =====      5.8
+- **Section K**: =====      5.2
+- **Section L**: ======     6.1
+- **Section M**: =====      5.9
+- **Section N**: ====       4.3
+- **Section O**: =====      5.1
+- **Section P**: ==         2.0

@@ -1,14 +1,5 @@
-# Man of Steel — Practice Log
+# Practice Log
 
-<!-- Each session gets an entry appended below. Format:
-## YYYY-MM-DD — Lesson XX: [lesson name]
-- **Duration:** X min
-- **Tempo achieved:** X bpm
-- **What worked:** ...
-- **What's stuck:** ...
-- **Next session:** continue / move to lesson XX
--->
+| Date | Lesson | Duration | Tempo | What Worked | What's Stuck |
+|------|--------|----------|-------|-------------|-------------|
 
----
-
-*No sessions logged yet.*

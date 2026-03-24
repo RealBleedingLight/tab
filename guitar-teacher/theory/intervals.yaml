@@ -1,0 +1,84 @@
+intervals:
+  - semitones: 0
+    name: "Unison"
+    short_name: "P1"
+    quality: "perfect"
+    character: "Identity — the same note"
+    guitar_ref: "Same fret, same string"
+
+  - semitones: 1
+    name: "Minor 2nd"
+    short_name: "m2"
+    quality: "minor"
+    character: "Maximum dissonance, tension, clash — the sound of a half step"
+    guitar_ref: "One fret up on the same string"
+
+  - semitones: 2
+    name: "Major 2nd"
+    short_name: "M2"
+    quality: "major"
+    character: "Mild tension, stepping motion — the whole step"
+    guitar_ref: "Two frets up on the same string"
+
+  - semitones: 3
+    name: "Minor 3rd"
+    short_name: "m3"
+    quality: "minor"
+    character: "Sad, dark — defines minor chords and keys"
+    guitar_ref: "Three frets up, or one string up same fret (strings 3-2 offset by one fret)"
+
+  - semitones: 4
+    name: "Major 3rd"
+    short_name: "M3"
+    quality: "major"
+    character: "Happy, bright — defines major chords and keys"
+    guitar_ref: "Four frets up on the same string"
+
+  - semitones: 5
+    name: "Perfect 4th"
+    short_name: "P4"
+    quality: "perfect"
+    character: "Open, hymn-like, suspended — standard guitar tuning interval"
+    guitar_ref: "Same fret, next higher string (except G to B)"
+
+  - semitones: 6
+    name: "Tritone"
+    short_name: "TT"
+    quality: "augmented"
+    character: "Maximum instability — the 'devil's interval', tense and restless"
+    guitar_ref: "Six frets up; divides the octave exactly in half"
+
+  - semitones: 7
+    name: "Perfect 5th"
+    short_name: "P5"
+    quality: "perfect"
+    character: "Strong, stable, powerful — the power chord interval"
+    guitar_ref: "Same fret, skip one string up (or two frets up on next string)"
+
+  - semitones: 8
+    name: "Minor 6th"
+    short_name: "m6"
+    quality: "minor"
+    character: "Bittersweet, dramatic — enharmonic with augmented 5th"
+    guitar_ref: "Eight frets up on the same string"
+
+  - semitones: 9
+    name: "Major 6th"
+    short_name: "M6"
+    quality: "major"
+    character: "Warm, sweet — the classic oldies/doo-wop interval"
+    guitar_ref: "Nine frets up on the same string"
+
+  - semitones: 10
+    name: "Minor 7th"
+    short_name: "m7"
+    quality: "minor"
+    character: "Bluesy, unresolved — defines dominant and minor 7th chords"
+    guitar_ref: "Ten frets up, or two frets below the octave"
+
+  - semitones: 11
+    name: "Major 7th"
+    short_name: "M7"
+    quality: "major"
+    character: "Lush, jazzy, almost-but-not-quite octave — beautiful tension"
+    guitar_ref: "Eleven frets up, one fret below the octave"

@@ -1,46 +1,28 @@
-# Man of Steel — Lesson Index
+# Lesson Index
 
-## How to Use
-Say "let's practice Man of Steel" and Claude will read your `.context.md`, find your current lesson, and walk you through it step by step. Use Sonnet or Haiku for sessions — the plans are detailed enough that any model can guide you.
-
-## Phase 1: Foundation (Lessons 01-06)
-| # | Lesson | Focus | Prereqs |
-|---|--------|-------|---------|
-| 01 | [Vibrato Foundations](01-vibrato-foundations.md) | Wrist vibrato technique | None |
-| 02 | [Bending Accuracy](02-bending-accuracy.md) | Full bends, 1.5 step bends, bend+vibrato | Lesson 01 |
-| 03 | [Opening Theme Bars 1-4](03-opening-theme-bars-1-4.md) | First phrase of the solo | Lessons 01-02 |
-| 04 | [Opening Theme Bars 5-8](04-opening-theme-bars-5-8.md) | Second phrase, completing Section A | Lesson 03 |
-| 05 | [Outro Bars 49-52](05-outro-bars-49-52.md) | Sustained melodic playing | Lessons 01-02 |
-| 06 | [Outro Bars 53-56](06-outro-bars-53-56.md) | Final resolution, completing Section F | Lesson 05 |
-
-## Phase 2: Legato & Dynamics (Lessons 07-11)
-| # | Lesson | Focus | Prereqs |
-|---|--------|-------|---------|
-| 07 | [Legato Fundamentals](07-legato-fundamentals.md) | Hammer-on/pull-off strength and evenness | Phase 1 complete |
-| 08 | [Section B Bars 9-12](08-section-b-bars-9-12.md) | Building intensity, first legato passage | Lesson 07 |
-| 09 | [Section B Bars 13-16](09-section-b-bars-13-16.md) | Completing Section B | Lesson 08 |
-| 10 | [Section E Bars 37-42](10-section-e-bars-37-42.md) | Climactic bends and dynamics | Phase 1 complete |
-| 11 | [Section E Bars 43-48](11-section-e-bars-43-48.md) | Wind-down phrasing, completing Section E | Lesson 10 |
-
-## Phase 3: Speed (Lessons 12-17)
-| # | Lesson | Focus | Prereqs |
-|---|--------|-------|---------|
-| 12 | [Alternate Picking Drill](12-alternate-picking-drill.md) | Building picking speed and accuracy | Phase 2 complete |
-| 13 | [Section C Bars 17-20](13-section-c-bars-17-20.md) | First chromatic run passage | Lesson 12 |
-| 14 | [Section C Bars 21-24](14-section-c-bars-21-24.md) | Completing Section C | Lesson 13 |
-| 15 | [Section D Bars 25-28](15-section-d-bars-25-28.md) | Sequence patterns begin | Lesson 12 |
-| 16 | [Section D Bars 29-32](16-section-d-bars-29-32.md) | String-crossing sequences | Lesson 15 |
-| 17 | [Section D Bars 33-36](17-section-d-bars-33-36.md) | Completing Section D | Lesson 16 |
-
-## Phase 4: Assembly (Lessons 18-20)
-| # | Lesson | Focus | Prereqs |
-|---|--------|-------|---------|
-| 18 | [Connect A + F](18-connect-a-f.md) | Melodic bookends together | Phases 1-3 |
-| 19 | [Connect B + E](19-connect-b-e.md) | Middle sections together | Lesson 18 |
-| 20 | [Connect C + D](20-connect-c-d.md) | Fast sections together | Lesson 19 |
-
-## Phase 5: Performance (Lessons 21-22)
-| # | Lesson | Focus | Prereqs |
-|---|--------|-------|---------|
-| 21 | [Full Solo Assembly](21-full-solo-assembly.md) | All sections connected, tempo push | Lesson 20 |
-| 22 | [Performance with Recording](22-performance-with-recording.md) | Play along, dynamics, expression | Lesson 21 |
+- [01. Technique Foundations — Hammer-On & Pull-Off & Slide](01-technique-foundations-hammer-on-pull-off-slide.md)
+- [02. Section P — Bars 64-65](02-section-p-bars-64-65.md)
+- [03. Section N — Bars 56-59](03-section-n-bars-56-59.md)
+- [04. Section O — Bars 60-63](04-section-o-bars-60-63.md)
+- [05. Section K — Bars 44-47](05-section-k-bars-44-47.md)
+- [06. Section I — Bars 36-39](06-section-i-bars-36-39.md)
+- [07. Section C — Bars 12-15](07-section-c-bars-12-15.md)
+- [08. Section E — Bars 20-23](08-section-e-bars-20-23.md)
+- [09. Section J — Bars 40-43](09-section-j-bars-40-43.md)
+- [10. Section M — Bars 52-55](10-section-m-bars-52-55.md)
+- [11. Section G — Bars 28-31](11-section-g-bars-28-31.md)
+- [12. Section H — Bars 32-35](12-section-h-bars-32-35.md)
+- [13. Section A — Bars 4-7](13-section-a-bars-4-7.md)
+- [14. Section D — Bars 16-19](14-section-d-bars-16-19.md)
+- [15. Section L — Bars 48-51](15-section-l-bars-48-51.md)
+- [16. Section B — Bars 8-11](16-section-b-bars-8-11.md)
+- [17. Section F — Bars 24-27](17-section-f-bars-24-27.md)
+- [18. Assembly — Section A + Section B](18-assembly-section-a-section-b.md)
+- [19. Assembly — Section C + Section D](19-assembly-section-c-section-d.md)
+- [20. Assembly — Section E + Section F](20-assembly-section-e-section-f.md)
+- [21. Assembly — Section G + Section H](21-assembly-section-g-section-h.md)
+- [22. Assembly — Section I + Section J](22-assembly-section-i-section-j.md)
+- [23. Assembly — Section K + Section L](23-assembly-section-k-section-l.md)
+- [24. Assembly — Section M + Section N](24-assembly-section-m-section-n.md)
+- [25. Assembly — Section O + Section P](25-assembly-section-o-section-p.md)
+- [26. Full Performance — Man Of Steel](26-full-performance-man-of-steel.md)

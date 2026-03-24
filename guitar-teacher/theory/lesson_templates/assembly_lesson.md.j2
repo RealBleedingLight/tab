@@ -1,0 +1,45 @@
+# Lesson {{ "%02d"|format(ctx.lesson_number) }}: {{ ctx.section_name }}
+**Phase:** Assembly
+**Prerequisites:** {{ ctx.prerequisites }}
+**Estimated time:** {{ ctx.estimated_time }} minutes
+**You'll need:** Guitar, metronome, tuner
+
+## Goal
+Connect {{ ctx.sections_to_connect|join(" and ") }} into a seamless passage at {{ ctx.target_tempo_pct }}% tempo ({{ ctx.target_tempo_bpm }} bpm). The transitions between sections should feel natural — no hesitation, no gear-shifting.
+
+## Warm-Up (5 min)
+{% for exercise in ctx.warmup_exercises %}
+- {{ exercise.description }}{{ ' (from ' + exercise.source_lesson + ')' if exercise.source_lesson else '' }}
+{% endfor %}
+
+## Concept: Connecting Sections
+The hardest part of playing a solo isn't any individual section — it's the transitions between them. When you practiced each section in isolation, you always started from a "ready" position. Now you need to arrive at each section mid-flow, with your hand already in motion. Focus on:
+- **Position shifts:** Know exactly where your hand needs to move between sections
+- **Timing continuity:** The beat doesn't pause between sections — keep the metronome running
+- **Dynamic arc:** Each section has its own energy level — practice matching the dynamics at the join point
+
+## Steps
+{% for step in ctx.steps %}
+
+### Step {{ loop.index }}: {{ step.title }}
+{{ step.body }}
+- **Do this:** {{ step.instruction }}
+- **Listen for:** {{ step.listen_for }}
+- **Repeat:** {{ step.repeat_instruction }}
+{% endfor %}
+
+## Checkpoint
+{% for item in ctx.checkpoints %}
+- [ ] {{ item }}
+{% endfor %}
+
+**All checked?** {% if ctx.next_lesson %}Move to Lesson {{ "%02d"|format(ctx.next_lesson) }}{% else %}You've completed this assembly lesson!{% endif %}
+
+**Not yet?** Identify which transition is weakest. Isolate the last 2 bars of the first section and the first 2 bars of the next — loop just that transition 10 times.
+
+## Session Log
+At the end of your session, tell Claude:
+- How long you practiced
+- Which checkpoints you passed
+- What tempo you reached
+- Which transitions felt smooth vs. rough

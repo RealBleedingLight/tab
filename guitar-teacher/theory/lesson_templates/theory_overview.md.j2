@@ -1,0 +1,44 @@
+# {{ analysis.title }} — Theory & Scale Analysis
+## {{ analysis.artist }}
+
+### Key and Tonality
+- Primary key: **{{ analysis.key }}**
+- Tempo: {{ analysis.tempo }} bpm
+- Tuning: {{ analysis.tuning|join(" ") }}
+
+### Scales Used
+{% for scale_name, bar_numbers in analysis.scale_summary.items() %}
+
+**{{ loop.index }}. {{ scale_name }}**
+{% if scale_info[scale_name] is defined %}
+- Notes: {{ scale_info[scale_name].notes|join(" ") }}
+- Character: {{ scale_info[scale_name].character }}
+- Appears in bars: {{ bar_numbers|join(", ") }}
+{% if scale_info[scale_name].improvisation_tip %}
+- *Improvisation tip: {{ scale_info[scale_name].improvisation_tip }}*
+{% endif %}
+{% else %}
+- Appears in bars: {{ bar_numbers|join(", ") }}
+{% endif %}
+{% endfor %}
+
+### Section-by-Section Analysis
+{% for section in analysis.sections %}
+
+**{{ section.name }}** (Bars {{ section.bar_range[0] }}-{{ section.bar_range[1] }})
+- Scale: {{ section.overall_scale }}
+- Difficulty: {{ "%.1f"|format(section.difficulty) }}/10
+- Key techniques: {{ section.primary_techniques|join(", ") }}
+{% endfor %}
+
+### Technique Inventory
+{% for technique, bars in analysis.technique_summary.items() %}
+- **{{ technique }}**: bars {{ bars|join(", ") }} ({{ bars|length }} occurrences)
+{% endfor %}
+
+### Practice Application
+When improvising over this progression:
+1. Start with the primary key ({{ analysis.key }}) as your safe zone
+2. Listen for chord changes that suggest modal shifts
+3. Use chromatic approach notes to connect scale tones
+4. Match the energy arc of the original solo — melodic passages deserve space, technical passages need precision

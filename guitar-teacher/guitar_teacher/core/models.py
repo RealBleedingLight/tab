@@ -166,3 +166,29 @@ class LessonContext:
     improvisation_suggestions: Optional[str]
     checkpoints: List[str]
     next_lesson: Optional[int]
+
+
+@dataclass
+class ScaleResult:
+    """A scale instantiated at a specific root."""
+    scale: Scale
+    root: str
+    notes: List[str]
+
+
+@dataclass
+class ChordResult:
+    """A chord instantiated at a specific root."""
+    chord: Chord
+    root: str
+    symbol: str
+    notes: List[str]
+
+
+@dataclass
+class ScaleSuggestion:
+    """A scale suggested for a chord progression."""
+    root: str
+    name: str
+    notes: List[str]
+    score: float

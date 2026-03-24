@@ -1,0 +1,38 @@
+# {{ analysis.title }} — Technique Breakdown
+## {{ analysis.artist }}
+
+### Overview
+- Tempo: {{ analysis.tempo }} bpm
+- Key: {{ analysis.key }}
+- Tuning: {{ analysis.tuning|join(" ") }}
+- Total sections: {{ analysis.sections|length }}
+
+### Techniques Used (by frequency)
+{% for technique, bars in technique_ranking %}
+
+**{{ loop.index }}. {{ technique|replace("_", " ")|title }}**
+- Appears in {{ bars|length }} bar{% if bars|length != 1 %}s{% endif %}: {{ bars|join(", ") }}
+{% if technique_info[technique] is defined %}
+- Difficulty: {{ technique_info[technique].difficulty }}/10
+- {{ technique_info[technique].description }}
+{% endif %}
+{% endfor %}
+
+### Section Difficulty Map
+
+| Section | Bars | Difficulty | Key Techniques | Practice Priority |
+|---------|------|-----------|----------------|-------------------|
+{% for section in analysis.sections %}
+| {{ section.name }} | {{ section.bar_range[0] }}-{{ section.bar_range[1] }} | {{ "%.1f"|format(section.difficulty) }}/10 | {{ section.primary_techniques[:3]|join(", ") }} | {{ section.practice_priority }} |
+{% endfor %}
+
+### Recommended Practice Order
+Learn sections in this order (easiest first):
+{% for section_name in analysis.practice_order %}
+{{ loop.index }}. {{ section_name }}
+{% endfor %}
+
+### Difficulty Arc
+{% for section in analysis.sections %}
+- **{{ section.name }}**: {{ "=" * (section.difficulty|int) }}{{ " " * (10 - section.difficulty|int) }} {{ "%.1f"|format(section.difficulty) }}
+{% endfor %}

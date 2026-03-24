@@ -1,0 +1,295 @@
+gp2tab_mapping:
+  bend: bend
+  bend_release: bend_release
+  pre_bend: pre_bend
+  pre_bend_release: pre_bend_release
+  vibrato: vibrato
+  hammer: hammer_on
+  pull: pull_off
+  slide_up: slide
+  slide_down: slide
+  tap: tapping
+  harmonic: harmonic
+  palm_mute: palm_mute
+  let_ring: let_ring
+  staccato: staccato
+  dead_note: dead_note
+
+techniques:
+  bend:
+    name: "Bending"
+    difficulty: 5
+    description: "Push or pull the string to raise the pitch smoothly to a target note"
+    variants:
+      - name: "Half-step bend"
+        semitones: 1
+        notation: "b"
+      - name: "Full bend"
+        semitones: 2
+        notation: "b"
+      - name: "Bend and a half"
+        semitones: 3
+        notation: "b"
+      - name: "Quarter-tone bend"
+        semitones: 0.5
+        notation: "b"
+      - name: "Microtone bend"
+        semitones: null
+        notation: "~b"
+    teaching_template: "Place your finger on the target fret. Use your other fingers behind it for support (e.g., index and middle behind the ring finger). Push the string upward (for strings 4-6) or pull downward (for strings 1-3). Match the target pitch by playing the target fret first, then bending up to match."
+    common_mistakes:
+      - "Not supporting the bending finger with adjacent fingers"
+      - "Bending out of tune — always check against the target fret"
+      - "Losing tone by not pressing hard enough during the bend"
+      - "Using only finger strength instead of rotating the wrist"
+
+  bend_release:
+    name: "Bend and Release"
+    difficulty: 6
+    description: "Bend the string up to a target pitch, then release it back down to the original note"
+    variants:
+      - name: "Half-step bend and release"
+        semitones: 1
+        notation: "br"
+      - name: "Full bend and release"
+        semitones: 2
+        notation: "br"
+    teaching_template: "Bend up to the target pitch as normal, hold it briefly, then slowly and evenly release the string back to its resting pitch. Both the bent note and the release should be clearly audible and in tune."
+    common_mistakes:
+      - "Releasing too quickly — the release should be controlled and even"
+      - "Not holding the bend long enough before releasing"
+      - "The bent pitch drifting sharp or flat before the release"
+      - "Muting the string during the release by lifting finger pressure"
+
+  pre_bend:
+    name: "Pre-Bend"
+    difficulty: 6
+    description: "Bend the string to the target pitch silently before picking, then pick the already-bent note"
+    variants:
+      - name: "Half-step pre-bend"
+        semitones: 1
+        notation: "pb"
+      - name: "Full pre-bend"
+        semitones: 2
+        notation: "pb"
+    teaching_template: "Before picking the string, silently push it to the target pitch. Then pick the string while holding the bend. The audience hears only the bent pitch — no audible bend-up. This requires knowing exactly how far to bend without hearing the starting note."
+    common_mistakes:
+      - "Not bending far enough before picking — the note sounds flat"
+      - "Audibly bending up instead of being silent before the pick"
+      - "Inconsistent pre-bend pitch because there's no audible reference"
+
+  pre_bend_release:
+    name: "Pre-Bend and Release"
+    difficulty: 7
+    description: "Silently bend to pitch, pick the bent note, then release down — creating a descending pitch effect"
+    variants:
+      - name: "Half-step pre-bend release"
+        semitones: 1
+        notation: "pbr"
+      - name: "Full pre-bend release"
+        semitones: 2
+        notation: "pbr"
+    teaching_template: "Silently bend to the target pitch, pick the string, then release the bend back down. The effect is a note that descends in pitch — the opposite of a normal bend. This is a very expressive technique used frequently in blues and rock solos."
+    common_mistakes:
+      - "Picking before the bend is fully in place"
+      - "Releasing too abruptly — should be smooth and controlled"
+      - "Not muting adjacent strings which ring sympathetically"
+
+  vibrato:
+    name: "Vibrato"
+    difficulty: 5
+    description: "Rapidly oscillate the pitch of a note by repeatedly bending and releasing the string in a controlled manner"
+    variants:
+      - name: "Wrist vibrato"
+        semitones: null
+        notation: "~"
+      - name: "Wide vibrato"
+        semitones: null
+        notation: "~"
+      - name: "Classical vibrato"
+        semitones: null
+        notation: "~"
+      - name: "B.B. King 'butterfly' vibrato"
+        semitones: null
+        notation: "~"
+    teaching_template: "After fretting a note, use a rhythmic wrist rotation to repeatedly bend and release the string slightly. The motion comes from the wrist, not the fingers. Start slow and even, then gradually increase speed. Vibrato is like your fingerprint — developing a good one takes time but defines your sound."
+    common_mistakes:
+      - "Using finger motion instead of wrist rotation — leads to weak, uneven vibrato"
+      - "Vibrato that's too fast and nervous-sounding (the 'mosquito' vibrato)"
+      - "Vibrato that's too slow and sounds like a series of bends"
+      - "Not centering the vibrato around the correct pitch"
+      - "Applying vibrato immediately instead of letting the note speak first"
+
+  hammer_on:
+    name: "Hammer-On"
+    difficulty: 3
+    description: "Sound a higher note by forcefully fretting it with a finger without picking — the fretting hand generates the note"
+    variants:
+      - name: "Single hammer-on"
+        semitones: null
+        notation: "h"
+      - name: "Hammer-on from nowhere"
+        semitones: null
+        notation: "h"
+    teaching_template: "Pick the first note, then firmly and quickly bring another finger down on a higher fret on the same string. The 'hammering' finger must land precisely on the fret with enough force to sustain the note. Keep the original finger down."
+    common_mistakes:
+      - "Not hammering hard enough — the note dies or is too quiet"
+      - "Landing between frets instead of right behind the target fret"
+      - "Lifting the first finger when hammering with the second"
+      - "Hammering too slowly — the motion should be quick and snappy"
+
+  pull_off:
+    name: "Pull-Off"
+    difficulty: 3
+    description: "Sound a lower note by plucking the string with the fretting finger as it lifts off"
+    variants:
+      - name: "Single pull-off"
+        semitones: null
+        notation: "p"
+      - name: "Pull-off to open string"
+        semitones: null
+        notation: "p"
+    teaching_template: "Fret both notes simultaneously. Pick the higher note, then pull the higher finger slightly downward (toward the floor) as you lift it off, plucking the string with the fingertip. The lower finger should already be in position. The pull-off is not just lifting the finger — you must flick the string."
+    common_mistakes:
+      - "Simply lifting the finger instead of pulling/flicking the string"
+      - "Not having the lower note already fretted before the pull-off"
+      - "Pulling too far and hitting adjacent strings"
+      - "Insufficient volume on the pulled-off note"
+
+  slide:
+    name: "Slide"
+    difficulty: 2
+    description: "Smoothly glide from one fret to another while maintaining pressure on the string"
+    variants:
+      - name: "Slide up"
+        semitones: null
+        notation: "/"
+      - name: "Slide down"
+        semitones: null
+        notation: "\\"
+      - name: "Slide into (from below)"
+        semitones: null
+        notation: "/"
+      - name: "Slide out (to nowhere)"
+        semitones: null
+        notation: "/"
+    teaching_template: "Pick the first note, then slide your finger along the string to the target fret while maintaining constant pressure. Don't lift the finger at all during the slide. The key is consistent pressure — too light and the note dies, too heavy and you slow down."
+    common_mistakes:
+      - "Lifting finger pressure during the slide, causing the note to die"
+      - "Overshooting or undershooting the target fret"
+      - "Pressing too hard, making the slide sluggish"
+      - "Not picking the initial note loudly enough — the slide needs energy to sustain"
+
+  tapping:
+    name: "Tapping"
+    difficulty: 6
+    description: "Use a picking-hand finger to hammer onto the fretboard, enabling wide interval legato lines impossible with one hand"
+    variants:
+      - name: "Single-note tap"
+        semitones: null
+        notation: "t"
+      - name: "Tap and pull-off"
+        semitones: null
+        notation: "t"
+      - name: "Multi-finger tapping"
+        semitones: null
+        notation: "t"
+      - name: "String-skipping taps"
+        semitones: null
+        notation: "t"
+    teaching_template: "Use your picking hand's index or middle finger to firmly tap a fret on the string. Then pull off with that tapping finger (flick downward) to sound the next note fretted by your fretting hand. The sequence is typically: tap - pull off - hammer on (or pull off). Mute unused strings with your palm."
+    common_mistakes:
+      - "Tapping too softly — the note doesn't sound clearly"
+      - "Not pulling off properly after the tap — just lifting instead of flicking"
+      - "Unwanted noise from open strings — palm muting is essential"
+      - "Tapping at the wrong angle, causing the finger to slip off the fret"
+
+  harmonic:
+    name: "Harmonic"
+    difficulty: 4
+    description: "Lightly touch the string at a node point and pick to produce a bell-like overtone instead of the fretted note"
+    variants:
+      - name: "Natural harmonic"
+        semitones: null
+        notation: "<>"
+      - name: "Artificial harmonic"
+        semitones: null
+        notation: "AH"
+      - name: "Pinch harmonic"
+        semitones: null
+        notation: "PH"
+      - name: "Tap harmonic"
+        semitones: null
+        notation: "TH"
+    teaching_template: "For natural harmonics: lightly touch the string directly over the fret wire (not behind it) at the 12th, 7th, or 5th fret. Don't press down — just touch. Pick the string and immediately lift your finger. The result is a bell-like chiming tone. For pinch harmonics: angle your thumb so it barely grazes the string right after picking."
+    common_mistakes:
+      - "Pressing too hard — you'll get a muted note instead of a harmonic"
+      - "Touching slightly off the node point — harmonics require precise positioning"
+      - "Not lifting the finger quickly enough after picking"
+      - "For pinch harmonics: picking at the wrong point along the string length"
+
+  palm_mute:
+    name: "Palm Mute"
+    difficulty: 2
+    description: "Rest the picking-hand palm lightly on the strings near the bridge to produce a chunky, dampened tone"
+    variants:
+      - name: "Heavy palm mute"
+        semitones: null
+        notation: "PM"
+      - name: "Light palm mute"
+        semitones: null
+        notation: "PM"
+    teaching_template: "Rest the fleshy edge of your picking hand (the karate-chop side) lightly on the strings where they meet the bridge. The closer to the bridge, the less muted the sound; the further from the bridge, the more dampened. Pick normally while maintaining palm contact. Essential for metal and rock rhythm playing."
+    common_mistakes:
+      - "Muting too far from the bridge — kills the note entirely instead of just dampening"
+      - "Inconsistent palm pressure — the mute level changes mid-riff"
+      - "Muting too close to the bridge — barely any dampening effect"
+      - "Accidentally lifting the palm when switching between muted and open notes"
+
+  let_ring:
+    name: "Let Ring"
+    difficulty: 1
+    description: "Allow the note or chord to sustain freely without dampening — the opposite of palm muting or staccato"
+    variants:
+      - name: "Let ring"
+        semitones: null
+        notation: "let ring"
+    teaching_template: "After picking a note or chord, keep your fretting fingers in place and do not dampen with either hand. Allow the note to ring out for its full duration or until the next note naturally takes over. Common in arpeggiated passages and clean-tone sections."
+    common_mistakes:
+      - "Accidentally muting strings by shifting hand position too early"
+      - "Lifting fretting fingers before the note should end"
+      - "Not managing string noise — other strings may ring sympathetically and create muddiness"
+
+  staccato:
+    name: "Staccato"
+    difficulty: 2
+    description: "Play notes short and detached by quickly dampening the string after picking"
+    variants:
+      - name: "Fretting-hand staccato"
+        semitones: null
+        notation: "."
+      - name: "Picking-hand staccato"
+        semitones: null
+        notation: "."
+    teaching_template: "Pick the note, then immediately dampen the string by either releasing fretting-hand pressure (without fully lifting off) or touching the string with the picking hand. The note should be crisp and short — the silence between staccato notes is as important as the notes themselves."
+    common_mistakes:
+      - "Notes are too long — not dampening quickly enough"
+      - "Dampening too hard, creating a percussive click"
+      - "Inconsistent note lengths across a staccato passage"
+
+  dead_note:
+    name: "Dead Note (Ghost Note)"
+    difficulty: 2
+    description: "Mute the strings with the fretting hand and pick to produce a percussive 'click' with no discernible pitch"
+    variants:
+      - name: "Single dead note"
+        semitones: null
+        notation: "x"
+      - name: "Rake with dead notes"
+        semitones: null
+        notation: "x"
+    teaching_template: "Lay your fretting-hand fingers lightly across the strings without pressing to the frets — just enough to mute. Pick normally. The result should be a percussive 'chuck' sound with no pitch. Used for rhythmic accents, funk strumming, and adding groove between notes."
+    common_mistakes:
+      - "Pressing too hard — actual notes sound instead of muted clicks"
+      - "Not muting all the strings — some notes ring through"
+      - "Muting too lightly — no sound at all when picked"
