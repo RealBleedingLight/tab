@@ -60,7 +60,6 @@ guitar-teacher/
 │   ├── intervals.yaml             # Interval names, semitone counts
 │   ├── techniques.yaml            # Technique definitions + teaching templates
 │   └── lesson_templates/          # Jinja2 markdown templates for lessons
-│       ├── warmup.md.j2
 │       ├── section_lesson.md.j2
 │       ├── technique_intro.md.j2
 │       ├── assembly_lesson.md.j2
