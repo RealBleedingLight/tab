@@ -14,7 +14,8 @@ export default function LoginPage() {
     setError("");
     setLoading(true);
     try {
-      await api.login(pin);
+      const { token } = await api.login(pin);
+      document.cookie = `token=${token}; path=/; max-age=86400; samesite=strict`;
       router.push("/");
       router.refresh();
     } catch {
