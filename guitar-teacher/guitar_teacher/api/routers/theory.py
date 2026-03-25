@@ -35,7 +35,7 @@ def _fretboard_data(notes, root=None, tuning=None, fret_range=(0, 15)):
 @router.get("/scale/{root}/{scale_type}")
 def get_scale(root: str, scale_type: str):
     engine = get_engine()
-    result = engine.get_scale(root, scale_type)
+    result = engine.get_scale(root, scale_type.replace("-", "_"))
     if result is None:
         raise HTTPException(status_code=404, detail=f"Scale not found: {root} {scale_type}")
     return {
@@ -80,7 +80,7 @@ def get_chord(chord_name: str):
 @router.get("/key/{root}/{scale_type}")
 def get_key(root: str, scale_type: str):
     engine = get_engine()
-    chords = engine.chords_in_key(root, scale_type)
+    chords = engine.chords_in_key(root, scale_type.replace("-", "_"))
     if not chords:
         raise HTTPException(status_code=404, detail=f"Key not found: {root} {scale_type}")
     roman_base = ["I", "II", "III", "IV", "V", "VI", "VII"]
