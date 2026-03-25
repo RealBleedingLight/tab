@@ -1,9 +1,12 @@
 """GitHub Contents API client for reading/writing repo files."""
 import base64
+import logging
 import os
 from typing import Optional, Tuple, List, Dict
 
 import httpx
+
+logger = logging.getLogger(__name__)
 
 _API_BASE = "https://api.github.com"
 
@@ -78,6 +81,7 @@ class GitHubClient:
         resp = await self._client.put(f"/{path}", json=body)
         data_json = resp.json()
         if "content" not in data_json:
+            logger.error("GitHub API error on upload (status %s): %s", resp.status_code, data_json)
             raise RuntimeError(f"GitHub API error on upload: {data_json}")
         return data_json["content"]["sha"]
 
