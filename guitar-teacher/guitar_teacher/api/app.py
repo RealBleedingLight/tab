@@ -49,7 +49,9 @@ def create_app() -> FastAPI:
     def verify(payload=Depends(require_auth)):
         return {"status": "valid"}
 
-    # --- Routers (added in subsequent tasks) ---
+    # --- Routers ---
+    from guitar_teacher.api.routers.theory import router as theory_router
+    app.include_router(theory_router)
 
     return app
 
