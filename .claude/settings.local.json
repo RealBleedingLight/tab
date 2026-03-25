@@ -63,7 +63,24 @@
       "Bash(.venv/bin/python -c \"\nfrom guitar_teacher.cli import cli\nfrom click.testing import CliRunner\nrunner = CliRunner\\(\\)\nfor cmd in ['scale E minor', 'chord Am7', 'interval C E', 'key A minor', 'identify-key A C E G', 'suggest-scales Am7 D7 Gmaj7']:\n    args = cmd.split\\(\\)\n    out = runner.invoke\\(cli, args\\).output\n    print\\(f'=== guitar-teacher {cmd} ==='\\)\n    print\\(out\\)\n\" 2>&1)",
       "Bash(.venv/bin/python -c \"\nfrom guitar_teacher.cli import cli\nfrom click.testing import CliRunner\nrunner = CliRunner\\(\\)\nout = runner.invoke\\(cli, ['analyze', '/Users/leo/hobby/tab/songs/guthrie-govan/man-of-steel/tab.json']\\).output\nprint\\(out\\)\n\" 2>&1)",
       "Bash(.venv/bin/python -m pytest tests/ -q 2>&1)",
-      "Bash(.venv/bin/python -c \"import gp2tab; print\\(gp2tab.__file__\\)\")"
+      "Bash(.venv/bin/python -c \"import gp2tab; print\\(gp2tab.__file__\\)\")",
+      "Bash(ls /Users/leo/hobby/tab/guitar-teacher/.venv/bin/pip*)",
+      "Bash(ls /Users/leo/hobby/tab/guitar-teacher/.venv/bin/python*)",
+      "Bash(.venv/bin/pip install:*)",
+      "Bash(.venv/bin/python -m pytest tests/ -x -q)",
+      "Bash(.venv/bin/python -m pytest tests/api/test_auth.py -v)",
+      "Bash(.venv/bin/python -m pytest tests/api/test_app.py -v)",
+      "Bash(.venv/bin/python -m pytest tests/ -x -q --ignore=tests/api/test_app.py)",
+      "Bash(.venv/bin/python -m pytest tests/ -q)",
+      "Bash(.venv/bin/python -m pytest tests/api/test_github_client.py -v)",
+      "Bash(.venv/bin/python -m pytest tests/api/test_theory_router.py -v)",
+      "Bash(.venv/bin/python -m pytest tests/api/test_songs_router.py -v)",
+      "Bash(.venv/bin/python -m pytest tests/api/test_songs_router.py tests/api/test_app.py -v)",
+      "Bash(.venv/bin/python -m pytest tests/api/test_jobs.py -v)",
+      "Bash(.venv/bin/python -m pytest tests/api/test_queue_router.py -v)",
+      "Bash(.venv/bin/python -m pytest tests/api/test_analysis_router.py -v)",
+      "Bash(AUTH_PIN=1234 AUTH_SECRET=dev-secret GITHUB_TOKEN=fake GITHUB_REPO=test/repo ALLOWED_ORIGINS=http://localhost:3000 .venv/bin/python -c \"from guitar_teacher.api.app import create_app; app = create_app\\(\\); print\\(''App created successfully''\\)\")",
+      "Bash(.venv/bin/python -m pytest tests/ -v)"
     ]
   }
 }

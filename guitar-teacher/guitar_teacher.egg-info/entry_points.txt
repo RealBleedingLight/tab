@@ -1,2 +1,3 @@
 [console_scripts]
 guitar-teacher = guitar_teacher.cli:main
+guitar-teacher-api = guitar_teacher.api.app:start

@@ -9,6 +9,8 @@ guitar_teacher.egg-info/dependency_links.txt
 guitar_teacher.egg-info/entry_points.txt
 guitar_teacher.egg-info/requires.txt
 guitar_teacher.egg-info/top_level.txt
+guitar_teacher/api/__init__.py
+guitar_teacher/api/routers/__init__.py
 guitar_teacher/core/__init__.py
 guitar_teacher/core/analyzer.py
 guitar_teacher/core/fretboard.py
