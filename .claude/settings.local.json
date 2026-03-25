@@ -80,7 +80,11 @@
       "Bash(.venv/bin/python -m pytest tests/api/test_queue_router.py -v)",
       "Bash(.venv/bin/python -m pytest tests/api/test_analysis_router.py -v)",
       "Bash(AUTH_PIN=1234 AUTH_SECRET=dev-secret GITHUB_TOKEN=fake GITHUB_REPO=test/repo ALLOWED_ORIGINS=http://localhost:3000 .venv/bin/python -c \"from guitar_teacher.api.app import create_app; app = create_app\\(\\); print\\(''App created successfully''\\)\")",
-      "Bash(.venv/bin/python -m pytest tests/ -v)"
+      "Bash(.venv/bin/python -m pytest tests/ -v)",
+      "Bash(npx:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(npm test:*)"
     ]
   }
 }
