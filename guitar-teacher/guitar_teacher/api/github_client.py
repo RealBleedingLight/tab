@@ -66,12 +66,20 @@ class GitHubClient:
 
     async def upload_binary(self, path: str, data: bytes, message: str) -> str:
         """Upload a binary file (e.g., GP file). Returns SHA."""
-        body = {
+        # Check if file already exists (need SHA to update)
+        existing = await self.read_binary(path)
+        body: dict = {
             "message": message,
             "content": base64.b64encode(data).decode("ascii"),
         }
+        if existing:
+            _, sha = existing
+            body["sha"] = sha
         resp = await self._client.put(f"/{path}", json=body)
-        return resp.json()["content"]["sha"]
+        data_json = resp.json()
+        if "content" not in data_json:
+            raise RuntimeError(f"GitHub API error on upload: {data_json}")
+        return data_json["content"]["sha"]
 
     async def read_binary(self, path: str) -> Optional[Tuple[bytes, str]]:
         """Read a binary file. Returns (bytes, sha) or None if not found."""
