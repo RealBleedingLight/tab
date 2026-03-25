@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #09090b; /* zinc-950 */
+  color: #f4f4f5; /* zinc-100 */
+}
+
+/* Monospace tab display: horizontal scroll, no wrap */
+.tab-content {
+  font-family: "JetBrains Mono", "Fira Code", "Courier New", monospace;
+  white-space: pre;
+  overflow-x: auto;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
