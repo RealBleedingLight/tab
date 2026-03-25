@@ -59,6 +59,9 @@ def create_app() -> FastAPI:
     from guitar_teacher.api.routers.queue import router as queue_router
     app.include_router(queue_router)
 
+    from guitar_teacher.api.routers.analysis import router as analysis_router
+    app.include_router(analysis_router)
+
     return app
 
 
