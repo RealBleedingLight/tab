@@ -25,11 +25,12 @@ def load_song(song_id: str, songs_dir: str = SONGS_DIR) -> Optional[dict]:
 def list_songs(songs_dir: str = SONGS_DIR) -> list:
     if not os.path.exists(songs_dir):
         return []
-    return [
-        json.load(open(os.path.join(songs_dir, f)))
-        for f in sorted(os.listdir(songs_dir))
-        if f.endswith(".json")
-    ]
+    results = []
+    for f in sorted(os.listdir(songs_dir)):
+        if f.endswith(".json"):
+            with open(os.path.join(songs_dir, f)) as fh:
+                results.append(json.load(fh))
+    return results
 
 
 def delete_song(song_id: str, songs_dir: str = SONGS_DIR) -> None:
