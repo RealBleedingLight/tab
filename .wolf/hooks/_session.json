@@ -16,13 +16,42 @@
       "count": 1,
       "tokens": 0,
       "first_read": "2026-03-26T21:06:28.242Z"
+    },
+    "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/core/theory.py": {
+      "count": 4,
+      "tokens": 0,
+      "first_read": "2026-03-26T21:19:12.720Z"
+    },
+    "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/core/models.py": {
+      "count": 3,
+      "tokens": 0,
+      "first_read": "2026-03-26T21:19:13.538Z"
+    },
+    "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/core/analyzer.py": {
+      "count": 1,
+      "tokens": 0,
+      "first_read": "2026-03-26T21:19:13.665Z"
+    },
+    "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/config.py": {
+      "count": 1,
+      "tokens": 0,
+      "first_read": "2026-03-26T21:19:21.007Z"
     }
   },
-  "files_written": [],
-  "edit_counts": {},
+  "files_written": [
+    {
+      "file": "/Users/leo/hobby/tab/docs/superpowers/plans/2026-03-27-guitar-teacher-web.md",
+      "action": "create",
+      "tokens": 18076,
+      "at": "2026-03-26T21:28:09.926Z"
+    }
+  ],
+  "edit_counts": {
+    "docs/superpowers/plans/2026-03-27-guitar-teacher-web.md": 1
+  },
   "anatomy_hits": 2,
-  "anatomy_misses": 1,
-  "repeated_reads_warned": 0,
+  "anatomy_misses": 4,
+  "repeated_reads_warned": 5,
   "cerebrum_warnings": 0,
-  "stop_count": 2
+  "stop_count": 3
 }
