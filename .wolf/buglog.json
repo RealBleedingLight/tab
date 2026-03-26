@@ -1,4 +1,117 @@
 {
   "version": 1,
-  "bugs": []
+  "bugs": [
+    {
+      "id": "bug-001",
+      "timestamp": "2026-03-26T16:27:44.834Z",
+      "error_message": "Significant refactor of ",
+      "file": "guitar-teacher/guitar_teacher/api/github_client.py",
+      "root_cause": "2 lines replaced/restructured",
+      "fix": "Rewrote 8→14 lines (2 removed)",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "py"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-03-26T16:27:44.834Z"
+    },
+    {
+      "id": "bug-002",
+      "timestamp": "2026-03-26T16:28:12.931Z",
+      "error_message": "Missing await",
+      "file": "guitar-teacher/guitar_teacher/api/routers/songs.py",
+      "root_cause": "Async call without await — returned Promise instead of value",
+      "fix": "Added await to async call",
+      "tags": [
+        "auto-detected",
+        "async-fix",
+        "py"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-03-26T16:28:12.931Z"
+    },
+    {
+      "id": "bug-003",
+      "timestamp": "2026-03-26T16:28:19.179Z",
+      "error_message": "Missing guard clause",
+      "file": "frontend/lib/api.ts",
+      "root_cause": "No early return/throw for edge case: !res.ok",
+      "fix": "Added guard clause: if (!res.ok)",
+      "tags": [
+        "auto-detected",
+        "guard-clause",
+        "ts"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-03-26T16:28:19.179Z"
+    },
+    {
+      "id": "bug-004",
+      "timestamp": "2026-03-26T16:28:35.809Z",
+      "error_message": "CSS fix: current_lesson",
+      "file": "frontend/app/page.tsx",
+      "root_cause": "current_lesson: \\s*(\\d+)/)?.[1] → \\s*(\\d+)/) ?? raw.match(/\\*\\*Current lesson:\\*\\*\\s*(\\d+)/))?.[1]",
+      "fix": "Changed current_lesson: \\s*(\\d+)/)?.[1] → \\s*(\\d+)/) ?? raw.match(/\\*\\*Current lesson:\\*\\*\\s*(\\d+)/))?.[1]",
+      "tags": [
+        "auto-detected",
+        "style-fix",
+        "tsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 2,
+      "last_seen": "2026-03-26T16:28:53.474Z"
+    },
+    {
+      "id": "bug-005",
+      "timestamp": "2026-03-26T16:28:44.611Z",
+      "error_message": "Missing await",
+      "file": "frontend/app/page.tsx",
+      "root_cause": "Async call without await — returned Promise instead of value",
+      "fix": "Added await to async call",
+      "tags": [
+        "auto-detected",
+        "async-fix",
+        "tsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-03-26T16:28:44.611Z"
+    },
+    {
+      "id": "bug-006",
+      "timestamp": "2026-03-26T16:28:58.384Z",
+      "error_message": "Null/undefined access in ",
+      "file": "frontend/app/practice/[artist]/[song]/page.tsx",
+      "root_cause": "Property access on potentially null/undefined value",
+      "fix": "Added null safety (optional chaining or null check)",
+      "tags": [
+        "auto-detected",
+        "null-safety",
+        "tsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-03-26T16:28:58.384Z"
+    },
+    {
+      "id": "bug-007",
+      "timestamp": "2026-03-26T16:29:08.530Z",
+      "error_message": "Type error",
+      "file": "frontend/app/practice/[artist]/[song]/page.tsx",
+      "root_cause": "Missing or incorrect type annotation",
+      "fix": "Added type assertion/annotation",
+      "tags": [
+        "auto-detected",
+        "type-fix",
+        "tsx"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-03-26T16:29:08.530Z"
+    }
+  ]
 }

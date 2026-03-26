@@ -2,14 +2,14 @@
   "version": 1,
   "created_at": "2026-03-26T15:29:14.376Z",
   "lifetime": {
-    "total_tokens_estimated": 28864,
-    "total_reads": 70,
-    "total_writes": 37,
-    "total_sessions": 1,
-    "anatomy_hits": 27,
-    "anatomy_misses": 41,
-    "repeated_reads_blocked": 13,
-    "estimated_savings_vs_bare_cli": 14680
+    "total_tokens_estimated": 48663,
+    "total_reads": 102,
+    "total_writes": 64,
+    "total_sessions": 2,
+    "anatomy_hits": 41,
+    "anatomy_misses": 57,
+    "repeated_reads_blocked": 18,
+    "estimated_savings_vs_bare_cli": 20604
   },
   "sessions": [
     {
@@ -666,6 +666,367 @@
         "writes_count": 14,
         "repeated_reads_blocked": 5,
         "anatomy_lookups": 10
+      }
+    },
+    {
+      "id": "session-2026-03-26-2059",
+      "started": "2026-03-26T15:29:25.020Z",
+      "ended": "2026-03-26T16:09:21.093Z",
+      "reads": [
+        {
+          "file": "/Users/kazam/.claude/projects/-Users-leo-hobby-tab/memory/project_gp2tab.md",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/kazam/.claude/projects/-Users-leo-hobby-tab/memory/project_web_platform.md",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/kazam/.claude/projects/-Users-leo-hobby-tab/memory/project_ui_fixes.md",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/frontend/app/practice/[artist]/[song]/page.tsx",
+          "tokens_estimated": 1613,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/frontend/lib/api.ts",
+          "tokens_estimated": 860,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/Dockerfile",
+          "tokens_estimated": 92,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/routers/queue.py",
+          "tokens_estimated": 1516,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/routers/songs.py",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/lessons/generator.py",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/frontend/components/MarkdownLesson.tsx",
+          "tokens_estimated": 427,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/lessons/templates.py",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/github_client.py",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/core/analyzer.py",
+          "tokens_estimated": 0,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/core/models.py",
+          "tokens_estimated": 0,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/gp2tab/gp2tab/__init__.py",
+          "tokens_estimated": 18,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/gp2tab/cli.py",
+          "tokens_estimated": 972,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/songs/guthrie-govan/man-of-steel/.context.md",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/frontend/app/queue/page.tsx",
+          "tokens_estimated": 1680,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/gp2tab/gp2tab/models.py",
+          "tokens_estimated": 346,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/config.py",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/pyproject.toml",
+          "tokens_estimated": 252,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/core/theory.py",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/app.py",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/.env.example",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/frontend/.env.local.example",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/gp2tab/gp2tab/parser.py",
+          "tokens_estimated": 251,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/lessons/generator.py",
+          "tokens_estimated": 106,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/frontend/components/MarkdownLesson.tsx",
+          "tokens_estimated": 140,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/routers/queue.py",
+          "tokens_estimated": 396,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/songs/guthrie-govan/man-of-steel/.context.md",
+          "tokens_estimated": 6,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/routers/queue.py",
+          "tokens_estimated": 19,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/frontend/app/queue/page.tsx",
+          "tokens_estimated": 80,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/frontend/app/queue/page.tsx",
+          "tokens_estimated": 311,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/frontend/app/queue/page.tsx",
+          "tokens_estimated": 235,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/frontend/app/queue/page.tsx",
+          "tokens_estimated": 101,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/Dockerfile",
+          "tokens_estimated": 22,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/github_client.py",
+          "tokens_estimated": 155,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/github_client.py",
+          "tokens_estimated": 153,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/github_client.py",
+          "tokens_estimated": 123,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/github_client.py",
+          "tokens_estimated": 272,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 8027,
+        "output_tokens_estimated": 2119,
+        "reads_count": 26,
+        "writes_count": 14,
+        "repeated_reads_blocked": 5,
+        "anatomy_lookups": 10
+      }
+    },
+    {
+      "id": "session-2026-03-26-2155",
+      "started": "2026-03-26T16:25:32.204Z",
+      "ended": "2026-03-26T16:29:43.905Z",
+      "reads": [
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/routers/queue.py",
+          "tokens_estimated": 1516,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/routers/songs.py",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/frontend/app/page.tsx",
+          "tokens_estimated": 884,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/frontend/lib/api.ts",
+          "tokens_estimated": 860,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/frontend/app/practice/[artist]/[song]/page.tsx",
+          "tokens_estimated": 1613,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/github_client.py",
+          "tokens_estimated": 2176,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/github_client.py",
+          "tokens_estimated": 52,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/github_client.py",
+          "tokens_estimated": 138,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/github_client.py",
+          "tokens_estimated": 816,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/routers/queue.py",
+          "tokens_estimated": 192,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/routers/songs.py",
+          "tokens_estimated": 95,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/frontend/lib/api.ts",
+          "tokens_estimated": 83,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/frontend/lib/api.ts",
+          "tokens_estimated": 74,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/frontend/app/page.tsx",
+          "tokens_estimated": 354,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/frontend/app/page.tsx",
+          "tokens_estimated": 214,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/frontend/app/page.tsx",
+          "tokens_estimated": 359,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/frontend/app/practice/[artist]/[song]/page.tsx",
+          "tokens_estimated": 56,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/frontend/app/practice/[artist]/[song]/page.tsx",
+          "tokens_estimated": 100,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/frontend/app/practice/[artist]/[song]/page.tsx",
+          "tokens_estimated": 71,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 7049,
+        "output_tokens_estimated": 2604,
+        "reads_count": 6,
+        "writes_count": 13,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 4
       }
     }
   ],

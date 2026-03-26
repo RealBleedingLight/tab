@@ -1,7 +1,7 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-03-26T15:55:47.521Z
-> Files: 693 tracked | Anatomy hits: 0 | Misses: 0
+> Auto-maintained by OpenWolf. Last scanned: 2026-03-26T16:29:08.512Z
+> Files: 694 tracked | Anatomy hits: 0 | Misses: 0
 
 ## ./
 
@@ -70,7 +70,7 @@
 
 - `globals.css` — Styles: 2 rules (~106 tok)
 - `layout.tsx` — inter (~185 tok)
-- `page.tsx` — parseContext — uses useState, useEffect (~884 tok)
+- `page.tsx` — parseContext (~1227 tok)
 
 ## frontend/app/login/
 
@@ -78,7 +78,7 @@
 
 ## frontend/app/practice/[artist]/[song]/
 
-- `page.tsx` — parseCurrentLesson — uses useState, useEffect, useCallback (~1613 tok)
+- `page.tsx` — parseCurrentLesson (~1722 tok)
 
 ## frontend/app/queue/
 
@@ -106,7 +106,7 @@
 
 ## frontend/lib/
 
-- `api.ts` — Exports api (~860 tok)
+- `api.ts` — Exports api (~953 tok)
 - `types.ts` — Exports Song, FretboardPosition, ScaleResult, ChordResult + 10 more (~535 tok)
 
 ## gp2tab/
@@ -880,11 +880,12 @@
 
 ## guitar-teacher/guitar_teacher/api/
 
-- `github_client.py` — GitHub Contents API client for reading/writing repo files. (~1380 tok)
+- `github_client.py` — GitHub Contents API client for reading/writing repo files. (~2176 tok)
 
 ## guitar-teacher/guitar_teacher/api/routers/
 
-- `queue.py` — GP file queue endpoints — upload, list, process. (~1516 tok)
+- `queue.py` — GP file queue endpoints — upload, list, process. (~1509 tok)
+- `songs.py` — Song data and progress endpoints. (~1069 tok)
 
 ## guitar-teacher/guitar_teacher/lessons/
 
