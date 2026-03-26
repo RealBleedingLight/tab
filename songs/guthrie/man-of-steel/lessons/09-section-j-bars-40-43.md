@@ -14,12 +14,12 @@ Play bars 40-43 cleanly with vibrato, slide, pull_off at 40% tempo (51 bpm) with
 ## Concept: Vibrato
 After fretting a note, use a rhythmic wrist rotation to repeatedly bend and release the string slightly. The motion comes from the wrist, not the fingers. Start slow and even, then gradually increase speed. Vibrato is like your fingerprint — developing a good one takes time but defines your sound.
 
-### Scale Context: C Natural Minor
-- Root: C
-- Notes: C, D, D#, F, G, G#, A#
-The relative minor of the major scale. If you know your major scale, you already know this — just start from the 6th degree. This is the foundation for all minor key music.
+### Scale Context: G Phrygian
+- Root: G
+- Notes: G, G#, A#, C, D, D#, F
+The flat 2nd is the defining interval. One semitone above the root creates instant tension. Metallica and prog metal bands love this sound.
 
-*Improvisation tip: Emphasize the b3 and b7 for the classic minor sound. For emotional solos, use the b6 to root resolution for maximum sadness.*
+*Improvisation tip: Use the b2 as a tension note — resolve it down to the root for a dark, dramatic effect. Try droning the open low E and playing Phrygian shapes over it.*
 
 ## Steps
 
