@@ -5,14 +5,14 @@
 **You'll need:** Guitar, metronome, tuner
 
 ## Goal
-Play bars 48-51 cleanly with bend, pre_bend, vibrato at 40% tempo (51 bpm) with clean execution and musical phrasing.
+Play bars 48-51 cleanly with pre_bend, bend, vibrato at 40% tempo (51 bpm) with clean execution and musical phrasing.
 
 ## Warm-Up (5 min)
-- 2 min bending warm-up on B string fret 15
 - 2 min pre-bend warm-up on B string fret 15
+- 2 min bending warm-up on B string fret 15
 
-## Concept: Bending
-Place your finger on the target fret. Use your other fingers behind it for support (e.g., index and middle behind the ring finger). Push the string upward (for strings 4-6) or pull downward (for strings 1-3). Match the target pitch by playing the target fret first, then bending up to match.
+## Concept: Pre-Bend
+Before picking the string, silently push it to the target pitch. Then pick the string while holding the bend. The audience hears only the bent pitch — no audible bend-up. This requires knowing exactly how far to bend without hearing the starting note.
 
 ### Scale Context: E Phrygian Dominant
 - Root: E
@@ -36,7 +36,7 @@ Continue to bars 50-51.
 - **Repeat:** 5 times through bars 50-51 until memorized.
 
 ### Step 3: Add Techniques
-Go back through bars 48-51 and focus on the techniques: bend, pre_bend, vibrato.
+Go back through bars 48-51 and focus on the techniques: pre_bend, bend, vibrato.
 - **Do this:** For each technique occurrence, stop and practice it in isolation 3 times. Then play the phrase around it in context.
 - **Listen for:** Each technique should be clean and accurate. Bends hit target pitch, vibrato is even, legato notes are consistent volume.
 - **Repeat:** Isolate each technique until reliable, then play bars 48-51 with techniques included.
