@@ -2,14 +2,14 @@
   "version": 1,
   "created_at": "2026-03-26T15:29:14.376Z",
   "lifetime": {
-    "total_tokens_estimated": 93783,
-    "total_reads": 134,
+    "total_tokens_estimated": 99705,
+    "total_reads": 137,
     "total_writes": 106,
     "total_sessions": 5,
-    "anatomy_hits": 57,
-    "anatomy_misses": 68,
+    "anatomy_hits": 59,
+    "anatomy_misses": 69,
     "repeated_reads_blocked": 22,
-    "estimated_savings_vs_bare_cli": 28501
+    "estimated_savings_vs_bare_cli": 28901
   },
   "sessions": [
     {
@@ -1484,6 +1484,40 @@
       "id": "session-2026-03-26-0233",
       "started": "2026-03-26T21:03:10.911Z",
       "ended": "2026-03-26T21:13:02.607Z",
+      "reads": [
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/README.md",
+          "tokens_estimated": 831,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/DOCS.md",
+          "tokens_estimated": 5091,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/app.py",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [],
+      "totals": {
+        "input_tokens_estimated": 5922,
+        "output_tokens_estimated": 0,
+        "reads_count": 3,
+        "writes_count": 0,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 2
+      }
+    },
+    {
+      "id": "session-2026-03-26-0233",
+      "started": "2026-03-26T21:03:10.911Z",
+      "ended": "2026-03-26T21:15:29.008Z",
       "reads": [
         {
           "file": "/Users/leo/hobby/tab/guitar-teacher/README.md",
