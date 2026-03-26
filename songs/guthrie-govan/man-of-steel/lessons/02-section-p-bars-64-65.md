@@ -1,4 +1,4 @@
-# Lesson 02: Section P — Bars 64-65 — Bars 64-65
+subl # Lesson 02: Section P — Bars 64-65 — Bars 64-65
 **Phase:** Foundation
 **Prerequisites:** Lessons 01
 **Estimated time:** 25 minutes

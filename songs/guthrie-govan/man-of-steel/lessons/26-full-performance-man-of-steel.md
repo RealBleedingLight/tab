@@ -12,7 +12,7 @@ Play the complete solo from start to finish at 80% tempo (102 bpm) with musical 
 - 5 min run through the section you're least confident on
 
 ## Performance Mindset
-This is not a practice session — it's a performance. The difference matters:
+This is not a practice sessiois n — it's a performance. The difference matters:
 - **No stopping.** If you hit a wrong note, keep going. A real performance doesn't have a rewind button.
 - **Commit to every note.** Tentative playing sounds worse than a confident wrong note. Play with conviction.
 - **Think in phrases, not notes.** You've learned the notes — now let the music flow through you. Think about where the melody is going, not where your fingers need to be.
