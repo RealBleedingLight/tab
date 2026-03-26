@@ -5,7 +5,7 @@
 **You'll need:** Guitar, metronome, tuner
 
 ## Goal
-Play bars 40-43 cleanly with vibrato, slide, hammer_on at 40% tempo (51 bpm) with clean execution and musical phrasing.
+Play bars 40-43 cleanly with vibrato, slide, pull_off at 40% tempo (51 bpm) with clean execution and musical phrasing.
 
 ## Warm-Up (5 min)
 - 2 min vibrato warm-up on B string fret 15
@@ -14,12 +14,12 @@ Play bars 40-43 cleanly with vibrato, slide, hammer_on at 40% tempo (51 bpm) wit
 ## Concept: Vibrato
 After fretting a note, use a rhythmic wrist rotation to repeatedly bend and release the string slightly. The motion comes from the wrist, not the fingers. Start slow and even, then gradually increase speed. Vibrato is like your fingerprint — developing a good one takes time but defines your sound.
 
-### Scale Context: F Dorian
-- Root: F
-- Notes: F, G, Ab, Bb, C, D, Eb
-Think of it as natural minor with a raised 6th. The raised 6th (major 6th) is the color note that distinguishes it from plain minor.
+### Scale Context: C Natural Minor
+- Root: C
+- Notes: C, D, D#, F, G, G#, A#
+The relative minor of the major scale. If you know your major scale, you already know this — just start from the 6th degree. This is the foundation for all minor key music.
 
-*Improvisation tip: Hit the major 6th over minor chords to get that Santana/Dorian flavor. Works beautifully over static minor vamps — try it over Am7 grooves.*
+*Improvisation tip: Emphasize the b3 and b7 for the classic minor sound. For emotional solos, use the b6 to root resolution for maximum sadness.*
 
 ## Steps
 
@@ -36,7 +36,7 @@ Continue to bars 42-43.
 - **Repeat:** 5 times through bars 42-43 until memorized.
 
 ### Step 3: Add Techniques
-Go back through bars 40-43 and focus on the techniques: vibrato, slide, hammer_on.
+Go back through bars 40-43 and focus on the techniques: vibrato, slide, pull_off.
 - **Do this:** For each technique occurrence, stop and practice it in isolation 3 times. Then play the phrase around it in context.
 - **Listen for:** Each technique should be clean and accurate. Bends hit target pitch, vibrato is even, legato notes are consistent volume.
 - **Repeat:** Isolate each technique until reliable, then play bars 40-43 with techniques included.
