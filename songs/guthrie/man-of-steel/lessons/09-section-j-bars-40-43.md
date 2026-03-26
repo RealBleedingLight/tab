@@ -1,0 +1,76 @@
+# Lesson 09: Section J — Bars 40-43 — Bars 40-43
+**Phase:** Building
+**Prerequisites:** Lessons 07, 08
+**Estimated time:** 25 minutes
+**You'll need:** Guitar, metronome, tuner
+
+## Goal
+Play bars 40-43 cleanly with vibrato, slide, pull_off at 40% tempo (51 bpm) with clean execution and musical phrasing.
+
+## Warm-Up (5 min)
+- 2 min vibrato warm-up on B string fret 15
+- 2 min slide warm-up on B string fret 15
+
+## Concept: Vibrato
+After fretting a note, use a rhythmic wrist rotation to repeatedly bend and release the string slightly. The motion comes from the wrist, not the fingers. Start slow and even, then gradually increase speed. Vibrato is like your fingerprint — developing a good one takes time but defines your sound.
+
+### Scale Context: E Super Locrian
+- Root: E
+- Notes: E, F, G, G#, A#, C, D
+7th mode of melodic minor. Contains all possible altered tensions over a dominant chord. This is THE scale for playing over altered dominant chords in jazz.
+
+*Improvisation tip: Use on V7 chords right before they resolve to I. Play melodic minor a half step up from the dominant root — that's the shortcut. Instant jazz credibility.*
+
+## Steps
+
+### Step 1: Learn the Notes — Bars 40-41
+Open your tab and read through bars 40-41.
+- **Do this:** Play each note one at a time, very slowly — no metronome. Find the right frets and strings. Play through until you can find every note without hesitation.
+- **Listen for:** Clean tone on every note. No accidental string noise, no buzzing.
+- **Repeat:** Play through bars 40-41 at least 5 times slowly.
+
+### Step 2: Learn the Notes — Bars 42-43
+Continue to bars 42-43.
+- **Do this:** Same approach — note by note, no metronome. Take your time.
+- **Listen for:** Clean transitions between notes, especially position shifts.
+- **Repeat:** 5 times through bars 42-43 until memorized.
+
+### Step 3: Add Techniques
+Go back through bars 40-43 and focus on the techniques: vibrato, slide, pull_off.
+- **Do this:** For each technique occurrence, stop and practice it in isolation 3 times. Then play the phrase around it in context.
+- **Listen for:** Each technique should be clean and accurate. Bends hit target pitch, vibrato is even, legato notes are consistent volume.
+- **Repeat:** Isolate each technique until reliable, then play bars 40-43 with techniques included.
+
+### Step 4: Phrasing and Expression
+Think vocally — if you were singing bars 40-43, how would it sound?
+- **Do this:** Add dynamics. Lean into emphasized notes, let breathing points have tiny gaps. Shape the line musically.
+- **Listen for:** Musical flow. The phrase should feel like it's going somewhere, not a disconnected series of notes.
+- **Repeat:** 5 passes focusing on musicality over precision.
+
+### Step 5: Tempo
+Set your metronome to 51 bpm (40% of 128 bpm).
+- **Do this:** Play bars 40-43 with metronome. If clean, increase by 5 bpm. If it falls apart, drop back 10 bpm.
+- **Listen for:** Clean execution at tempo. Every note in time, techniques accurate.
+- **Repeat:** 3 passes at each tempo before increasing.
+
+### Step 6: Consistency Pass
+You need to play this section reliably, not just once.
+- **Do this:** At 40% tempo, play bars 40-43 three times in a row with no mistakes.
+- **Listen for:** Consistency. Each pass should sound roughly the same.
+- **Repeat:** Until 3 clean consecutive passes. If one bar consistently breaks, isolate and loop it 10 times.
+
+## Checkpoint
+- [ ] Can you play bars 40-43 cleanly at 40% tempo?
+- [ ] Are all techniques executed accurately?
+- [ ] Does the phrasing feel musical and natural?
+- [ ] Can you do 3 clean consecutive passes?
+
+**All checked?** Move to Lesson 10
+**Not yet?** Repeat this lesson next session. Focus on whichever checkpoint isn't passing.
+
+## Session Log
+At the end of your session, tell Claude:
+- How long you practiced
+- Which checkpoints you passed
+- What tempo you reached
+- What felt difficult

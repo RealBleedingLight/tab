@@ -1,3 +1,5 @@
+# Practice Log
 
-## 2026-03-26
-- Lesson 1
+| Date | Lesson | Duration | Tempo | What Worked | What's Stuck |
+|------|--------|----------|-------|-------------|-------------|
+
