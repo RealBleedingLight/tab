@@ -5,21 +5,21 @@
 **You'll need:** Guitar, metronome, tuner
 
 ## Goal
-Play bars 28-31 cleanly with bend, hammer_on, slide at 40% tempo (51 bpm) with clean execution and musical phrasing.
+Play bars 28-31 cleanly with bend, slide, pull_off at 40% tempo (51 bpm) with clean execution and musical phrasing.
 
 ## Warm-Up (5 min)
 - 2 min bending warm-up on B string fret 15
-- 2 min hammer-on warm-up on B string fret 15
+- 2 min slide warm-up on B string fret 15
 
 ## Concept: Bending
 Place your finger on the target fret. Use your other fingers behind it for support (e.g., index and middle behind the ring finger). Push the string upward (for strings 4-6) or pull downward (for strings 1-3). Match the target pitch by playing the target fret first, then bending up to match.
 
-### Scale Context: C Major
-- Root: C
-- Notes: C, D, E, F, G, A, B
-The foundation scale — all other modes are derived from it. Learn this shape cold before moving to modes.
+### Scale Context: G Mixolydian
+- Root: G
+- Notes: G, A, B, C, D, E, F
+Major scale with a flat 7th. This is the sound of dominant 7th chords and classic rock. Think AC/DC, Allman Brothers, Grateful Dead.
 
-*Improvisation tip: Emphasize the major 3rd and major 7th for the characteristic bright sound. Resolve phrases to the root for a strong sense of home.*
+*Improvisation tip: The b7 gives you that classic rock/blues swagger over dominant 7th chords. Mix with pentatonic major for an authentic blues-rock sound.*
 
 ## Steps
 
@@ -36,7 +36,7 @@ Continue to bars 30-31.
 - **Repeat:** 5 times through bars 30-31 until memorized.
 
 ### Step 3: Add Techniques
-Go back through bars 28-31 and focus on the techniques: bend, hammer_on, slide.
+Go back through bars 28-31 and focus on the techniques: bend, slide, pull_off.
 - **Do this:** For each technique occurrence, stop and practice it in isolation 3 times. Then play the phrase around it in context.
 - **Listen for:** Each technique should be clean and accurate. Bends hit target pitch, vibrato is even, legato notes are consistent volume.
 - **Repeat:** Isolate each technique until reliable, then play bars 28-31 with techniques included.
