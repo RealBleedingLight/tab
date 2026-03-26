@@ -3,7 +3,7 @@
 
 ### Overview
 - Tempo: 128 bpm
-- Key: B Diminished (Whole-Half)
+- Key: C Diminished (Whole-Half)
 - Tuning: E A D G B E
 - Total sections: 16
 
@@ -59,21 +59,21 @@
 
 | Section | Bars | Difficulty | Key Techniques | Practice Priority |
 |---------|------|-----------|----------------|-------------------|
-| Section A | 4-7 | 6.1/10 | bend_release, pull_off, hammer_on | 1 |
-| Section B | 8-11 | 6.2/10 | slide, bend, pre_bend | 2 |
+| Section A | 4-7 | 6.1/10 | hammer_on, bend_release, pull_off | 1 |
+| Section B | 8-11 | 6.2/10 | slide, pre_bend, bend | 2 |
 | Section C | 12-15 | 5.6/10 | slide, vibrato, bend_release | 3 |
-| Section D | 16-19 | 6.1/10 | pull_off, hammer_on, slide | 4 |
-| Section E | 20-23 | 5.7/10 | hammer_on, pull_off, slide | 5 |
-| Section F | 24-27 | 6.2/10 | slide, vibrato, bend_release | 6 |
-| Section G | 28-31 | 6.0/10 | bend, slide, pull_off | 7 |
+| Section D | 16-19 | 6.1/10 | slide, hammer_on, pull_off | 4 |
+| Section E | 20-23 | 5.7/10 | pull_off, slide, hammer_on | 5 |
+| Section F | 24-27 | 6.2/10 | slide, vibrato, hammer_on | 6 |
+| Section G | 28-31 | 6.0/10 | bend, hammer_on, slide | 7 |
 | Section H | 32-35 | 6.0/10 | bend, vibrato, pre_bend | 8 |
-| Section I | 36-39 | 5.3/10 | pull_off, hammer_on, mute | 9 |
-| Section J | 40-43 | 5.8/10 | vibrato, slide, hammer_on | 10 |
+| Section I | 36-39 | 5.3/10 | hammer_on, pull_off, mute | 9 |
+| Section J | 40-43 | 5.8/10 | vibrato, slide, pull_off | 10 |
 | Section K | 44-47 | 5.2/10 | bend, bend_release, vibrato | 11 |
-| Section L | 48-51 | 6.1/10 | bend, pre_bend, vibrato | 12 |
-| Section M | 52-55 | 5.9/10 | vibrato, hammer_on, pull_off | 13 |
+| Section L | 48-51 | 6.1/10 | pre_bend, bend, vibrato | 12 |
+| Section M | 52-55 | 5.9/10 | pull_off, vibrato, hammer_on | 13 |
 | Section N | 56-59 | 4.3/10 | pre_bend, vibrato | 14 |
-| Section O | 60-63 | 5.1/10 | slide, pull_off, hammer_on | 15 |
+| Section O | 60-63 | 5.1/10 | slide, hammer_on, pull_off | 15 |
 | Section P | 64-65 | 2.0/10 |  | 16 |
 
 ### Recommended Practice Order
