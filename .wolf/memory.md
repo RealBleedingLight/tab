@@ -76,3 +76,4 @@
 | Time | Action | File(s) | Outcome | ~Tokens |
 |------|--------|---------|---------|--------|
 | 02:58 | Created docs/superpowers/plans/2026-03-27-guitar-teacher-web.md | — | ~16871 |
+| 02:58 | Session end: 1 writes across 1 files (2026-03-27-guitar-teacher-web.md) | 7 reads | ~23998 tok |
