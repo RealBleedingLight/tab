@@ -5,21 +5,21 @@
 **You'll need:** Guitar, metronome, tuner
 
 ## Goal
-Play bars 16-19 cleanly with pull_off, hammer_on, slide at 40% tempo (51 bpm) with clean execution and musical phrasing.
+Play bars 16-19 cleanly with slide, hammer_on, pull_off at 40% tempo (51 bpm) with clean execution and musical phrasing.
 
 ## Warm-Up (5 min)
-- 2 min pull-off warm-up on B string fret 15
+- 2 min slide warm-up on B string fret 15
 - 2 min hammer-on warm-up on B string fret 15
 
-## Concept: Pull-Off
-Fret both notes simultaneously. Pick the higher note, then pull the higher finger slightly downward (toward the floor) as you lift it off, plucking the string with the fingertip. The lower finger should already be in position. The pull-off is not just lifting the finger — you must flick the string.
+## Concept: Slide
+Pick the first note, then slide your finger along the string to the target fret while maintaining constant pressure. Don't lift the finger at all during the slide. The key is consistent pressure — too light and the note dies, too heavy and you slow down.
 
-### Scale Context: B Locrian
-- Root: B
-- Notes: B, C, D, E, F, G, A
-The most dissonant mode of the major scale. Rarely used as a tonal center, but essential for playing over min7b5 chords in jazz and metal.
+### Scale Context: C Major
+- Root: C
+- Notes: C, D, E, F, G, A, B
+The foundation scale — all other modes are derived from it. Learn this shape cold before moving to modes.
 
-*Improvisation tip: Hard to use melodically due to the b5 — try pedaling on the root and using chromatic approach tones. Works well for brief, tense passages in metal.*
+*Improvisation tip: Emphasize the major 3rd and major 7th for the characteristic bright sound. Resolve phrases to the root for a strong sense of home.*
 
 ## Steps
 
@@ -36,7 +36,7 @@ Continue to bars 18-19.
 - **Repeat:** 5 times through bars 18-19 until memorized.
 
 ### Step 3: Add Techniques
-Go back through bars 16-19 and focus on the techniques: pull_off, hammer_on, slide.
+Go back through bars 16-19 and focus on the techniques: slide, hammer_on, pull_off.
 - **Do this:** For each technique occurrence, stop and practice it in isolation 3 times. Then play the phrase around it in context.
 - **Listen for:** Each technique should be clean and accurate. Bends hit target pitch, vibrato is even, legato notes are consistent volume.
 - **Repeat:** Isolate each technique until reliable, then play bars 16-19 with techniques included.
