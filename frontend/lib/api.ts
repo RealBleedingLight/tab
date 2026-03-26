@@ -57,6 +57,12 @@ export const api = {
     post<{ status: string }>(`/songs/${artist}/${song}/save-progress`, req),
   deleteSong: (artist: string, song: string) =>
     del<{ status: string }>(`/songs/${artist}/${song}`),
+  getTab: (artist: string, song: string) =>
+    get<{ content: string }>(`/songs/${artist}/${song}/tab`),
+  getTheory: (artist: string, song: string) =>
+    get<{ content: string }>(`/songs/${artist}/${song}/theory`),
+  getBreakdown: (artist: string, song: string) =>
+    get<{ content: string }>(`/songs/${artist}/${song}/breakdown`),
 
   // Theory
   getScale: (root: string, scaleType: string) =>

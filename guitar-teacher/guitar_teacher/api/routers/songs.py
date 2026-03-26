@@ -83,6 +83,45 @@ async def get_lesson(artist: str, song: str, number: int):
         await gh.close()
 
 
+@router.get("/{artist}/{song}/tab")
+async def get_tab(artist: str, song: str):
+    gh = get_github()
+    try:
+        result = await gh.read_file(f"songs/{artist}/{song}/tab.txt")
+        if result is None:
+            raise HTTPException(status_code=404, detail="Tab file not found")
+        content, _ = result
+        return {"content": content}
+    finally:
+        await gh.close()
+
+
+@router.get("/{artist}/{song}/theory")
+async def get_theory_md(artist: str, song: str):
+    gh = get_github()
+    try:
+        result = await gh.read_file(f"songs/{artist}/{song}/theory.md")
+        if result is None:
+            raise HTTPException(status_code=404, detail="Theory file not found")
+        content, _ = result
+        return {"content": content}
+    finally:
+        await gh.close()
+
+
+@router.get("/{artist}/{song}/breakdown")
+async def get_breakdown(artist: str, song: str):
+    gh = get_github()
+    try:
+        result = await gh.read_file(f"songs/{artist}/{song}/breakdown.md")
+        if result is None:
+            raise HTTPException(status_code=404, detail="Breakdown file not found")
+        content, _ = result
+        return {"content": content}
+    finally:
+        await gh.close()
+
+
 @router.delete("/{artist}/{song}")
 async def delete_song(artist: str, song: str):
     gh = get_github()
