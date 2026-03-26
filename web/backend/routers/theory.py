@@ -22,6 +22,8 @@ _OPEN_STRINGS = [
     note_to_pitch_class("E"),   # 4
 ]
 
+_CHORD_RE = re.compile(r'^([A-G][#b]?)(.*)$')
+
 _DEGREE_NUMERALS = ["I", "II", "III", "IV", "V", "VI", "VII"]
 _QUALITY_NUMERAL = {
     "major":      lambda x: x.upper(),
@@ -98,7 +100,6 @@ def list_chords():
 @router.get("/chord/{chord_name}", response_model=ChordResponse)
 def get_chord(chord_name: str):
     # Parse root + type from chord name like "Am7", "Cmaj7", "E"
-    _CHORD_RE = re.compile(r'^([A-G][#b]?)(.*)$')
     m = _CHORD_RE.match(chord_name)
     if not m:
         raise HTTPException(status_code=404, detail=f"Cannot parse chord name '{chord_name}'")
@@ -128,9 +129,9 @@ def get_chord(chord_name: str):
 @router.get("/key/{root}/{scale_type}", response_model=KeyResponse)
 def get_key(root: str, scale_type: str):
     engine = get_engine()
-    chord_results = engine.chords_in_key(root, scale_type)
-    if not chord_results:
+    if engine.get_scale(root, scale_type) is None:
         raise HTTPException(status_code=404, detail=f"Scale '{scale_type}' not found")
+    chord_results = engine.chords_in_key(root, scale_type)
 
     degrees = []
     for i, cr in enumerate(chord_results):
