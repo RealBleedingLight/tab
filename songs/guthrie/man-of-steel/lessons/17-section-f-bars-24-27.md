@@ -5,7 +5,7 @@
 **You'll need:** Guitar, metronome, tuner
 
 ## Goal
-Play bars 24-27 cleanly with slide, vibrato, bend_release at 40% tempo (51 bpm) with clean execution and musical phrasing.
+Play bars 24-27 cleanly with slide, vibrato, hammer_on at 40% tempo (51 bpm) with clean execution and musical phrasing.
 
 ## Warm-Up (5 min)
 - 2 min slide warm-up on B string fret 15
@@ -13,6 +13,13 @@ Play bars 24-27 cleanly with slide, vibrato, bend_release at 40% tempo (51 bpm) 
 
 ## Concept: Slide
 Pick the first note, then slide your finger along the string to the target fret while maintaining constant pressure. Don't lift the finger at all during the slide. The key is consistent pressure — too light and the note dies, too heavy and you slow down.
+
+### Scale Context: C Major
+- Root: C
+- Notes: C, D, E, F, G, A, B
+The foundation scale — all other modes are derived from it. Learn this shape cold before moving to modes.
+
+*Improvisation tip: Emphasize the major 3rd and major 7th for the characteristic bright sound. Resolve phrases to the root for a strong sense of home.*
 
 ## Steps
 
@@ -29,7 +36,7 @@ Continue to bars 26-27.
 - **Repeat:** 5 times through bars 26-27 until memorized.
 
 ### Step 3: Add Techniques
-Go back through bars 24-27 and focus on the techniques: slide, vibrato, bend_release.
+Go back through bars 24-27 and focus on the techniques: slide, vibrato, hammer_on.
 - **Do this:** For each technique occurrence, stop and practice it in isolation 3 times. Then play the phrase around it in context.
 - **Listen for:** Each technique should be clean and accurate. Bends hit target pitch, vibrato is even, legato notes are consistent volume.
 - **Repeat:** Isolate each technique until reliable, then play bars 24-27 with techniques included.
