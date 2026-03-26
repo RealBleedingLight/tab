@@ -5,11 +5,11 @@
 **You'll need:** Guitar, metronome, tuner
 
 ## Goal
-Play bars 8-11 cleanly with slide, bend, pre_bend at 40% tempo (51 bpm) with clean execution and musical phrasing.
+Play bars 8-11 cleanly with slide, pre_bend, bend at 40% tempo (51 bpm) with clean execution and musical phrasing.
 
 ## Warm-Up (5 min)
 - 2 min slide warm-up on B string fret 15
-- 2 min bending warm-up on B string fret 15
+- 2 min pre-bend warm-up on B string fret 15
 
 ## Concept: Slide
 Pick the first note, then slide your finger along the string to the target fret while maintaining constant pressure. Don't lift the finger at all during the slide. The key is consistent pressure — too light and the note dies, too heavy and you slow down.
@@ -36,7 +36,7 @@ Continue to bars 10-11.
 - **Repeat:** 5 times through bars 10-11 until memorized.
 
 ### Step 3: Add Techniques
-Go back through bars 8-11 and focus on the techniques: slide, bend, pre_bend.
+Go back through bars 8-11 and focus on the techniques: slide, pre_bend, bend.
 - **Do this:** For each technique occurrence, stop and practice it in isolation 3 times. Then play the phrase around it in context.
 - **Listen for:** Each technique should be clean and accurate. Bends hit target pitch, vibrato is even, legato notes are consistent volume.
 - **Repeat:** Isolate each technique until reliable, then play bars 8-11 with techniques included.
