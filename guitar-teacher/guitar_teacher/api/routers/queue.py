@@ -66,7 +66,6 @@ async def _run_processing(job_id: str, filename: str, model: Optional[str], orde
     """Background task: download GP file, analyze, generate lessons, commit."""
     import tempfile
     import os
-    from guitar_teacher.core.analyzer import analyze_file
     from guitar_teacher.lessons.generator import generate_lessons
 
     job_tracker.update(job_id, status="running", progress="Downloading file from repo")
@@ -96,13 +95,29 @@ async def _run_processing(job_id: str, filename: str, model: Optional[str], orde
             tmp_path = tmp.name
 
         try:
-            analysis = analyze_file(tmp_path)
+            from gp2tab.parser import parse as gp2tab_parse
+            from gp2tab.formatter_tab import format_tab
+            from gp2tab.formatter_json import format_json
+            from gp2tab.formatter_llm import format_llm
+            from guitar_teacher.core.analyzer import analyze_song
+
+            song = gp2tab_parse(tmp_path)
+            analysis = analyze_song(song)
         finally:
             os.unlink(tmp_path)
 
         job_tracker.update(job_id, progress=f"Generating lessons ({len(analysis.sections)} sections)")
 
         with tempfile.TemporaryDirectory() as tmp_dir:
+            # Generate tab files (tab.txt, tab.json, tab.llm.txt)
+            job_tracker.update(job_id, progress="Generating tab files")
+            with open(os.path.join(tmp_dir, "tab.txt"), "w") as f:
+                f.write(format_tab(song, width=120))
+            with open(os.path.join(tmp_dir, "tab.json"), "w") as f:
+                f.write(format_json(song))
+            with open(os.path.join(tmp_dir, "tab.llm.txt"), "w") as f:
+                f.write(format_llm(song))
+
             generate_lessons(analysis, tmp_dir, section_order=order)
 
             song_path = f"songs/{artist_slug}/{song_slug}"

@@ -84,7 +84,12 @@
       "Bash(npx:*)",
       "Bash(npm install:*)",
       "Bash(npm run:*)",
-      "Bash(npm test:*)"
+      "Bash(npm test:*)",
+      "Bash(find /Users/leo/hobby/tab/guitar-teacher -name *.py -not -path */.* -not -path */.venv/*)",
+      "Bash(for d:*)",
+      "Bash(do echo:*)",
+      "Read(//Users/leo/hobby/tab/**)",
+      "Bash(done)"
     ]
   }
 }

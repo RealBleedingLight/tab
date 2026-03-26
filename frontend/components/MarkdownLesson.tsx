@@ -18,9 +18,9 @@ export default function MarkdownLesson({ content }: Props) {
           p: ({ children }) => <p className="my-2 text-zinc-300 leading-relaxed">{children}</p>,
           li: ({ children }) => <li className="text-zinc-300">{children}</li>,
           code: ({ children, className }) => {
-            const isBlock = className?.includes("language-");
+            const isBlock = className?.includes("language-") || String(children).includes("\n");
             return isBlock ? (
-              <code className="tab-content block p-3 bg-zinc-900 rounded my-3 overflow-x-auto">{children}</code>
+              <code className="tab-content block p-3 bg-zinc-900 rounded my-3 overflow-x-auto whitespace-pre font-mono text-sm text-zinc-200">{children}</code>
             ) : (
               <code className="bg-zinc-800 px-1 rounded text-zinc-200 font-mono text-sm">{children}</code>
             );

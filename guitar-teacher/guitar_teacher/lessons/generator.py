@@ -608,7 +608,7 @@ def _generate_context(analysis, lesson_plan, output_dir):
         f"**Key:** {analysis.key}",
         f"**Tempo:** {analysis.tempo} bpm\n",
         "## Current Status",
-        f"- **Current lesson:** 01",
+        f"current_lesson: 01",
         f"- **Total lessons:** {len(lesson_plan)}",
         "- **Max clean tempo:** —",
         "- **Stuck points:** None yet\n",

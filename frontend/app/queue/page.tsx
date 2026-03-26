@@ -11,6 +11,8 @@ interface ActiveJob {
   status: JobStatus | null;
 }
 
+const JOB_STORAGE_KEY = "queue_active_job";
+
 export default function QueuePage() {
   const [files, setFiles] = useState<QueueFile[]>([]);
   const [loading, setLoading] = useState(true);
@@ -32,12 +34,26 @@ export default function QueuePage() {
     }
   }, []);
 
-  useEffect(() => { loadFiles(); }, [loadFiles]);
+  // Restore in-progress job from localStorage on mount
+  useEffect(() => {
+    const stored = localStorage.getItem(JOB_STORAGE_KEY);
+    if (stored) {
+      try { setActiveJob(JSON.parse(stored)); } catch { localStorage.removeItem(JOB_STORAGE_KEY); }
+    }
+    loadFiles();
+  }, [loadFiles]);
 
   // Poll job status every 3 seconds while job is running
   useEffect(() => {
     if (!activeJob || !activeJob.jobId) return;
-    if (activeJob.status?.status === "completed" || activeJob.status?.status === "failed") return;
+
+    // Persist job so it survives navigation
+    localStorage.setItem(JOB_STORAGE_KEY, JSON.stringify(activeJob));
+
+    if (activeJob.status?.status === "completed" || activeJob.status?.status === "failed") {
+      localStorage.removeItem(JOB_STORAGE_KEY);
+      return;
+    }
 
     pollRef.current = setTimeout(async () => {
       try {
@@ -71,7 +87,9 @@ export default function QueuePage() {
   async function processFile(filename: string) {
     try {
       const { job_id } = await api.processFile(filename, selectedModel);
-      setActiveJob({ filename, jobId: job_id, status: null });
+      const job = { filename, jobId: job_id, status: null };
+      setActiveJob(job);
+      localStorage.setItem(JOB_STORAGE_KEY, JSON.stringify(job));
     } catch {
       alert("Failed to start processing.");
     }
@@ -101,6 +119,7 @@ export default function QueuePage() {
         <p className="text-zinc-400 text-sm">
           {uploading ? "Uploading..." : "Drop a .gp file here or tap to browse"}
         </p>
+        <p className="text-zinc-600 text-xs mt-1">File must be named: <span className="font-mono">Artist - Song.gp</span></p>
         <input
           ref={fileInputRef}
           type="file"
