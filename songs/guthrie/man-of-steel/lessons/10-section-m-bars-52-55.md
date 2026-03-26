@@ -5,11 +5,11 @@
 **You'll need:** Guitar, metronome, tuner
 
 ## Goal
-Play bars 52-55 cleanly with pull_off, hammer_on, vibrato at 40% tempo (51 bpm) with clean execution and musical phrasing.
+Play bars 52-55 cleanly with pull_off, vibrato, hammer_on at 40% tempo (51 bpm) with clean execution and musical phrasing.
 
 ## Warm-Up (5 min)
 - 2 min pull-off warm-up on B string fret 15
-- 2 min hammer-on warm-up on B string fret 15
+- 2 min vibrato warm-up on B string fret 15
 
 ## Concept: Pull-Off
 Fret both notes simultaneously. Pick the higher note, then pull the higher finger slightly downward (toward the floor) as you lift it off, plucking the string with the fingertip. The lower finger should already be in position. The pull-off is not just lifting the finger — you must flick the string.
@@ -29,7 +29,7 @@ Continue to bars 54-55.
 - **Repeat:** 5 times through bars 54-55 until memorized.
 
 ### Step 3: Add Techniques
-Go back through bars 52-55 and focus on the techniques: pull_off, hammer_on, vibrato.
+Go back through bars 52-55 and focus on the techniques: pull_off, vibrato, hammer_on.
 - **Do this:** For each technique occurrence, stop and practice it in isolation 3 times. Then play the phrase around it in context.
 - **Listen for:** Each technique should be clean and accurate. Bends hit target pitch, vibrato is even, legato notes are consistent volume.
 - **Repeat:** Isolate each technique until reliable, then play bars 52-55 with techniques included.
