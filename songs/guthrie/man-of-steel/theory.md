@@ -2,17 +2,17 @@
 ## Guthrie Govan
 
 ### Key and Tonality
-- Primary key: **B Diminished (Whole-Half)**
+- Primary key: **C Diminished (Whole-Half)**
 - Tempo: 128 bpm
 - Tuning: E A D G B E
 
 ### Scales Used
 
-**1. B Dorian**
-- Notes: B C# D E F# G# A
-- Character: Minor but with a brighter, jazzy edge due to the raised 6th
+**1. D Lydian**
+- Notes: D E F# G# A B C#
+- Character: Dreamy, floating, ethereal — the raised 4th removes the only point of tension in the major scale
 - Appears in bars: 4, 5, 6, 7
-- *Improvisation tip: Hit the major 6th over minor chords to get that Santana/Dorian flavor. Works beautifully over static minor vamps — try it over Am7 grooves.*
+- *Improvisation tip: Lean into the #4 to create that dreamy, Satriani-like quality. Works great over sustained major chords — let the #11 ring out.*
 
 **2. E Phrygian Dominant**
 - Notes: E F G# A B C D
@@ -20,105 +20,90 @@
 - Appears in bars: 8, 9, 10, 11, 48, 49, 50, 51
 - *Improvisation tip: The b2 to major 3rd leap (3 semitones) is the signature move. Use over dominant chords resolving to minor for an authentic exotic sound. Killer for metal solos.*
 
-**3. B Diminished (Half-Whole)**
-- Appears in bars: 12, 13, 14, 15, 20, 21, 22, 23, 32, 33, 34, 35
+**3. C Diminished (Whole-Half)**
+- Appears in bars: 12, 13, 14, 15, 20, 21, 22, 23, 32, 33, 34, 35, 36, 37, 38, 39
 
-**4. B Locrian**
-- Notes: B C D E F G A
-- Character: Extremely unstable and dissonant — the b5 removes any sense of rest
-- Appears in bars: 16, 17, 18, 19, 28, 29, 30, 31
-- *Improvisation tip: Hard to use melodically due to the b5 — try pedaling on the root and using chromatic approach tones. Works well for brief, tense passages in metal.*
-
-**5. B Diminished (Whole-Half)**
-- Appears in bars: 24, 25, 26, 27, 36, 37, 38, 39
-
-**6. F Dorian**
-- Notes: F G Ab Bb C D Eb
-- Character: Minor but with a brighter, jazzy edge due to the raised 6th
-- Appears in bars: 40, 41, 42, 43
-- *Improvisation tip: Hit the major 6th over minor chords to get that Santana/Dorian flavor. Works beautifully over static minor vamps — try it over Am7 grooves.*
-
-**7. F Major**
-- Notes: F G A Bb C D E
+**4. C Major**
+- Notes: C D E F G A B
 - Character: Bright, happy, resolved — the most stable and consonant of all scales
-- Appears in bars: 44, 45, 46, 47
+- Appears in bars: 16, 17, 18, 19, 24, 25, 26, 27, 28, 29, 30, 31, 44, 45, 46, 47, 60, 61, 62, 63
 - *Improvisation tip: Emphasize the major 3rd and major 7th for the characteristic bright sound. Resolve phrases to the root for a strong sense of home.*
 
-**8. E Minor Pentatonic**
-- Appears in bars: 52, 53, 54, 55
+**5. C Natural Minor**
+- Notes: C D D# F G G# A#
+- Character: Sad, dark, melancholic — the standard minor sound
+- Appears in bars: 40, 41, 42, 43
+- *Improvisation tip: Emphasize the b3 and b7 for the classic minor sound. For emotional solos, use the b6 to root resolution for maximum sadness.*
 
-**9. B Phrygian**
-- Notes: B C D E F# G A
-- Character: Dark, exotic, Spanish/flamenco flavor — the b2 gives it tension right from the start
-- Appears in bars: 60, 61, 62, 63
-- *Improvisation tip: Use the b2 as a tension note — resolve it down to the root for a dark, dramatic effect. Try droning the open low E and playing Phrygian shapes over it.*
+**6. E Minor Pentatonic**
+- Appears in bars: 52, 53, 54, 55
 
 ### Section-by-Section Analysis
 
 **Section A** (Bars 4-7)
-- Scale: B Dorian
+- Scale: D Lydian
 - Difficulty: 6.1/10
-- Key techniques: bend_release, pull_off, hammer_on, pre_bend, bend, vibrato, slide
+- Key techniques: hammer_on, bend_release, pull_off, pre_bend, bend, vibrato, slide
 
 **Section B** (Bars 8-11)
 - Scale: E Phrygian Dominant
 - Difficulty: 6.2/10
-- Key techniques: slide, bend, pre_bend, bend_release, vibrato, pull_off, hammer_on
+- Key techniques: slide, pre_bend, bend, bend_release, vibrato, hammer_on, pull_off
 
 **Section C** (Bars 12-15)
-- Scale: B Diminished (Half-Whole)
+- Scale: C Diminished (Whole-Half)
 - Difficulty: 5.6/10
-- Key techniques: slide, vibrato, bend_release, bend, pull_off, hammer_on
+- Key techniques: slide, vibrato, bend_release, bend, hammer_on, pull_off
 
 **Section D** (Bars 16-19)
-- Scale: B Locrian
+- Scale: C Major
 - Difficulty: 6.1/10
-- Key techniques: pull_off, hammer_on, slide, bend, vibrato, pre_bend, bend_release
+- Key techniques: slide, hammer_on, pull_off, bend, vibrato, pre_bend, bend_release
 
 **Section E** (Bars 20-23)
-- Scale: B Diminished (Half-Whole)
+- Scale: C Diminished (Whole-Half)
 - Difficulty: 5.7/10
-- Key techniques: hammer_on, pull_off, slide, vibrato, tapping
+- Key techniques: pull_off, slide, hammer_on, vibrato, tapping
 
 **Section F** (Bars 24-27)
-- Scale: B Diminished (Whole-Half)
+- Scale: C Major
 - Difficulty: 6.2/10
-- Key techniques: slide, vibrato, bend_release, bend, pull_off, hammer_on, mute, pre_bend
+- Key techniques: slide, vibrato, hammer_on, bend_release, bend, pull_off, mute, pre_bend
 
 **Section G** (Bars 28-31)
-- Scale: B Locrian
+- Scale: C Major
 - Difficulty: 6.0/10
-- Key techniques: bend, slide, pull_off, hammer_on, vibrato, pre_bend, bend_release
+- Key techniques: bend, hammer_on, slide, pull_off, vibrato, pre_bend, bend_release
 
 **Section H** (Bars 32-35)
-- Scale: B Diminished (Half-Whole)
+- Scale: C Diminished (Whole-Half)
 - Difficulty: 6.0/10
-- Key techniques: bend, vibrato, pre_bend, bend_release, pull_off, hammer_on, slide
+- Key techniques: bend, vibrato, pre_bend, bend_release, hammer_on, pull_off, slide
 
 **Section I** (Bars 36-39)
-- Scale: B Diminished (Whole-Half)
+- Scale: C Diminished (Whole-Half)
 - Difficulty: 5.3/10
-- Key techniques: pull_off, hammer_on, mute, slide
+- Key techniques: hammer_on, pull_off, mute, slide
 
 **Section J** (Bars 40-43)
-- Scale: F Dorian
+- Scale: C Natural Minor
 - Difficulty: 5.8/10
-- Key techniques: vibrato, slide, hammer_on, pull_off, bend_release, pre_bend
+- Key techniques: vibrato, slide, pull_off, hammer_on, pre_bend, bend_release
 
 **Section K** (Bars 44-47)
-- Scale: F Major
+- Scale: C Major
 - Difficulty: 5.2/10
-- Key techniques: bend, bend_release, vibrato, trill, pull_off, hammer_on, pre_bend, slide
+- Key techniques: bend, bend_release, vibrato, trill, hammer_on, pull_off, slide, pre_bend
 
 **Section L** (Bars 48-51)
 - Scale: E Phrygian Dominant
 - Difficulty: 6.1/10
-- Key techniques: bend, pre_bend, vibrato, bend_release, slide, pull_off, hammer_on
+- Key techniques: pre_bend, bend, vibrato, bend_release, hammer_on, slide, pull_off
 
 **Section M** (Bars 52-55)
 - Scale: E Minor Pentatonic
 - Difficulty: 5.9/10
-- Key techniques: vibrato, hammer_on, pull_off, pre_bend, bend_release, bend
+- Key techniques: pull_off, vibrato, hammer_on, pre_bend, bend_release, bend
 
 **Section N** (Bars 56-59)
 - Scale: 
@@ -126,9 +111,9 @@
 - Key techniques: pre_bend, vibrato
 
 **Section O** (Bars 60-63)
-- Scale: B Phrygian
+- Scale: C Major
 - Difficulty: 5.1/10
-- Key techniques: slide, pull_off, hammer_on, bend_release, pre_bend, bend
+- Key techniques: slide, hammer_on, pull_off, bend_release, pre_bend, bend
 
 **Section P** (Bars 64-65)
 - Scale: 
@@ -149,7 +134,7 @@
 
 ### Practice Application
 When improvising over this progression:
-1. Start with the primary key (B Diminished (Whole-Half)) as your safe zone
+1. Start with the primary key (C Diminished (Whole-Half)) as your safe zone
 2. Listen for chord changes that suggest modal shifts
 3. Use chromatic approach notes to connect scale tones
 4. Match the energy arc of the original solo — melodic passages deserve space, technical passages need precision
