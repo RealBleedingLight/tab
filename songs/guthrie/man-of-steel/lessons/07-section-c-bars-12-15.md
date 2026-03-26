@@ -14,6 +14,13 @@ Play bars 12-15 cleanly with slide, vibrato, bend_release at 40% tempo (51 bpm) 
 ## Concept: Slide
 Pick the first note, then slide your finger along the string to the target fret while maintaining constant pressure. Don't lift the finger at all during the slide. The key is consistent pressure — too light and the note dies, too heavy and you slow down.
 
+### Scale Context: G Major
+- Root: G
+- Notes: G, A, B, C, D, E, F#
+The foundation scale — all other modes are derived from it. Learn this shape cold before moving to modes.
+
+*Improvisation tip: Emphasize the major 3rd and major 7th for the characteristic bright sound. Resolve phrases to the root for a strong sense of home.*
+
 ## Steps
 
 ### Step 1: Learn the Notes — Bars 12-13
