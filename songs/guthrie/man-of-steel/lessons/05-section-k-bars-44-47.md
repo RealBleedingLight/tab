@@ -14,12 +14,12 @@ Play bars 44-47 cleanly with bend, bend_release, vibrato at 40% tempo (51 bpm) w
 ## Concept: Bending
 Place your finger on the target fret. Use your other fingers behind it for support (e.g., index and middle behind the ring finger). Push the string upward (for strings 4-6) or pull downward (for strings 1-3). Match the target pitch by playing the target fret first, then bending up to match.
 
-### Scale Context: D# Lydian
-- Root: D#
-- Notes: D#, F, G, A, A#, C, D
-Major scale with a raised 4th (#4). Steve Vai and Joe Satriani use this constantly. The #4 creates a tritone with the root, giving it a floating quality.
+### Scale Context: F Major
+- Root: F
+- Notes: F, G, A, Bb, C, D, E
+The foundation scale — all other modes are derived from it. Learn this shape cold before moving to modes.
 
-*Improvisation tip: Lean into the #4 to create that dreamy, Satriani-like quality. Works great over sustained major chords — let the #11 ring out.*
+*Improvisation tip: Emphasize the major 3rd and major 7th for the characteristic bright sound. Resolve phrases to the root for a strong sense of home.*
 
 ## Steps
 
