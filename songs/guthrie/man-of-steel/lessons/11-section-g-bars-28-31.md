@@ -5,21 +5,21 @@
 **You'll need:** Guitar, metronome, tuner
 
 ## Goal
-Play bars 28-31 cleanly with bend, pull_off, slide at 40% tempo (51 bpm) with clean execution and musical phrasing.
+Play bars 28-31 cleanly with bend, slide, pull_off at 40% tempo (51 bpm) with clean execution and musical phrasing.
 
 ## Warm-Up (5 min)
 - 2 min bending warm-up on B string fret 15
-- 2 min pull-off warm-up on B string fret 15
+- 2 min slide warm-up on B string fret 15
 
 ## Concept: Bending
 Place your finger on the target fret. Use your other fingers behind it for support (e.g., index and middle behind the ring finger). Push the string upward (for strings 4-6) or pull downward (for strings 1-3). Match the target pitch by playing the target fret first, then bending up to match.
 
-### Scale Context: C# Super Locrian
-- Root: C#
-- Notes: C#, D, E, F, G, A, B
-7th mode of melodic minor. Contains all possible altered tensions over a dominant chord. This is THE scale for playing over altered dominant chords in jazz.
+### Scale Context: B Locrian
+- Root: B
+- Notes: B, C, D, E, F, G, A
+The most dissonant mode of the major scale. Rarely used as a tonal center, but essential for playing over min7b5 chords in jazz and metal.
 
-*Improvisation tip: Use on V7 chords right before they resolve to I. Play melodic minor a half step up from the dominant root — that's the shortcut. Instant jazz credibility.*
+*Improvisation tip: Hard to use melodically due to the b5 — try pedaling on the root and using chromatic approach tones. Works well for brief, tense passages in metal.*
 
 ## Steps
 
@@ -36,7 +36,7 @@ Continue to bars 30-31.
 - **Repeat:** 5 times through bars 30-31 until memorized.
 
 ### Step 3: Add Techniques
-Go back through bars 28-31 and focus on the techniques: bend, pull_off, slide.
+Go back through bars 28-31 and focus on the techniques: bend, slide, pull_off.
 - **Do this:** For each technique occurrence, stop and practice it in isolation 3 times. Then play the phrase around it in context.
 - **Listen for:** Each technique should be clean and accurate. Bends hit target pitch, vibrato is even, legato notes are consistent volume.
 - **Repeat:** Isolate each technique until reliable, then play bars 28-31 with techniques included.
