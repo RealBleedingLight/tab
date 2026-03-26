@@ -5,21 +5,21 @@
 **You'll need:** Guitar, metronome, tuner
 
 ## Goal
-Play bars 16-19 cleanly with slide, pull_off, hammer_on at 40% tempo (51 bpm) with clean execution and musical phrasing.
+Play bars 16-19 cleanly with slide, hammer_on, pull_off at 40% tempo (51 bpm) with clean execution and musical phrasing.
 
 ## Warm-Up (5 min)
 - 2 min slide warm-up on B string fret 15
-- 2 min pull-off warm-up on B string fret 15
+- 2 min hammer-on warm-up on B string fret 15
 
 ## Concept: Slide
 Pick the first note, then slide your finger along the string to the target fret while maintaining constant pressure. Don't lift the finger at all during the slide. The key is consistent pressure — too light and the note dies, too heavy and you slow down.
 
-### Scale Context: G Dorian
-- Root: G
-- Notes: G, A, A#, C, D, E, F
-Think of it as natural minor with a raised 6th. The raised 6th (major 6th) is the color note that distinguishes it from plain minor.
+### Scale Context: F Major
+- Root: F
+- Notes: F, G, A, Bb, C, D, E
+The foundation scale — all other modes are derived from it. Learn this shape cold before moving to modes.
 
-*Improvisation tip: Hit the major 6th over minor chords to get that Santana/Dorian flavor. Works beautifully over static minor vamps — try it over Am7 grooves.*
+*Improvisation tip: Emphasize the major 3rd and major 7th for the characteristic bright sound. Resolve phrases to the root for a strong sense of home.*
 
 ## Steps
 
@@ -36,7 +36,7 @@ Continue to bars 18-19.
 - **Repeat:** 5 times through bars 18-19 until memorized.
 
 ### Step 3: Add Techniques
-Go back through bars 16-19 and focus on the techniques: slide, pull_off, hammer_on.
+Go back through bars 16-19 and focus on the techniques: slide, hammer_on, pull_off.
 - **Do this:** For each technique occurrence, stop and practice it in isolation 3 times. Then play the phrase around it in context.
 - **Listen for:** Each technique should be clean and accurate. Bends hit target pitch, vibrato is even, legato notes are consistent volume.
 - **Repeat:** Isolate each technique until reliable, then play bars 16-19 with techniques included.

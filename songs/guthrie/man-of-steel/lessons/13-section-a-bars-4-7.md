@@ -14,12 +14,12 @@ Play bars 4-7 cleanly with pre_bend, hammer_on, pull_off at 40% tempo (51 bpm) w
 ## Concept: Pre-Bend
 Before picking the string, silently push it to the target pitch. Then pick the string while holding the bend. The audience hears only the bent pitch — no audible bend-up. This requires knowing exactly how far to bend without hearing the starting note.
 
-### Scale Context: A Major
-- Root: A
-- Notes: A, B, C#, D, E, F#, G#
-The foundation scale — all other modes are derived from it. Learn this shape cold before moving to modes.
+### Scale Context: B Dorian
+- Root: B
+- Notes: B, C#, D, E, F#, G#, A
+Think of it as natural minor with a raised 6th. The raised 6th (major 6th) is the color note that distinguishes it from plain minor.
 
-*Improvisation tip: Emphasize the major 3rd and major 7th for the characteristic bright sound. Resolve phrases to the root for a strong sense of home.*
+*Improvisation tip: Hit the major 6th over minor chords to get that Santana/Dorian flavor. Works beautifully over static minor vamps — try it over Am7 grooves.*
 
 ## Steps
 

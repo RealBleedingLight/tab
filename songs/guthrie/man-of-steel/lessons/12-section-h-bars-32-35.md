@@ -14,13 +14,6 @@ Play bars 32-35 cleanly with bend, pre_bend, vibrato at 40% tempo (51 bpm) with 
 ## Concept: Bending
 Place your finger on the target fret. Use your other fingers behind it for support (e.g., index and middle behind the ring finger). Push the string upward (for strings 4-6) or pull downward (for strings 1-3). Match the target pitch by playing the target fret first, then bending up to match.
 
-### Scale Context: G Major
-- Root: G
-- Notes: G, A, B, C, D, E, F#
-The foundation scale — all other modes are derived from it. Learn this shape cold before moving to modes.
-
-*Improvisation tip: Emphasize the major 3rd and major 7th for the characteristic bright sound. Resolve phrases to the root for a strong sense of home.*
-
 ## Steps
 
 ### Step 1: Learn the Notes — Bars 32-33

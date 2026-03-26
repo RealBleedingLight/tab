@@ -14,6 +14,13 @@ Play bars 24-27 cleanly with slide, vibrato, hammer_on at 40% tempo (51 bpm) wit
 ## Concept: Slide
 Pick the first note, then slide your finger along the string to the target fret while maintaining constant pressure. Don't lift the finger at all during the slide. The key is consistent pressure — too light and the note dies, too heavy and you slow down.
 
+### Scale Context: F# Phrygian
+- Root: F#
+- Notes: F#, G, A, B, C#, D, E
+The flat 2nd is the defining interval. One semitone above the root creates instant tension. Metallica and prog metal bands love this sound.
+
+*Improvisation tip: Use the b2 as a tension note — resolve it down to the root for a dark, dramatic effect. Try droning the open low E and playing Phrygian shapes over it.*
+
 ## Steps
 
 ### Step 1: Learn the Notes — Bars 24-25

@@ -14,12 +14,12 @@ Play bars 44-47 cleanly with bend, bend_release, vibrato at 40% tempo (51 bpm) w
 ## Concept: Bending
 Place your finger on the target fret. Use your other fingers behind it for support (e.g., index and middle behind the ring finger). Push the string upward (for strings 4-6) or pull downward (for strings 1-3). Match the target pitch by playing the target fret first, then bending up to match.
 
-### Scale Context: G Dorian
-- Root: G
-- Notes: G, A, A#, C, D, E, F
-Think of it as natural minor with a raised 6th. The raised 6th (major 6th) is the color note that distinguishes it from plain minor.
+### Scale Context: F Major
+- Root: F
+- Notes: F, G, A, Bb, C, D, E
+The foundation scale — all other modes are derived from it. Learn this shape cold before moving to modes.
 
-*Improvisation tip: Hit the major 6th over minor chords to get that Santana/Dorian flavor. Works beautifully over static minor vamps — try it over Am7 grooves.*
+*Improvisation tip: Emphasize the major 3rd and major 7th for the characteristic bright sound. Resolve phrases to the root for a strong sense of home.*
 
 ## Steps
 
