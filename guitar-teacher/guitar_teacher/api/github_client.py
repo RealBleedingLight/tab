@@ -1,4 +1,5 @@
 """GitHub Contents API client for reading/writing repo files."""
+import asyncio
 import base64
 import logging
 import os
@@ -21,13 +22,19 @@ class GitHubClient:
     ):
         self.token = token or os.environ.get("GITHUB_TOKEN", "")
         self.repo = repo or os.environ.get("GITHUB_REPO", "")
+        _headers = {
+            "Authorization": f"Bearer {self.token}",
+            "Accept": "application/vnd.github.v3+json",
+        }
         self._client = httpx.AsyncClient(
             base_url=f"{_API_BASE}/repos/{self.repo}/contents",
-            headers={
-                "Authorization": f"Bearer {self.token}",
-                "Accept": "application/vnd.github.v3+json",
-            },
+            headers=_headers,
             timeout=30.0,
+        )
+        self._git_client = httpx.AsyncClient(
+            base_url=f"{_API_BASE}/repos/{self.repo}/git",
+            headers=_headers,
+            timeout=60.0,
         )
 
     async def read_file(self, path: str) -> Optional[Tuple[str, str]]:
@@ -112,5 +119,71 @@ class GitHubClient:
         """Delete a file from the repo."""
         await self._client.delete(f"/{path}", json={"message": message, "sha": sha})
 
+    async def delete_directory(self, path: str, message: str) -> None:
+        """Recursively delete all files in a directory."""
+        items = await self.list_directory(path)
+        for item in items:
+            if item["type"] == "file":
+                await self.delete_file(item["path"], item["sha"], message)
+            elif item["type"] == "dir":
+                await self.delete_directory(item["path"], message)
+
+    async def commit_files_batch(
+        self, files: Dict[str, str], message: str, branch: str = "main"
+    ) -> None:
+        """Commit multiple text files in a single Git commit (Git Trees API)."""
+        git = self._git_client
+
+        # Get current HEAD SHA
+        ref_resp = await git.get(f"/refs/heads/{branch}")
+        if not ref_resp.is_success:
+            raise RuntimeError(f"Failed to get ref: {ref_resp.status_code} {ref_resp.text}")
+        head_sha = ref_resp.json()["object"]["sha"]
+
+        # Get base tree SHA from HEAD commit
+        commit_resp = await git.get(f"/commits/{head_sha}")
+        commit_resp.raise_for_status()
+        base_tree_sha = commit_resp.json()["tree"]["sha"]
+
+        # Create blobs for all files in parallel
+        async def _create_blob(content: str) -> str:
+            resp = await git.post("/blobs", json={
+                "content": base64.b64encode(content.encode("utf-8")).decode("ascii"),
+                "encoding": "base64",
+            })
+            resp.raise_for_status()
+            return resp.json()["sha"]
+
+        paths = list(files.keys())
+        blob_shas = await asyncio.gather(*[_create_blob(c) for c in files.values()])
+
+        # Create a new tree with all file entries
+        tree_resp = await git.post("/trees", json={
+            "base_tree": base_tree_sha,
+            "tree": [
+                {"path": path, "mode": "100644", "type": "blob", "sha": sha}
+                for path, sha in zip(paths, blob_shas)
+            ],
+        })
+        tree_resp.raise_for_status()
+        new_tree_sha = tree_resp.json()["sha"]
+
+        # Create the commit
+        new_commit_resp = await git.post("/commits", json={
+            "message": message,
+            "tree": new_tree_sha,
+            "parents": [head_sha],
+        })
+        new_commit_resp.raise_for_status()
+        new_commit_sha = new_commit_resp.json()["sha"]
+
+        # Advance the branch ref
+        update_resp = await git.patch(f"/refs/heads/{branch}", json={
+            "sha": new_commit_sha,
+            "force": False,
+        })
+        update_resp.raise_for_status()
+
     async def close(self):
         await self._client.aclose()
+        await self._git_client.aclose()

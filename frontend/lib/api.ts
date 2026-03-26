@@ -25,6 +25,12 @@ async function post<T>(path: string, body: unknown): Promise<T> {
   return res.json();
 }
 
+async function del<T>(path: string): Promise<T> {
+  const res = await fetch(`${backend()}${path}`, { method: "DELETE", credentials: "include" });
+  if (!res.ok) throw new Error(`${res.status}`);
+  return res.json();
+}
+
 async function postForm<T>(path: string, form: FormData): Promise<T> {
   const res = await fetch(`${backend()}${path}`, {
     method: "POST",
@@ -49,6 +55,8 @@ export const api = {
     get<LessonFile>(`/songs/${artist}/${song}/lessons/${number}`),
   saveProgress: (artist: string, song: string, req: SaveProgressRequest) =>
     post<{ status: string }>(`/songs/${artist}/${song}/save-progress`, req),
+  deleteSong: (artist: string, song: string) =>
+    del<{ status: string }>(`/songs/${artist}/${song}`),
 
   // Theory
   getScale: (root: string, scaleType: string) =>

@@ -83,6 +83,16 @@ async def get_lesson(artist: str, song: str, number: int):
         await gh.close()
 
 
+@router.delete("/{artist}/{song}")
+async def delete_song(artist: str, song: str):
+    gh = get_github()
+    try:
+        await gh.delete_directory(f"songs/{artist}/{song}", message=f"Delete {artist}/{song}")
+        return {"status": "deleted"}
+    finally:
+        await gh.close()
+
+
 @router.post("/{artist}/{song}/save-progress")
 async def save_progress(artist: str, song: str, req: SaveProgressRequest):
     gh = get_github()

@@ -121,19 +121,17 @@ async def _run_processing(job_id: str, filename: str, model: Optional[str], orde
             generate_lessons(analysis, tmp_dir, section_order=order)
 
             song_path = f"songs/{artist_slug}/{song_slug}"
-            file_count = 0
+            batch: dict = {}
             for root, dirs, files in os.walk(tmp_dir):
-                for fname in files:
+                for fname in sorted(files):
                     local_path = os.path.join(root, fname)
                     rel_path = os.path.relpath(local_path, tmp_dir)
                     repo_path = f"{song_path}/{rel_path}"
-
                     with open(local_path, "r") as f:
-                        content = f.read()
+                        batch[repo_path] = f.read()
 
-                    file_count += 1
-                    job_tracker.update(job_id, progress=f"Uploading file {file_count}: {rel_path}")
-                    await gh.write_file(repo_path, content, message=f"Add {rel_path} for {name_part}")
+            job_tracker.update(job_id, progress=f"Committing {len(batch)} files in one batch")
+            await gh.commit_files_batch(batch, message=f"Process {name_part} ({len(batch)} files)")
 
         job_tracker.update(job_id, status="completed", result={
             "artist": artist_slug,

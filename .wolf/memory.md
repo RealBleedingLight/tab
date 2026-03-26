@@ -3,6 +3,10 @@
 > Chronological action log. Hooks and AI append to this file automatically.
 > Old sessions are consolidated by the daemon weekly.
 
+| 2026-03-26 | batch commit: replaced per-file GitHub writes with Git Trees API (commit_files_batch) | github_client.py, queue.py | single commit for all lesson files | ~300 tok |
+| 2026-03-26 | delete song: added delete_directory + DELETE /songs/{artist}/{song} endpoint + UI delete button | github_client.py, songs.py, page.tsx, api.ts | songs can now be deleted from dashboard | ~200 tok |
+| 2026-03-26 | fix blank practice page: handle old context format, graceful no-lesson state | practice/page.tsx, page.tsx | shows helpful message instead of blank/error | ~150 tok |
+
 ## Session: 2026-03-26 20:59
 
 | Time | Action | File(s) | Outcome | ~Tokens |
@@ -24,3 +28,23 @@
 | 21:25 | Edited guitar-teacher/guitar_teacher/api/github_client.py | modified write_file() | ~272 |
 | 21:28 | Session end: 14 writes across 7 files (generator.py, MarkdownLesson.tsx, queue.py, .context.md, page.tsx) | 26 reads | ~10146 tok |
 | 21:32 | Session end: 14 writes across 7 files (generator.py, MarkdownLesson.tsx, queue.py, .context.md, page.tsx) | 26 reads | ~10146 tok |
+| 21:39 | Session end: 14 writes across 7 files (generator.py, MarkdownLesson.tsx, queue.py, .context.md, page.tsx) | 26 reads | ~10146 tok |
+
+## Session: 2026-03-26 21:55
+
+| Time | Action | File(s) | Outcome | ~Tokens |
+|------|--------|---------|---------|--------|
+| 21:57 | Edited guitar-teacher/guitar_teacher/api/github_client.py | added 1 import(s) | ~52 |
+| 21:57 | Edited guitar-teacher/guitar_teacher/api/github_client.py | expanded (+6 lines) | ~138 |
+| 21:57 | Edited guitar-teacher/guitar_teacher/api/github_client.py | modified delete_file() | ~816 |
+| 21:58 | Edited guitar-teacher/guitar_teacher/api/routers/queue.py | modified walk() | ~192 |
+| 21:58 | Edited guitar-teacher/guitar_teacher/api/routers/songs.py | modified delete_song() | ~95 |
+| 21:58 | Edited frontend/lib/api.ts | added 1 condition(s) | ~83 |
+| 21:58 | Edited frontend/lib/api.ts | 2→4 lines | ~74 |
+| 21:58 | Edited frontend/app/page.tsx | CSS: formats, lesson, lesson | ~354 |
+| 21:58 | Edited frontend/app/page.tsx | CSS: artist, song | ~214 |
+| 21:58 | Edited frontend/app/page.tsx | CSS: disabled | ~359 |
+| 21:58 | Edited frontend/app/practice/[artist]/[song]/page.tsx | added nullish coalescing | ~56 |
+| 21:59 | Edited frontend/app/practice/[artist]/[song]/page.tsx | 4→9 lines | ~100 |
+| 21:59 | Edited frontend/app/practice/[artist]/[song]/page.tsx | 1→4 lines | ~71 |
+| 21:59 | Session end: 13 writes across 5 files (github_client.py, queue.py, songs.py, api.ts, page.tsx) | 6 reads | ~9653 tok |

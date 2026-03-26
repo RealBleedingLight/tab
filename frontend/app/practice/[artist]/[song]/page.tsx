@@ -8,7 +8,7 @@ import SaveIndicator from "@/components/SaveIndicator";
 type SaveState = "idle" | "saving" | "saved" | "offline";
 
 function parseCurrentLesson(context: string): number {
-  const m = context.match(/current_lesson:\s*(\d+)/);
+  const m = context.match(/current_lesson:\s*(\d+)/) ?? context.match(/\*\*Current lesson:\*\*\s*(\d+)/);
   return m ? parseInt(m[1]) : 1;
 }
 
@@ -37,8 +37,13 @@ export default function PracticePage() {
         setContextContent(ctx.content);
         const lessonNum = parseCurrentLesson(ctx.content);
         setCurrentLesson(lessonNum);
-        const lesson = await api.getLesson(artist, song, lessonNum);
-        setLessonContent(lesson.content);
+        try {
+          const lesson = await api.getLesson(artist, song, lessonNum);
+          setLessonContent(lesson.content);
+        } catch {
+          // Lesson not found — song may not have lessons generated yet
+          setLessonContent(null);
+        }
       } catch {
         setError("Could not load lesson. Check backend connection.");
       } finally {
@@ -135,7 +140,10 @@ export default function PracticePage() {
           <p className="text-xs text-zinc-600 mb-3 font-medium uppercase tracking-wider">
             Lesson {currentLesson}
           </p>
-          {lessonContent && <MarkdownLesson content={lessonContent} />}
+          {lessonContent
+            ? <MarkdownLesson content={lessonContent} />
+            : <p className="text-zinc-500 text-sm">No lessons found for this song. Upload a GP file and process it in the Queue to generate lessons.</p>
+          }
         </div>
       </div>
 
