@@ -1,7 +1,12 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-03-26T16:55:35.429Z
-> Files: 694 tracked | Anatomy hits: 0 | Misses: 0
+> Auto-maintained by OpenWolf. Last scanned: 2026-03-26T16:57:46.028Z
+> Files: 696 tracked | Anatomy hits: 0 | Misses: 0
+
+## ../../../kazam/.claude/projects/-Users-leo-hobby-tab/memory/
+
+- `MEMORY.md` — Memory Index (~182 tok)
+- `project_web_platform.md` — Architecture (~977 tok)
 
 ## ./
 

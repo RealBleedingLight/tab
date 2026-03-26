@@ -1,167 +1,28 @@
 {
-  "session_id": "session-2026-03-26-2155",
-  "started": "2026-03-26T16:25:32.204Z",
+  "session_id": "session-2026-03-26-0233",
+  "started": "2026-03-26T21:03:10.911Z",
   "files_read": {
-    "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/routers/queue.py": {
+    "/Users/leo/hobby/tab/guitar-teacher/README.md": {
       "count": 1,
-      "tokens": 1516,
-      "first_read": "2026-03-26T16:25:37.529Z"
+      "tokens": 831,
+      "first_read": "2026-03-26T21:06:19.117Z"
     },
-    "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/routers/songs.py": {
-      "count": 2,
-      "tokens": 1069,
-      "first_read": "2026-03-26T16:25:37.907Z"
-    },
-    "/Users/leo/hobby/tab/frontend/app/page.tsx": {
+    "/Users/leo/hobby/tab/guitar-teacher/DOCS.md": {
       "count": 1,
-      "tokens": 884,
-      "first_read": "2026-03-26T16:25:38.268Z"
+      "tokens": 5091,
+      "first_read": "2026-03-26T21:06:19.524Z"
     },
-    "/Users/leo/hobby/tab/frontend/lib/api.ts": {
-      "count": 3,
-      "tokens": 953,
-      "first_read": "2026-03-26T16:25:43.398Z"
-    },
-    "/Users/leo/hobby/tab/frontend/app/practice/[artist]/[song]/page.tsx": {
-      "count": 2,
-      "tokens": 1722,
-      "first_read": "2026-03-26T16:25:43.638Z"
-    },
-    "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/github_client.py": {
-      "count": 1,
-      "tokens": 2176,
-      "first_read": "2026-03-26T16:29:12.920Z"
-    },
-    "/Users/leo/hobby/tab/songs/guthrie-govan/man-of-steel/lessons/02-section-p-bars-64-65.md": {
+    "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/app.py": {
       "count": 1,
       "tokens": 0,
-      "first_read": "2026-03-26T16:51:39.918Z"
-    },
-    "/Users/leo/hobby/tab/songs/guthrie-govan/man-of-steel/lessons/01-technique-foundations-hammer-on-pull-off-slide.md": {
-      "count": 1,
-      "tokens": 0,
-      "first_read": "2026-03-26T16:51:40.059Z"
-    },
-    "/Users/leo/hobby/tab/songs/guthrie-govan/man-of-steel/theory.md": {
-      "count": 1,
-      "tokens": 0,
-      "first_read": "2026-03-26T16:51:59.955Z"
-    },
-    "/Users/leo/hobby/tab/songs/guthrie-govan/man-of-steel/breakdown.md": {
-      "count": 1,
-      "tokens": 0,
-      "first_read": "2026-03-26T16:52:00.140Z"
+      "first_read": "2026-03-26T21:06:28.242Z"
     }
   },
-  "files_written": [
-    {
-      "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/github_client.py",
-      "action": "edit",
-      "tokens": 52,
-      "at": "2026-03-26T16:27:39.183Z"
-    },
-    {
-      "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/github_client.py",
-      "action": "edit",
-      "tokens": 138,
-      "at": "2026-03-26T16:27:44.833Z"
-    },
-    {
-      "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/github_client.py",
-      "action": "edit",
-      "tokens": 816,
-      "at": "2026-03-26T16:27:57.912Z"
-    },
-    {
-      "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/routers/queue.py",
-      "action": "edit",
-      "tokens": 192,
-      "at": "2026-03-26T16:28:06.998Z"
-    },
-    {
-      "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/routers/songs.py",
-      "action": "edit",
-      "tokens": 95,
-      "at": "2026-03-26T16:28:12.930Z"
-    },
-    {
-      "file": "/Users/leo/hobby/tab/frontend/lib/api.ts",
-      "action": "edit",
-      "tokens": 83,
-      "at": "2026-03-26T16:28:19.178Z"
-    },
-    {
-      "file": "/Users/leo/hobby/tab/frontend/lib/api.ts",
-      "action": "edit",
-      "tokens": 74,
-      "at": "2026-03-26T16:28:24.098Z"
-    },
-    {
-      "file": "/Users/leo/hobby/tab/frontend/app/page.tsx",
-      "action": "edit",
-      "tokens": 354,
-      "at": "2026-03-26T16:28:35.807Z"
-    },
-    {
-      "file": "/Users/leo/hobby/tab/frontend/app/page.tsx",
-      "action": "edit",
-      "tokens": 214,
-      "at": "2026-03-26T16:28:44.609Z"
-    },
-    {
-      "file": "/Users/leo/hobby/tab/frontend/app/page.tsx",
-      "action": "edit",
-      "tokens": 359,
-      "at": "2026-03-26T16:28:53.472Z"
-    },
-    {
-      "file": "/Users/leo/hobby/tab/frontend/app/practice/[artist]/[song]/page.tsx",
-      "action": "edit",
-      "tokens": 56,
-      "at": "2026-03-26T16:28:58.383Z"
-    },
-    {
-      "file": "/Users/leo/hobby/tab/frontend/app/practice/[artist]/[song]/page.tsx",
-      "action": "edit",
-      "tokens": 100,
-      "at": "2026-03-26T16:29:03.355Z"
-    },
-    {
-      "file": "/Users/leo/hobby/tab/frontend/app/practice/[artist]/[song]/page.tsx",
-      "action": "edit",
-      "tokens": 71,
-      "at": "2026-03-26T16:29:08.528Z"
-    },
-    {
-      "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/routers/songs.py",
-      "action": "edit",
-      "tokens": 354,
-      "at": "2026-03-26T16:54:41.760Z"
-    },
-    {
-      "file": "/Users/leo/hobby/tab/frontend/lib/api.ts",
-      "action": "edit",
-      "tokens": 130,
-      "at": "2026-03-26T16:55:00.479Z"
-    },
-    {
-      "file": "/Users/leo/hobby/tab/frontend/app/practice/[artist]/[song]/page.tsx",
-      "action": "create",
-      "tokens": 2562,
-      "at": "2026-03-26T16:55:35.456Z"
-    }
-  ],
-  "edit_counts": {
-    "guitar-teacher/guitar_teacher/api/github_client.py": 3,
-    "guitar-teacher/guitar_teacher/api/routers/queue.py": 1,
-    "guitar-teacher/guitar_teacher/api/routers/songs.py": 2,
-    "frontend/lib/api.ts": 3,
-    "frontend/app/page.tsx": 3,
-    "frontend/app/practice/[artist]/[song]/page.tsx": 4
-  },
-  "anatomy_hits": 4,
-  "anatomy_misses": 4,
-  "repeated_reads_warned": 4,
+  "files_written": [],
+  "edit_counts": {},
+  "anatomy_hits": 2,
+  "anatomy_misses": 1,
+  "repeated_reads_warned": 0,
   "cerebrum_warnings": 0,
-  "stop_count": 3
+  "stop_count": 0
 }

@@ -53,3 +53,25 @@
 | 22:24 | Edited guitar-teacher/guitar_teacher/api/routers/songs.py | modified get_tab() | ~354 |
 | 22:25 | Edited frontend/lib/api.ts | expanded (+6 lines) | ~130 |
 | 22:25 | Created frontend/app/practice/[artist]/[song]/page.tsx | — | ~2562 |
+| 22:26 | Session end: 16 writes across 5 files (github_client.py, queue.py, songs.py, api.ts, page.tsx) | 10 reads | ~13970 tok |
+| 22:27 | Created ../../../kazam/.claude/projects/-Users-leo-hobby-tab/memory/project_web_platform.md | — | ~1042 |
+| 22:27 | Created ../../../kazam/.claude/projects/-Users-leo-hobby-tab/memory/MEMORY.md | — | ~194 |
+| 2026-03-26 | removed all dummy songs from GitHub (dream-theater, gary-moore, marty-friedman, megadeth, guthrie duplicate, lessons_old) | songs/ | only guthrie-govan/man-of-steel remains | ~50 tok |
+| 2026-03-26 | fix MarkdownLesson: removed prose/prose-invert (tailwind v4 no typography plugin), added explicit ul/ol/strong/em/blockquote/hr styling | MarkdownLesson.tsx | lesson content now renders visibly | ~100 tok |
+| 2026-03-26 | add queue delete: DELETE /queue/{filename} + Remove button on queue page | queue.py, queue/page.tsx, api.ts | queue files can be removed | ~100 tok |
+| 2026-03-26 | practice page 4-tab layout: Lesson / Tab / Theory / Breakdown, lazy-load non-lesson tabs | practice/page.tsx, songs.py, api.ts | all song content accessible in practice page | ~200 tok |
+
+## Session: 2026-03-26 22:30
+
+| Time | Action | File(s) | Outcome | ~Tokens |
+|------|--------|---------|---------|--------|
+
+## Session: 2026-03-26 02:31
+
+| Time | Action | File(s) | Outcome | ~Tokens |
+|------|--------|---------|---------|--------|
+
+## Session: 2026-03-26 02:33
+
+| Time | Action | File(s) | Outcome | ~Tokens |
+|------|--------|---------|---------|--------|
