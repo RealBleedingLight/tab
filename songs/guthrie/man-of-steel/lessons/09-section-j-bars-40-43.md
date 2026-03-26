@@ -5,7 +5,7 @@
 **You'll need:** Guitar, metronome, tuner
 
 ## Goal
-Play bars 40-43 cleanly with vibrato, slide, hammer_on at 40% tempo (51 bpm) with clean execution and musical phrasing.
+Play bars 40-43 cleanly with vibrato, slide, pull_off at 40% tempo (51 bpm) with clean execution and musical phrasing.
 
 ## Warm-Up (5 min)
 - 2 min vibrato warm-up on B string fret 15
@@ -14,12 +14,12 @@ Play bars 40-43 cleanly with vibrato, slide, hammer_on at 40% tempo (51 bpm) wit
 ## Concept: Vibrato
 After fretting a note, use a rhythmic wrist rotation to repeatedly bend and release the string slightly. The motion comes from the wrist, not the fingers. Start slow and even, then gradually increase speed. Vibrato is like your fingerprint — developing a good one takes time but defines your sound.
 
-### Scale Context: G Phrygian
-- Root: G
-- Notes: G, G#, A#, C, D, D#, F
-The flat 2nd is the defining interval. One semitone above the root creates instant tension. Metallica and prog metal bands love this sound.
+### Scale Context: A# Mixolydian
+- Root: A#
+- Notes: A#, C, D, D#, F, G, G#
+Major scale with a flat 7th. This is the sound of dominant 7th chords and classic rock. Think AC/DC, Allman Brothers, Grateful Dead.
 
-*Improvisation tip: Use the b2 as a tension note — resolve it down to the root for a dark, dramatic effect. Try droning the open low E and playing Phrygian shapes over it.*
+*Improvisation tip: The b7 gives you that classic rock/blues swagger over dominant 7th chords. Mix with pentatonic major for an authentic blues-rock sound.*
 
 ## Steps
 
@@ -36,7 +36,7 @@ Continue to bars 42-43.
 - **Repeat:** 5 times through bars 42-43 until memorized.
 
 ### Step 3: Add Techniques
-Go back through bars 40-43 and focus on the techniques: vibrato, slide, hammer_on.
+Go back through bars 40-43 and focus on the techniques: vibrato, slide, pull_off.
 - **Do this:** For each technique occurrence, stop and practice it in isolation 3 times. Then play the phrase around it in context.
 - **Listen for:** Each technique should be clean and accurate. Bends hit target pitch, vibrato is even, legato notes are consistent volume.
 - **Repeat:** Isolate each technique until reliable, then play bars 40-43 with techniques included.
