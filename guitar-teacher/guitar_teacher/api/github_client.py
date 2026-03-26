@@ -35,6 +35,8 @@ class GitHubClient:
         resp = await self._client.get(f"/{path}")
         if resp.status_code == 404:
             return None
+        if not resp.is_success:
+            raise RuntimeError(f"GitHub API error {resp.status_code} reading {path}: {resp.json().get('message', resp.text)}")
         data = resp.json()
         content = base64.b64decode(data["content"]).decode("utf-8")
         return content, data["sha"]
@@ -50,6 +52,14 @@ class GitHubClient:
         if sha:
             body["sha"] = sha
         resp = await self._client.put(f"/{path}", json=body)
+        # 422 means file already exists but no SHA was provided — fetch SHA and retry
+        if resp.status_code == 422 and sha is None:
+            existing = await self.read_file(path)
+            if existing:
+                body["sha"] = existing[1]
+                resp = await self._client.put(f"/{path}", json=body)
+        if not resp.is_success:
+            raise RuntimeError(f"GitHub API error {resp.status_code} writing {path}: {resp.json().get('message', resp.text)}")
         return resp.json()["content"]["sha"]
 
     async def append_to_file(self, path: str, text: str, message: str) -> str:
@@ -65,6 +75,8 @@ class GitHubClient:
         resp = await self._client.get(f"/{path}")
         if resp.status_code == 404:
             return []
+        if not resp.is_success:
+            raise RuntimeError(f"GitHub API error {resp.status_code} listing {path}: {resp.json().get('message', resp.text)}")
         return resp.json()
 
     async def upload_binary(self, path: str, data: bytes, message: str) -> str:
@@ -90,6 +102,8 @@ class GitHubClient:
         resp = await self._client.get(f"/{path}")
         if resp.status_code == 404:
             return None
+        if not resp.is_success:
+            raise RuntimeError(f"GitHub API error {resp.status_code} reading {path}: {resp.json().get('message', resp.text)}")
         data = resp.json()
         content = base64.b64decode(data["content"])
         return content, data["sha"]
