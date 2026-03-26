@@ -5,21 +5,21 @@
 **You'll need:** Guitar, metronome, tuner
 
 ## Goal
-Play bars 4-7 cleanly with bend_release, pull_off, hammer_on at 40% tempo (51 bpm) with clean execution and musical phrasing.
+Play bars 4-7 cleanly with hammer_on, bend_release, pull_off at 40% tempo (51 bpm) with clean execution and musical phrasing.
 
 ## Warm-Up (5 min)
+- 2 min hammer-on warm-up on B string fret 15
 - 2 min bend and release warm-up on B string fret 15
-- 2 min pull-off warm-up on B string fret 15
 
-## Concept: Bend and Release
-Bend up to the target pitch as normal, hold it briefly, then slowly and evenly release the string back to its resting pitch. Both the bent note and the release should be clearly audible and in tune.
+## Concept: Hammer-On
+Pick the first note, then firmly and quickly bring another finger down on a higher fret on the same string. The 'hammering' finger must land precisely on the fret with enough force to sustain the note. Keep the original finger down.
 
-### Scale Context: B Dorian
-- Root: B
-- Notes: B, C#, D, E, F#, G#, A
-Think of it as natural minor with a raised 6th. The raised 6th (major 6th) is the color note that distinguishes it from plain minor.
+### Scale Context: D Lydian
+- Root: D
+- Notes: D, E, F#, G#, A, B, C#
+Major scale with a raised 4th (#4). Steve Vai and Joe Satriani use this constantly. The #4 creates a tritone with the root, giving it a floating quality.
 
-*Improvisation tip: Hit the major 6th over minor chords to get that Santana/Dorian flavor. Works beautifully over static minor vamps — try it over Am7 grooves.*
+*Improvisation tip: Lean into the #4 to create that dreamy, Satriani-like quality. Works great over sustained major chords — let the #11 ring out.*
 
 ## Steps
 
@@ -36,7 +36,7 @@ Continue to bars 6-7.
 - **Repeat:** 5 times through bars 6-7 until memorized.
 
 ### Step 3: Add Techniques
-Go back through bars 4-7 and focus on the techniques: bend_release, pull_off, hammer_on.
+Go back through bars 4-7 and focus on the techniques: hammer_on, bend_release, pull_off.
 - **Do this:** For each technique occurrence, stop and practice it in isolation 3 times. Then play the phrase around it in context.
 - **Listen for:** Each technique should be clean and accurate. Bends hit target pitch, vibrato is even, legato notes are consistent volume.
 - **Repeat:** Isolate each technique until reliable, then play bars 4-7 with techniques included.
