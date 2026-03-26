@@ -1,14 +1,14 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-03-26T15:38:42.606Z
-> Files: 692 tracked | Anatomy hits: 0 | Misses: 0
+> Auto-maintained by OpenWolf. Last scanned: 2026-03-26T15:55:47.521Z
+> Files: 693 tracked | Anatomy hits: 0 | Misses: 0
 
 ## ./
 
 - `.DS_Store` (~1640 tok)
 - `.gitignore` — Git ignore rules (~8 tok)
 - `CLAUDE.md` — OpenWolf (~2397 tok)
-- `Dockerfile` — Docker container definition (~92 tok)
+- `Dockerfile` — Docker container definition (~108 tok)
 - `INDEX.md` — Guitar Tab Workspace (~465 tok)
 - `UPGRADE_ROADMAP.md` — Guitar Teacher — Upgrade Roadmap (~477 tok)
 
@@ -877,6 +877,10 @@
 - `beta_web_fetch_tool_20260309_param.py` — File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details. (~630 tok)
 - `beta_web_fetch_tool_result_block_param.py` — File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details. (~382 tok)
 - `beta_web_fetch_tool_result_block.py` — File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details. (~311 tok)
+
+## guitar-teacher/guitar_teacher/api/
+
+- `github_client.py` — GitHub Contents API client for reading/writing repo files. (~1380 tok)
 
 ## guitar-teacher/guitar_teacher/api/routers/
 

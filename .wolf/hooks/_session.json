@@ -28,7 +28,7 @@
       "first_read": "2026-03-26T15:30:14.536Z"
     },
     "/Users/leo/hobby/tab/Dockerfile": {
-      "count": 1,
+      "count": 2,
       "tokens": 92,
       "first_read": "2026-03-26T15:30:26.275Z"
     },
@@ -63,7 +63,7 @@
       "first_read": "2026-03-26T15:32:36.931Z"
     },
     "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/core/analyzer.py": {
-      "count": 1,
+      "count": 2,
       "tokens": 0,
       "first_read": "2026-03-26T15:34:30.552Z"
     },
@@ -91,6 +91,46 @@
       "count": 1,
       "tokens": 1680,
       "first_read": "2026-03-26T15:38:08.566Z"
+    },
+    "/Users/leo/hobby/tab/gp2tab/gp2tab/models.py": {
+      "count": 1,
+      "tokens": 346,
+      "first_read": "2026-03-26T15:41:55.674Z"
+    },
+    "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/config.py": {
+      "count": 1,
+      "tokens": 0,
+      "first_read": "2026-03-26T15:42:10.480Z"
+    },
+    "/Users/leo/hobby/tab/guitar-teacher/pyproject.toml": {
+      "count": 1,
+      "tokens": 252,
+      "first_read": "2026-03-26T15:42:21.810Z"
+    },
+    "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/core/theory.py": {
+      "count": 1,
+      "tokens": 0,
+      "first_read": "2026-03-26T15:42:38.719Z"
+    },
+    "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/app.py": {
+      "count": 1,
+      "tokens": 0,
+      "first_read": "2026-03-26T15:42:45.300Z"
+    },
+    "/Users/leo/hobby/tab/guitar-teacher/.env.example": {
+      "count": 1,
+      "tokens": 0,
+      "first_read": "2026-03-26T15:48:45.063Z"
+    },
+    "/Users/leo/hobby/tab/frontend/.env.local.example": {
+      "count": 1,
+      "tokens": 0,
+      "first_read": "2026-03-26T15:48:45.202Z"
+    },
+    "/Users/leo/hobby/tab/gp2tab/gp2tab/parser.py": {
+      "count": 1,
+      "tokens": 251,
+      "first_read": "2026-03-26T15:50:15.204Z"
     }
   },
   "files_written": [
@@ -147,6 +187,36 @@
       "action": "edit",
       "tokens": 101,
       "at": "2026-03-26T15:38:42.623Z"
+    },
+    {
+      "file": "/Users/leo/hobby/tab/Dockerfile",
+      "action": "edit",
+      "tokens": 22,
+      "at": "2026-03-26T15:50:54.944Z"
+    },
+    {
+      "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/github_client.py",
+      "action": "edit",
+      "tokens": 155,
+      "at": "2026-03-26T15:51:02.416Z"
+    },
+    {
+      "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/github_client.py",
+      "action": "edit",
+      "tokens": 153,
+      "at": "2026-03-26T15:51:09.453Z"
+    },
+    {
+      "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/github_client.py",
+      "action": "edit",
+      "tokens": 123,
+      "at": "2026-03-26T15:51:16.666Z"
+    },
+    {
+      "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/github_client.py",
+      "action": "edit",
+      "tokens": 272,
+      "at": "2026-03-26T15:55:47.555Z"
     }
   ],
   "edit_counts": {
@@ -154,11 +224,13 @@
     "frontend/components/MarkdownLesson.tsx": 1,
     "guitar-teacher/guitar_teacher/api/routers/queue.py": 2,
     "songs/guthrie-govan/man-of-steel/.context.md": 1,
-    "frontend/app/queue/page.tsx": 4
+    "frontend/app/queue/page.tsx": 4,
+    "Dockerfile": 1,
+    "guitar-teacher/guitar_teacher/api/github_client.py": 4
   },
-  "anatomy_hits": 7,
-  "anatomy_misses": 11,
-  "repeated_reads_warned": 3,
+  "anatomy_hits": 10,
+  "anatomy_misses": 15,
+  "repeated_reads_warned": 5,
   "cerebrum_warnings": 0,
-  "stop_count": 0
+  "stop_count": 2
 }
