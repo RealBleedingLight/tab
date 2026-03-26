@@ -112,6 +112,22 @@
       "related_bugs": [],
       "occurrences": 1,
       "last_seen": "2026-03-26T16:29:08.530Z"
+    },
+    {
+      "id": "bug-008",
+      "timestamp": "2026-03-26T16:54:41.761Z",
+      "error_message": "Missing await",
+      "file": "guitar-teacher/guitar_teacher/api/routers/songs.py",
+      "root_cause": "Async call without await — returned Promise instead of value",
+      "fix": "Added await to async call",
+      "tags": [
+        "auto-detected",
+        "async-fix",
+        "py"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-03-26T16:54:41.761Z"
     }
   ]
 }

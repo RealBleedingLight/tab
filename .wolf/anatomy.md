@@ -1,6 +1,6 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-03-26T16:29:08.512Z
+> Auto-maintained by OpenWolf. Last scanned: 2026-03-26T16:55:35.429Z
 > Files: 694 tracked | Anatomy hits: 0 | Misses: 0
 
 ## ./
@@ -78,7 +78,7 @@
 
 ## frontend/app/practice/[artist]/[song]/
 
-- `page.tsx` — parseCurrentLesson (~1722 tok)
+- `page.tsx` — parseCurrentLesson (~2562 tok)
 
 ## frontend/app/queue/
 
@@ -106,7 +106,7 @@
 
 ## frontend/lib/
 
-- `api.ts` — Exports api (~953 tok)
+- `api.ts` — Exports api (~1049 tok)
 - `types.ts` — Exports Song, FretboardPosition, ScaleResult, ChordResult + 10 more (~535 tok)
 
 ## gp2tab/
@@ -885,7 +885,7 @@
 ## guitar-teacher/guitar_teacher/api/routers/
 
 - `queue.py` — GP file queue endpoints — upload, list, process. (~1509 tok)
-- `songs.py` — Song data and progress endpoints. (~1069 tok)
+- `songs.py` — Song data and progress endpoints. (~1413 tok)
 
 ## guitar-teacher/guitar_teacher/lessons/
 
