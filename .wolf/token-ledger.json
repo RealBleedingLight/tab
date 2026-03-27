@@ -2,14 +2,14 @@
   "version": 1,
   "created_at": "2026-03-26T15:29:14.376Z",
   "lifetime": {
-    "total_tokens_estimated": 397747,
-    "total_reads": 500,
-    "total_writes": 176,
+    "total_tokens_estimated": 397827,
+    "total_reads": 505,
+    "total_writes": 177,
     "total_sessions": 9,
-    "anatomy_hits": 332,
-    "anatomy_misses": 135,
-    "repeated_reads_blocked": 221,
-    "estimated_savings_vs_bare_cli": 1762731
+    "anatomy_hits": 335,
+    "anatomy_misses": 136,
+    "repeated_reads_blocked": 222,
+    "estimated_savings_vs_bare_cli": 1763361
   },
   "sessions": [
     {
@@ -4588,6 +4588,58 @@
       "id": "session-2026-03-27-1448",
       "started": "2026-03-27T09:18:42.508Z",
       "ended": "2026-03-27T11:18:22.305Z",
+      "reads": [
+        {
+          "file": "/Users/kazam/.claude/projects/-Users-leo-hobby-tab/memory/project_web_platform.md",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/railway.json",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/Dockerfile",
+          "tokens_estimated": 30,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/web/frontend/.env.production.example",
+          "tokens_estimated": 2,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/web/backend/config.py",
+          "tokens_estimated": 25,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/Users/leo/hobby/tab/Dockerfile",
+          "tokens_estimated": 23,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 57,
+        "output_tokens_estimated": 23,
+        "reads_count": 5,
+        "writes_count": 1,
+        "repeated_reads_blocked": 1,
+        "anatomy_lookups": 3
+      }
+    },
+    {
+      "id": "session-2026-03-27-1448",
+      "started": "2026-03-27T09:18:42.508Z",
+      "ended": "2026-03-27T11:19:54.148Z",
       "reads": [
         {
           "file": "/Users/kazam/.claude/projects/-Users-leo-hobby-tab/memory/project_web_platform.md",

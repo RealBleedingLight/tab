@@ -26,6 +26,11 @@
       "count": 1,
       "tokens": 25,
       "first_read": "2026-03-27T11:17:48.646Z"
+    },
+    "/Users/leo/hobby/tab/gp2tab/gp2tab/parser_gp5.py": {
+      "count": 1,
+      "tokens": 1256,
+      "first_read": "2026-03-27T11:25:16.119Z"
     }
   },
   "files_written": [
@@ -34,14 +39,21 @@
       "action": "edit",
       "tokens": 23,
       "at": "2026-03-27T10:55:25.255Z"
+    },
+    {
+      "file": "/Users/leo/hobby/tab/gp2tab/gp2tab/parser_gp5.py",
+      "action": "edit",
+      "tokens": 16,
+      "at": "2026-03-27T11:25:22.712Z"
     }
   ],
   "edit_counts": {
-    "Dockerfile": 1
+    "Dockerfile": 1,
+    "gp2tab/gp2tab/parser_gp5.py": 1
   },
-  "anatomy_hits": 3,
+  "anatomy_hits": 4,
   "anatomy_misses": 1,
   "repeated_reads_warned": 1,
   "cerebrum_warnings": 0,
-  "stop_count": 22
+  "stop_count": 23
 }
