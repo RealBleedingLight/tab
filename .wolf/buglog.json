@@ -228,15 +228,11 @@
     {
       "id": "bug-015",
       "timestamp": "2026-03-27T07:17:38.610Z",
-      "error_message": "Incorrect value in code",
+      "error_message": "API 422: Processing failed: [Errno 2] No such file or directory: 'python'",
       "file": "web/backend/services/processor.py",
-      "root_cause": "Had \"python\"",
-      "fix": "Changed to \"-m\"",
-      "tags": [
-        "auto-detected",
-        "wrong-value",
-        "py"
-      ],
+      "root_cause": "subprocess.run used hardcoded 'python' which doesn't exist on macOS (python3 only). Also fails in venv environments.",
+      "fix": "import sys; use sys.executable instead of 'python' — always points to the running interpreter",
+      "tags": ["subprocess", "python-executable", "upload", "gp2tab"],
       "related_bugs": [],
       "occurrences": 1,
       "last_seen": "2026-03-27T07:17:38.610Z"
