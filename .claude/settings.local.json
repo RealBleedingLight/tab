@@ -121,7 +121,8 @@
       "Bash(docker context:*)",
       "Bash(DOCKER_HOST=unix:///var/run/docker.sock docker build -t guitar-teacher-api /Users/leo/hobby/tab/.worktrees/guitar-teacher-web/ 2>&1)",
       "Bash(cat /Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/frontend/src/app/songs/[id]/page.tsx)",
-      "Bash(/Users/leo/hobby/tab/guitar-teacher/.venv/bin/python -m pytest web/backend/tests/ -q 2>&1)"
+      "Bash(/Users/leo/hobby/tab/guitar-teacher/.venv/bin/python -m pytest web/backend/tests/ -q 2>&1)",
+      "Bash(ls:*)"
     ]
   }
 }
