@@ -24,14 +24,22 @@ export default function SongPage() {
   }, [id, router])
 
   async function toggleComplete(sectionId: string) {
-    const updated = await api.songs.toggleComplete(id, sectionId)
-    setSong(updated)
+    try {
+      const updated = await api.songs.toggleComplete(id, sectionId)
+      setSong(updated)
+    } catch {
+      // section state unchanged — no feedback needed for toggle failure
+    }
   }
 
   async function handleDelete() {
     if (!confirm(`Delete "${song?.title}"?`)) return
-    await api.songs.delete(id)
-    router.push("/")
+    try {
+      await api.songs.delete(id)
+      router.push("/")
+    } catch {
+      alert("Delete failed. Please try again.")
+    }
   }
 
   if (!song) {

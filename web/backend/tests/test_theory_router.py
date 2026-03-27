@@ -56,4 +56,4 @@ def test_get_key():
     assert r.status_code == 200
     data = r.json()
     assert len(data["degrees"]) == 7
-    assert data["degrees"][0]["numeral"] == "I"
+    assert data["degrees"][0]["numeral"] == "i"  # A natural minor: i ii° III iv v VI VII°

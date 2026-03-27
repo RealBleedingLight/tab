@@ -135,7 +135,9 @@ def get_key(root: str, scale_type: str):
 
     degrees = []
     for i, cr in enumerate(chord_results):
-        numeral = _DEGREE_NUMERALS[i] if i < len(_DEGREE_NUMERALS) else str(i + 1)
+        base = _DEGREE_NUMERALS[i] if i < len(_DEGREE_NUMERALS) else str(i + 1)
+        quality_fn = _QUALITY_NUMERAL.get(cr.chord.key, lambda x: x.upper())
+        numeral = quality_fn(base)
 
         chord_name = cr.root + cr.symbol
         degrees.append(KeyDegree(

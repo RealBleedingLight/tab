@@ -43,10 +43,14 @@ def toggle_section_complete(song_id: str, section_id: str, songs_dir: str = SONG
     data = load_song(song_id, songs_dir)
     if data is None:
         return None
+    found = False
     for s in data["sections"]:
         if s["id"] == section_id:
             s["completed"] = not s.get("completed", False)
+            found = True
             break
+    if not found:
+        return None
     data["completed_count"] = sum(1 for s in data["sections"] if s.get("completed"))
     save_song(data, songs_dir)
     return data

@@ -1,0 +1,32 @@
+# Frontend (built separately, deployed to Vercel)
+web/frontend/
+
+# Guitar content files (not needed in Docker image)
+songs/
+concepts/
+inbox/
+docs/
+
+# Development and tooling
+.git/
+.worktrees/
+.wolf/
+.claude/
+scripts/
+*.md
+!web/backend/requirements.txt
+
+# Python caches
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/.pytest_cache/
+**/*.egg-info/
+
+# Node
+**/node_modules/
+
+# Misc
+.env*
+*.swp
+*.swo

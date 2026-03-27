@@ -18,6 +18,7 @@ export function UploadZone({ onUploaded }: Props) {
     setError("")
     try {
       const song = await api.songs.upload(file)
+      if (inputRef.current) inputRef.current.value = ""
       setState("idle")
       onUploaded(song)
     } catch (e: unknown) {

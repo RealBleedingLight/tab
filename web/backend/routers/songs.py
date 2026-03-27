@@ -22,9 +22,11 @@ def get_song(song_id: str):
 
 @router.post("/{song_id}/sections/{section_id}/complete", response_model=SongDetail)
 def toggle_complete(song_id: str, section_id: str):
+    if storage_mod.load_song(song_id, songs_dir=storage_mod.SONGS_DIR) is None:
+        raise HTTPException(404, detail="Song not found")
     result = storage_mod.toggle_section_complete(song_id, section_id, songs_dir=storage_mod.SONGS_DIR)
     if result is None:
-        raise HTTPException(404, detail="Song not found")
+        raise HTTPException(404, detail="Section not found")
     return SongDetail(**result)
 
 
