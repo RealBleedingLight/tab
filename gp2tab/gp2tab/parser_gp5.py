@@ -105,7 +105,7 @@ def _extract_techniques(gp_note) -> list:
             techniques.append(Technique(type="harmonic_pinch"))
     if eff.palmMute:
         techniques.append(Technique(type="palm_mute"))
-    if eff.ghostNote or eff.deadNote:
+    if eff.ghostNote or getattr(eff, 'deadNote', False):
         techniques.append(Technique(type="mute"))
     return techniques
 
