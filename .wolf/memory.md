@@ -177,3 +177,18 @@
 | 16:57 | Session end: 2 writes across 2 files (Dockerfile, parser_gp5.py) | 6 reads | ~1352 tok |
 | 17:00 | Edited gp2tab/gp2tab/parser_gp5.py | 2→3 lines | ~53 |
 | 17:02 | Session end: 3 writes across 2 files (Dockerfile, parser_gp5.py) | 6 reads | ~1427 tok |
+| 17:18 | Session end: 3 writes across 2 files (Dockerfile, parser_gp5.py) | 6 reads | ~1427 tok |
+| 17:29 | Created ../../../kazam/.claude/projects/-Users-leo-hobby-tab/memory/project_web_platform.md | — | ~545 |
+
+## Session: 2026-03-27 (deployment)
+
+| Time | Action | File(s) | Outcome | ~Tokens |
+|------|--------|---------|---------|--------|
+| 16:00 | Installed Railway + Vercel CLIs | — | railway 4.35.0, vercel 50.37.1 | ~50 |
+| 16:10 | Resolved git divergence (rebase + force push) | .wolf/ files | main pushed to origin | ~200 |
+| 16:20 | Fixed Dockerfile PORT hardcode | Dockerfile | Railway healthcheck passes | ~100 |
+| 16:30 | Deployed backend to Railway | — | Live: string-theory-production.up.railway.app | ~150 |
+| 16:35 | Set ALLOWED_ORIGINS on Railway | Railway env var | CORS fixed for Vercel frontend | ~50 |
+| 16:40 | Deployed frontend via Vercel GitHub integration | web/frontend/ | Live: tab-fg52.vercel.app | ~100 |
+| 16:50 | Fixed bug-017: NoteEffect.deadNote missing | gp2tab/parser_gp5.py | gp upload works | ~100 |
+| 16:55 | Fixed bug-018: MeasureHeader.tempo missing | gp2tab/parser_gp5.py | gp upload works for more files | ~100 |

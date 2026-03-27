@@ -1,12 +1,12 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-03-27T11:30:43.502Z
+> Auto-maintained by OpenWolf. Last scanned: 2026-03-27T11:59:44.166Z
 > Files: 745 tracked | Anatomy hits: 0 | Misses: 0
 
 ## ../../../kazam/.claude/projects/-Users-leo-hobby-tab/memory/
 
 - `MEMORY.md` — Memory Index (~182 tok)
-- `project_web_platform.md` — Guitar Teacher Web Platform (~1035 tok)
+- `project_web_platform.md` — Guitar Teacher Web Platform (~511 tok)
 
 ## ./
 

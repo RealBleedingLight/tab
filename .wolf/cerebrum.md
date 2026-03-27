@@ -34,6 +34,8 @@
 - [2026-03-27] **toggle_section_complete must return None on missing section** — original silently no-op'd and saved unchanged data, returning 200. Now returns None → router raises 404.
 - [2026-03-27] **Roman numerals in key endpoint must use _QUALITY_NUMERAL** — was returning all uppercase (I II III...) regardless of chord quality. Fixed to use `cr.chord.key` lookup.
 - [2026-03-27] **File input must reset after upload** — `inputRef.current.value = ""` after success, otherwise same file can't be re-uploaded via click (onChange doesn't fire if value unchanged).
+- [2026-03-27] **Never hardcode Railway port** — use `CMD uvicorn ... --port ${PORT:-8000}` shell form in Dockerfile. JSON array form `["uvicorn", "--port", "8000"]` won't expand env vars and healthcheck will fail.
+- [2026-03-27] **pyguitarpro NoteEffect.deadNote missing** — not present in all file versions. Use `getattr(eff, 'deadNote', False)`. Same pattern for `MeasureHeader.tempo` — use `getattr(measure_header, 'tempo', None)`.
 
 ## Decision Log
 
@@ -45,3 +47,8 @@
 - **Web platform stack summary**: 19 backend tests (pytest), routes: GET/POST /songs, DELETE /songs/{id}, POST /songs/{id}/sections/{sid}/complete, GET /theory/scales|chords|keys. Frontend routes: `/` (home+upload), `/theory` (3 tabs: scales/chords/keys), `/songs/[id]` (section viewer + full tab).
 - **gp2tab integration**: Called as `subprocess.run([sys.executable, "-m", "gp2tab", path, "-o", outdir, "--format", "tab"])`. Produces `tab.txt` in outdir. Then `analyze_file(path)` from `guitar_teacher.core.analyzer` for section/technique analysis.
 - **JSON upload limitation**: When uploading a `.json` file, `full_tab` is empty because `tab.txt` is expected as a sibling file — but upload saves to a temp path. This is a known limitation; app degrades gracefully ("No tab available").
+- **Railway PORT**: Railway injects a `PORT` env var dynamically — never hardcode `--port 8000` in the Dockerfile CMD. Use shell form: `CMD uvicorn web.backend.main:app --host 0.0.0.0 --port ${PORT:-8000}`.
+- **Railway CORS**: `ALLOWED_ORIGINS` defaults to `http://localhost:3000`. Must set `ALLOWED_ORIGINS=http://localhost:3000,https://your-vercel-url.vercel.app` as a Railway env var for the live frontend to reach the backend.
+- **Railway filesystem is ephemeral**: Songs uploaded to `/app/data/songs/` are wiped on every redeploy. To persist, mount a Railway Volume at `/app/data`.
+- **pyguitarpro attribute variance**: Different `.gp` files expose different attributes on `NoteEffect` and `MeasureHeader`. Always use `getattr(obj, 'attr', default)` for optional fields like `deadNote` and `tempo` on measure headers.
+- **Vercel free tier CLI limit**: Free tier caps at 100 CLI deployments/day. If hit, deploy via GitHub integration (Vercel dashboard → Import Git Repo → set root dir to `web/frontend`) — no CLI limit.

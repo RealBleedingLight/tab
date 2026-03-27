@@ -130,7 +130,8 @@
       "Bash(curl:*)",
       "Bash(vercel --yes -e NEXT_PUBLIC_API_URL=https://string-theory-production.up.railway.app)",
       "Bash(railway variables:*)",
-      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(d[-1][''''id''''] if d else ''''bug-000''''\\)\")"
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(d[-1][''''id''''] if d else ''''bug-000''''\\)\")",
+      "Bash(/Users/leo/hobby/tab/.wolf/memory.md:*)"
     ]
   }
 }
