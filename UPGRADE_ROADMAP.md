@@ -1,15 +1,30 @@
 # Guitar Teacher — Upgrade Roadmap
 
-This file tracks planned future upgrades beyond the current CLI + data-file architecture.
+This file tracks planned future upgrades to the Guitar Teacher platform.
 
-## Phase 2: Web UI
+## Current State
 
-- Build a local web frontend (likely Flask or FastAPI + vanilla JS or Svelte)
-- Interactive clickable fretboard — click notes to hear them, highlight scales/chords
-- Visual lesson viewer with progress tracking
-- Chord/scale diagrams rendered as SVG instead of ASCII
-- Side-by-side tab view with analysis annotations
-- Practice session timer with built-in metronome
+The following has been built and deployed as of March 2026:
+
+- **gp2tab** — Guitar Pro file parser, generates ASCII tab and structured analysis data
+- **guitar-teacher CLI** — Local command-line tool for scale/chord/key queries and lesson generation
+- **FastAPI backend** — REST API deployed on Railway, handles GP file processing via gp2tab
+- **Next.js web frontend** — Deployed on Vercel, provides a full web UI with:
+  - Upload queue: upload GP files, process, delete
+  - Dashboard: browse processed songs
+  - Practice page: 4-tab layout (Lesson, Tab, Theory, Breakdown)
+  - GitHub-backed storage for all song data
+
+---
+
+## Phase 2: Web UI — DONE
+
+- FastAPI backend + Next.js frontend web platform
+- Deployed on Railway (backend) and Vercel (frontend)
+- GP file upload, processing pipeline, and GitHub storage
+- Practice page with Lesson, Tab, Theory, and Breakdown tabs
+
+---
 
 ## Phase 3: Plugin Architecture
 

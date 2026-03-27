@@ -1,5 +1,7 @@
 # Guitar Teacher — Full Documentation
 
+> **Note:** A full web platform has been built on top of this CLI tool. It provides a browser-based UI for uploading Guitar Pro files, processing lessons, and practicing — deployed on Railway (backend) and Vercel (frontend). This document covers the underlying CLI tool and engine; for the web platform see the `web/` directory and the FastAPI backend in `api/`.
+
 Guitar Teacher is a local CLI tool that analyzes Guitar Pro files and generates structured lesson plans. It also serves as a music theory reference you can query from the terminal.
 
 ---

@@ -2,14 +2,14 @@
   "version": 1,
   "created_at": "2026-03-26T15:29:14.376Z",
   "lifetime": {
-    "total_tokens_estimated": 402033,
-    "total_reads": 523,
-    "total_writes": 185,
-    "total_sessions": 9,
-    "anatomy_hits": 347,
-    "anatomy_misses": 139,
-    "repeated_reads_blocked": 229,
-    "estimated_savings_vs_bare_cli": 1770963
+    "total_tokens_estimated": 404044,
+    "total_reads": 529,
+    "total_writes": 189,
+    "total_sessions": 11,
+    "anatomy_hits": 351,
+    "anatomy_misses": 140,
+    "repeated_reads_blocked": 232,
+    "estimated_savings_vs_bare_cli": 1774349
   },
   "sessions": [
     {
@@ -4883,6 +4883,79 @@
         "output_tokens_estimated": 92,
         "reads_count": 6,
         "writes_count": 3,
+        "repeated_reads_blocked": 3,
+        "anatomy_lookups": 4
+      }
+    },
+    {
+      "id": "session-2026-03-27-1448",
+      "started": "2026-03-27T09:18:42.508Z",
+      "ended": "2026-03-27T12:01:27.940Z",
+      "reads": [
+        {
+          "file": "/Users/kazam/.claude/projects/-Users-leo-hobby-tab/memory/project_web_platform.md",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/railway.json",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/Dockerfile",
+          "tokens_estimated": 30,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/web/frontend/.env.production.example",
+          "tokens_estimated": 2,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/web/backend/config.py",
+          "tokens_estimated": 25,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/gp2tab/gp2tab/parser_gp5.py",
+          "tokens_estimated": 1278,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/Users/leo/hobby/tab/Dockerfile",
+          "tokens_estimated": 23,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/gp2tab/gp2tab/parser_gp5.py",
+          "tokens_estimated": 16,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/gp2tab/gp2tab/parser_gp5.py",
+          "tokens_estimated": 53,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/kazam/.claude/projects/-Users-leo-hobby-tab/memory/project_web_platform.md",
+          "tokens_estimated": 584,
+          "action": "create"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 1335,
+        "output_tokens_estimated": 676,
+        "reads_count": 6,
+        "writes_count": 4,
         "repeated_reads_blocked": 3,
         "anatomy_lookups": 4
       }

@@ -131,7 +131,13 @@
       "Bash(vercel --yes -e NEXT_PUBLIC_API_URL=https://string-theory-production.up.railway.app)",
       "Bash(railway variables:*)",
       "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(d[-1][''''id''''] if d else ''''bug-000''''\\)\")",
-      "Bash(/Users/leo/hobby/tab/.wolf/memory.md:*)"
+      "Bash(/Users/leo/hobby/tab/.wolf/memory.md:*)",
+      "Bash(mkdir -p /Users/leo/hobby/tab/docs/archive/plans /Users/leo/hobby/tab/docs/archive/specs)",
+      "Bash(mv /Users/leo/hobby/tab/docs/superpowers/plans/2026-03-24-gp2tab-implementation.md /Users/leo/hobby/tab/docs/archive/plans/)",
+      "Bash(mv /Users/leo/hobby/tab/docs/superpowers/plans/2026-03-24-guitar-teacher.md /Users/leo/hobby/tab/docs/archive/plans/)",
+      "Bash(mv /Users/leo/hobby/tab/docs/superpowers/plans/2026-03-25-fastapi-backend.md /Users/leo/hobby/tab/docs/archive/plans/)",
+      "Bash(mv /Users/leo/hobby/tab/docs/superpowers/plans/2026-03-26-nextjs-frontend.md /Users/leo/hobby/tab/docs/archive/plans/)",
+      "Bash(find /Users/leo/hobby/tab/guitar-teacher/guitar_teacher -name *.py -not -path */.venv/* -not -path */__pycache__/*)"
     ]
   }
 }
