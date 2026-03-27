@@ -1,5 +1,6 @@
 import re
 import subprocess
+import sys
 import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
@@ -15,7 +16,7 @@ def make_song_id(title: str, artist: str) -> str:
 def _run_gp2tab(gp_path: str, output_dir: str) -> str:
     """Run gp2tab CLI on a GP file, return tab text content."""
     result = subprocess.run(
-        ["python", "-m", "gp2tab", gp_path, "-o", output_dir, "--format", "tab"],
+        [sys.executable, "-m", "gp2tab", gp_path, "-o", output_dir, "--format", "tab"],
         capture_output=True, text=True,
     )
     if result.returncode != 0:

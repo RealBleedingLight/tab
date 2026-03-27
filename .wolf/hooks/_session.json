@@ -156,6 +156,11 @@
       "count": 5,
       "tokens": 0,
       "first_read": "2026-03-27T06:34:26.726Z"
+    },
+    "/Users/leo/hobby/tab/web/backend/services/processor.py": {
+      "count": 1,
+      "tokens": 0,
+      "first_read": "2026-03-27T07:17:29.258Z"
     }
   },
   "files_written": [
@@ -200,6 +205,18 @@
       "action": "edit",
       "tokens": 26,
       "at": "2026-03-27T06:42:17.289Z"
+    },
+    {
+      "file": "/Users/leo/hobby/tab/web/backend/services/processor.py",
+      "action": "edit",
+      "tokens": 16,
+      "at": "2026-03-27T07:17:33.958Z"
+    },
+    {
+      "file": "/Users/leo/hobby/tab/web/backend/services/processor.py",
+      "action": "edit",
+      "tokens": 25,
+      "at": "2026-03-27T07:17:38.608Z"
     }
   ],
   "edit_counts": {
@@ -209,11 +226,12 @@
     ".worktrees/guitar-teacher-web/web/frontend/src/components/UploadZone.tsx": 1,
     ".worktrees/guitar-teacher-web/web/frontend/src/app/songs/[id]/page.tsx": 1,
     ".worktrees/guitar-teacher-web/.dockerignore": 1,
-    ".worktrees/guitar-teacher-web/web/backend/tests/test_theory_router.py": 1
+    ".worktrees/guitar-teacher-web/web/backend/tests/test_theory_router.py": 1,
+    "web/backend/services/processor.py": 2
   },
   "anatomy_hits": 28,
-  "anatomy_misses": 3,
+  "anatomy_misses": 4,
   "repeated_reads_warned": 23,
   "cerebrum_warnings": 0,
-  "stop_count": 5
+  "stop_count": 6
 }

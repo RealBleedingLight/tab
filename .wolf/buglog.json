@@ -224,6 +224,22 @@
       "related_bugs": [],
       "occurrences": 1,
       "last_seen": "2026-03-27T06:41:48.432Z"
+    },
+    {
+      "id": "bug-015",
+      "timestamp": "2026-03-27T07:17:38.610Z",
+      "error_message": "Incorrect value in code",
+      "file": "web/backend/services/processor.py",
+      "root_cause": "Had \"python\"",
+      "fix": "Changed to \"-m\"",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "py"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-03-27T07:17:38.610Z"
     }
   ]
 }
