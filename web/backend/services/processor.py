@@ -3,21 +3,8 @@ import subprocess
 import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Optional
 
 from guitar_teacher.core.analyzer import analyze_file
-from guitar_teacher.core.theory import TheoryEngine
-from web.backend.config import THEORY_DIR
-
-_engine: Optional[TheoryEngine] = None
-
-
-def _get_engine() -> TheoryEngine:
-    global _engine
-    if _engine is None:
-        _engine = TheoryEngine(THEORY_DIR)
-    return _engine
-
 
 def make_song_id(title: str, artist: str) -> str:
     def slug(s):
