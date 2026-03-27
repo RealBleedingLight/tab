@@ -123,7 +123,8 @@
       "Bash(cat /Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/frontend/src/app/songs/[id]/page.tsx)",
       "Bash(/Users/leo/hobby/tab/guitar-teacher/.venv/bin/python -m pytest web/backend/tests/ -q 2>&1)",
       "Bash(ls:*)",
-      "Bash(find /Users/leo/hobby/tab -name *.json -path */songs/*)"
+      "Bash(find /Users/leo/hobby/tab -name *.json -path */songs/*)",
+      "Bash(railway up:*)"
     ]
   }
 }
