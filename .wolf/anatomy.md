@@ -1,7 +1,7 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-03-26T21:28:09.891Z
-> Files: 697 tracked | Anatomy hits: 0 | Misses: 0
+> Auto-maintained by OpenWolf. Last scanned: 2026-03-27T06:42:17.257Z
+> Files: 728 tracked | Anatomy hits: 0 | Misses: 0
 
 ## ../../../kazam/.claude/projects/-Users-leo-hobby-tab/memory/
 
@@ -48,6 +48,70 @@
 ## .claude/rules/
 
 - `openwolf.md` (~313 tok)
+
+## .worktrees/guitar-teacher-web/
+
+- `.dockerignore` — Frontend (built separately, deployed to Vercel) (~104 tok)
+- `Dockerfile` — Docker container definition (~205 tok)
+- `railway.json` (~67 tok)
+
+## .worktrees/guitar-teacher-web/.wolf/
+
+- `anatomy.md` — anatomy.md (~19338 tok)
+- `cerebrum.md` — Cerebrum (~484 tok)
+- `memory.md` — Memory (~1580 tok)
+
+## .worktrees/guitar-teacher-web/web/backend/
+
+- `config.py` (~113 tok)
+- `main.py` — API: 1 endpoints (~207 tok)
+- `models.py` — Declares SectionSummary (~400 tok)
+- `requirements.txt` — Python dependencies (~28 tok)
+
+## .worktrees/guitar-teacher-web/web/backend/routers/
+
+- `songs.py` — API: 4 endpoints (~425 tok)
+- `theory.py` — API: 5 endpoints (~1364 tok)
+- `upload.py` — API: 1 endpoints (~302 tok)
+
+## .worktrees/guitar-teacher-web/web/backend/services/
+
+- `processor.py` — make_song_id, slug, process_gp_file (~885 tok)
+- `storage.py` — save_song, load_song, list_songs, delete_song (~465 tok)
+
+## .worktrees/guitar-teacher-web/web/backend/tests/
+
+- `test_processor.py` — Path to sample tab.json — lives in the main repo, not the worktree (~374 tok)
+- `test_songs_router.py` — seed, test_list_songs, test_get_song, test_get_missing_song_returns_404 (~690 tok)
+- `test_storage.py` — songs_dir, test_save_and_load_song, test_list_songs, test_delete_song (~608 tok)
+- `test_theory_router.py` — test_list_scales, test_get_scale, test_get_scale_unknown_returns_404, test_list_chords (~435 tok)
+
+## .worktrees/guitar-teacher-web/web/frontend/src/app/
+
+- `layout.tsx` — inter (~347 tok)
+- `page.tsx` — HomePage (~365 tok)
+
+## .worktrees/guitar-teacher-web/web/frontend/src/app/songs/[id]/
+
+- `page.tsx` — SongPage (~1123 tok)
+
+## .worktrees/guitar-teacher-web/web/frontend/src/app/theory/
+
+- `page.tsx` — NOTES (~1920 tok)
+
+## .worktrees/guitar-teacher-web/web/frontend/src/components/
+
+- `FretboardDiagram.tsx` — DISPLAY_ORDER (~785 tok)
+- `SectionContent.tsx` — TECHNIQUE_LABELS (~700 tok)
+- `SectionSidebar.tsx` — diffColor (~469 tok)
+- `SongCard.tsx` — SongCard (~528 tok)
+- `TabViewer.tsx` — TabViewer (~101 tok)
+- `UploadZone.tsx` — UploadZone (~642 tok)
+
+## .worktrees/guitar-teacher-web/web/frontend/src/lib/
+
+- `api.ts` — Exports api (~451 tok)
+- `types.ts` — Exports FretPosition, SectionSummary, SongSummary, SongDetail + 6 more (~387 tok)
 
 ## concepts/
 

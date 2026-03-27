@@ -3,8 +3,6 @@
 > Chronological action log. Hooks and AI append to this file automatically.
 > Old sessions are consolidated by the daemon weekly.
 
-| 03:12 | Task 1: scaffold web/backend (FastAPI + stubs) and web/frontend (Next.js 14 + shadcn) | web/backend/, web/frontend/ | committed c07ac4f | ~2500 |
-
 | 2026-03-26 | batch commit: replaced per-file GitHub writes with Git Trees API (commit_files_batch) | github_client.py, queue.py | single commit for all lesson files | ~300 tok |
 | 2026-03-26 | delete song: added delete_directory + DELETE /songs/{artist}/{song} endpoint + UI delete button | github_client.py, songs.py, page.tsx, api.ts | songs can now be deleted from dashboard | ~200 tok |
 | 2026-03-26 | fix blank practice page: handle old context format, graceful no-lesson state | practice/page.tsx, page.tsx | shows helpful message instead of blank/error | ~150 tok |
@@ -79,5 +77,64 @@
 |------|--------|---------|---------|--------|
 | 02:58 | Created docs/superpowers/plans/2026-03-27-guitar-teacher-web.md | — | ~16871 |
 | 02:58 | Session end: 1 writes across 1 files (2026-03-27-guitar-teacher-web.md) | 7 reads | ~23998 tok |
-| 22:45 | Task 6: created types.ts, api.ts, updated layout.tsx, env files | web/frontend/src/lib/, web/frontend/src/app/layout.tsx | build clean, committed | ~800 |
-| 11:48 | Task 10: created Dockerfile (web.backend.main:app), railway.json, .env.production.example; Docker daemon unavailable so build untested | Dockerfile, railway.json, web/frontend/.env.production.example | committed feat: Docker and Railway/Vercel deployment config | ~400 |
+| 02:59 | Session end: 1 writes across 1 files (2026-03-27-guitar-teacher-web.md) | 7 reads | ~23998 tok |
+| 03:04 | Created .worktrees/guitar-teacher-web/web/backend/requirements.txt | — | ~30 |
+| 03:04 | Created .worktrees/guitar-teacher-web/web/backend/config.py | — | ~113 |
+| 03:04 | Created .worktrees/guitar-teacher-web/web/backend/main.py | — | ~207 |
+| 03:04 | Created .worktrees/guitar-teacher-web/web/backend/routers/theory.py | — | ~15 |
+| 03:04 | Created .worktrees/guitar-teacher-web/web/backend/routers/songs.py | — | ~15 |
+| 03:04 | Created .worktrees/guitar-teacher-web/web/backend/routers/upload.py | — | ~15 |
+| 03:09 | Created .worktrees/guitar-teacher-web/web/backend/requirements.txt | — | ~30 |
+| 03:12 | Edited .worktrees/guitar-teacher-web/.wolf/memory.md | 1→3 lines | ~56 |
+| 03:12 | Edited .worktrees/guitar-teacher-web/.wolf/anatomy.md | expanded (+21 lines) | ~245 |
+| 03:12 | Edited .worktrees/guitar-teacher-web/.wolf/cerebrum.md | 1→5 lines | ~148 |
+| 03:16 | Edited .worktrees/guitar-teacher-web/web/frontend/src/app/layout.tsx | 4→4 lines | ~33 |
+| 03:16 | Created .worktrees/guitar-teacher-web/web/frontend/src/app/page.tsx | — | ~64 |
+| 03:17 | Created .worktrees/guitar-teacher-web/web/backend/models.py | — | ~400 |
+| 03:18 | Created .worktrees/guitar-teacher-web/web/backend/tests/test_storage.py | — | ~608 |
+| 05:06 | Created .worktrees/guitar-teacher-web/web/backend/services/storage.py | — | ~423 |
+| 05:09 | Edited .worktrees/guitar-teacher-web/web/backend/services/storage.py | modified list_songs() | ~92 |
+| 05:10 | Created .worktrees/guitar-teacher-web/web/backend/tests/test_theory_router.py | — | ~423 |
+| 05:16 | Created .worktrees/guitar-teacher-web/web/backend/routers/theory.py | — | ~1396 |
+| 05:16 | Edited .worktrees/guitar-teacher-web/web/backend/routers/theory.py | modified enumerate() | ~41 |
+| 05:22 | Edited .worktrees/guitar-teacher-web/web/backend/routers/theory.py | 1→3 lines | ~31 |
+| 05:22 | Edited .worktrees/guitar-teacher-web/web/backend/routers/theory.py | modified get_chord() | ~38 |
+| 05:22 | Edited .worktrees/guitar-teacher-web/web/backend/routers/theory.py | modified get_key() | ~76 |
+| 05:24 | Created .worktrees/guitar-teacher-web/web/backend/tests/test_processor.py | — | ~306 |
+| 05:32 | Created .worktrees/guitar-teacher-web/web/backend/services/processor.py | — | ~972 |
+| 05:32 | Created .worktrees/guitar-teacher-web/web/backend/routers/upload.py | — | ~302 |
+| 06:08 | Edited .worktrees/guitar-teacher-web/web/backend/tests/test_processor.py | 2→5 lines | ~110 |
+| 06:28 | Edited .worktrees/guitar-teacher-web/web/backend/services/processor.py | removed 15 lines | ~16 |
+| 06:28 | Edited .worktrees/guitar-teacher-web/web/backend/services/processor.py | removed 3 lines | ~1 |
+| 10:18 | Created .worktrees/guitar-teacher-web/web/backend/tests/test_songs_router.py | — | ~690 |
+| 10:32 | Created .worktrees/guitar-teacher-web/web/backend/routers/songs.py | — | ~384 |
+| 10:34 | Created .worktrees/guitar-teacher-web/web/frontend/src/lib/types.ts | — | ~387 |
+| 10:35 | Created .worktrees/guitar-teacher-web/web/frontend/src/lib/api.ts | — | ~456 |
+| 10:35 | Created .worktrees/guitar-teacher-web/web/frontend/src/app/layout.tsx | — | ~347 |
+| 11:29 | Created .worktrees/guitar-teacher-web/web/frontend/src/lib/api.ts | — | ~451 |
+| 11:36 | Created .worktrees/guitar-teacher-web/web/frontend/src/components/FretboardDiagram.tsx | — | ~785 |
+| 11:36 | Created .worktrees/guitar-teacher-web/web/frontend/src/app/theory/page.tsx | — | ~1920 |
+| 11:40 | Created .worktrees/guitar-teacher-web/web/frontend/src/components/UploadZone.tsx | — | ~626 |
+| 11:40 | Created .worktrees/guitar-teacher-web/web/frontend/src/components/SongCard.tsx | — | ~528 |
+| 11:40 | Created .worktrees/guitar-teacher-web/web/frontend/src/app/page.tsx | — | ~365 |
+| 11:43 | Created .worktrees/guitar-teacher-web/web/frontend/src/components/TabViewer.tsx | — | ~101 |
+| 11:43 | Created .worktrees/guitar-teacher-web/web/frontend/src/components/SectionSidebar.tsx | — | ~469 |
+| 11:43 | Created .worktrees/guitar-teacher-web/web/frontend/src/components/SectionContent.tsx | — | ~700 |
+| 11:44 | Created .worktrees/guitar-teacher-web/web/frontend/src/app/songs/[id]/page.tsx | — | ~1069 |
+| 11:46 | Created .worktrees/guitar-teacher-web/Dockerfile | — | ~205 |
+| 11:46 | Created .worktrees/guitar-teacher-web/railway.json | — | ~67 |
+| 11:47 | Edited .worktrees/guitar-teacher-web/.wolf/anatomy.md | 1→2 lines | ~68 |
+| 11:47 | Edited .worktrees/guitar-teacher-web/.wolf/anatomy.md | 1→2 lines | ~47 |
+
+## Session: 2026-03-27 11:51
+
+| Time | Action | File(s) | Outcome | ~Tokens |
+|------|--------|---------|---------|--------|
+| 12:11 | Edited .worktrees/guitar-teacher-web/web/backend/services/storage.py | modified toggle_section_complete() | ~155 |
+| 12:11 | Edited .worktrees/guitar-teacher-web/web/backend/routers/songs.py | modified toggle_complete() | ~141 |
+| 12:11 | Edited .worktrees/guitar-teacher-web/web/backend/routers/theory.py | modified enumerate() | ~123 |
+| 12:11 | Edited .worktrees/guitar-teacher-web/web/frontend/src/components/UploadZone.tsx | added 1 condition(s) | ~43 |
+| 12:11 | Edited .worktrees/guitar-teacher-web/web/frontend/src/app/songs/[id]/page.tsx | added error handling | ~136 |
+| 12:11 | Created .worktrees/guitar-teacher-web/.dockerignore | — | ~104 |
+| 12:12 | Edited .worktrees/guitar-teacher-web/web/backend/tests/test_theory_router.py | inline fix | ~26 |
+| 12:12 | Session end: 7 writes across 7 files (storage.py, songs.py, theory.py, UploadZone.tsx, page.tsx) | 31 reads | ~30663 tok |

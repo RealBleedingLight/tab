@@ -98,7 +98,30 @@
       "Bash(git stash:*)",
       "Bash(git pull:*)",
       "Bash(gh api:*)",
-      "Bash(git rm:*)"
+      "Bash(git rm:*)",
+      "Bash(git check-ignore:*)",
+      "Bash(git worktree:*)",
+      "Bash(source /Users/leo/hobby/tab/guitar-teacher/.venv/bin/activate)",
+      "Bash(python -c \"import guitar_teacher; print\\(''guitar_teacher ok''\\)\")",
+      "Bash(python -c \"import gp2tab; print\\(''gp2tab ok''\\)\")",
+      "Bash(python -m pytest tests/ -q --tb=no)",
+      "Bash(pip show:*)",
+      "Bash(git restore:*)",
+      "Bash(git:*)",
+      "Bash(python -m pytest web/backend/tests/test_storage.py -v)",
+      "Bash(python -m pytest web/backend/tests/test_theory_router.py -v)",
+      "Bash(find /Users/leo/hobby/tab -name theory.py -path */core/*)",
+      "Bash(python -m pytest web/backend/tests/test_processor.py -v)",
+      "Bash(python -m pytest web/backend/tests/ -v)",
+      "Bash(python -m pytest web/backend/tests/test_songs_router.py -v)",
+      "Bash(/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/.wolf/memory.md:*)",
+      "Bash(/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/.wolf/cerebrum.md:*)",
+      "Bash(ls /Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/frontend/.env*)",
+      "Bash(docker build:*)",
+      "Bash(docker context:*)",
+      "Bash(DOCKER_HOST=unix:///var/run/docker.sock docker build -t guitar-teacher-api /Users/leo/hobby/tab/.worktrees/guitar-teacher-web/ 2>&1)",
+      "Bash(cat /Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/frontend/src/app/songs/[id]/page.tsx)",
+      "Bash(/Users/leo/hobby/tab/guitar-teacher/.venv/bin/python -m pytest web/backend/tests/ -q 2>&1)"
     ]
   }
 }
