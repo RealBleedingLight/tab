@@ -2,14 +2,14 @@
   "version": 1,
   "created_at": "2026-03-26T15:29:14.376Z",
   "lifetime": {
-    "total_tokens_estimated": 397612,
-    "total_reads": 491,
-    "total_writes": 174,
+    "total_tokens_estimated": 397667,
+    "total_reads": 495,
+    "total_writes": 175,
     "total_sessions": 9,
-    "anatomy_hits": 327,
-    "anatomy_misses": 133,
-    "repeated_reads_blocked": 219,
-    "estimated_savings_vs_bare_cli": 1761671
+    "anatomy_hits": 329,
+    "anatomy_misses": 134,
+    "repeated_reads_blocked": 220,
+    "estimated_savings_vs_bare_cli": 1762101
   },
   "sessions": [
     {
@@ -4496,6 +4496,52 @@
       "id": "session-2026-03-27-1448",
       "started": "2026-03-27T09:18:42.508Z",
       "ended": "2026-03-27T11:09:24.686Z",
+      "reads": [
+        {
+          "file": "/Users/kazam/.claude/projects/-Users-leo-hobby-tab/memory/project_web_platform.md",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/railway.json",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/Dockerfile",
+          "tokens_estimated": 30,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/web/frontend/.env.production.example",
+          "tokens_estimated": 2,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/Users/leo/hobby/tab/Dockerfile",
+          "tokens_estimated": 23,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 32,
+        "output_tokens_estimated": 23,
+        "reads_count": 4,
+        "writes_count": 1,
+        "repeated_reads_blocked": 1,
+        "anatomy_lookups": 2
+      }
+    },
+    {
+      "id": "session-2026-03-27-1448",
+      "started": "2026-03-27T09:18:42.508Z",
+      "ended": "2026-03-27T11:17:00.378Z",
       "reads": [
         {
           "file": "/Users/kazam/.claude/projects/-Users-leo-hobby-tab/memory/project_web_platform.md",
