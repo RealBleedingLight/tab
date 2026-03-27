@@ -1,6 +1,6 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-03-27T11:25:22.687Z
+> Auto-maintained by OpenWolf. Last scanned: 2026-03-27T11:30:43.502Z
 > Files: 745 tracked | Anatomy hits: 0 | Misses: 0
 
 ## ../../../kazam/.claude/projects/-Users-leo-hobby-tab/memory/
@@ -216,7 +216,7 @@
 - `formatter_tab.py` — Format Song model as ASCII tab. (~2105 tok)
 - `models.py` — Data models for gp2tab. (~346 tok)
 - `parser_gp_xml.py` — Parser for GP6/7/8 files (ZIP containing Content/score.gpif XML). (~3888 tok)
-- `parser_gp5.py` — Parser for GP3/4/5 files using pyguitarpro library. (~1262 tok)
+- `parser_gp5.py` — Parser for GP3/4/5 files using pyguitarpro library. (~1278 tok)
 - `parser.py` — Format-detecting parser dispatcher. (~251 tok)
 - `utils.py` — Shared utilities for gp2tab. (~265 tok)
 
