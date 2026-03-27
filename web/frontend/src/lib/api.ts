@@ -1,3 +1,13 @@
+import type {
+  SongSummary,
+  SongDetail,
+  ScaleListItem,
+  ScaleResponse,
+  ChordTypeItem,
+  ChordResponse,
+  KeyResponse,
+} from "./types"
+
 const BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000"
 
 async function request<T>(path: string, options?: RequestInit): Promise<T> {
@@ -13,32 +23,32 @@ async function request<T>(path: string, options?: RequestInit): Promise<T> {
 export const api = {
   songs: {
     list: () =>
-      request<import("./types").SongSummary[]>("/songs"),
+      request<SongSummary[]>("/songs"),
     get: (id: string) =>
-      request<import("./types").SongDetail>(`/songs/${id}`),
+      request<SongDetail>(`/songs/${id}`),
     delete: (id: string) =>
       request<void>(`/songs/${id}`, { method: "DELETE" }),
     toggleComplete: (songId: string, sectionId: string) =>
-      request<import("./types").SongDetail>(
+      request<SongDetail>(
         `/songs/${songId}/sections/${sectionId}/complete`,
         { method: "POST" }
       ),
     upload: (file: File) => {
       const form = new FormData()
       form.append("file", file)
-      return request<import("./types").SongSummary>("/upload", { method: "POST", body: form })
+      return request<SongSummary>("/upload", { method: "POST", body: form })
     },
   },
   theory: {
     scales: () =>
-      request<import("./types").ScaleListItem[]>("/theory/scales"),
+      request<ScaleListItem[]>("/theory/scales"),
     scale: (root: string, type: string) =>
-      request<import("./types").ScaleResponse>(`/theory/scale/${root}/${type}`),
+      request<ScaleResponse>(`/theory/scale/${root}/${type}`),
     chords: () =>
-      request<import("./types").ChordTypeItem[]>("/theory/chords"),
+      request<ChordTypeItem[]>("/theory/chords"),
     chord: (name: string) =>
-      request<import("./types").ChordResponse>(`/theory/chord/${name}`),
+      request<ChordResponse>(`/theory/chord/${name}`),
     key: (root: string, type: string) =>
-      request<import("./types").KeyResponse>(`/theory/key/${root}/${type}`),
+      request<KeyResponse>(`/theory/key/${root}/${type}`),
   },
 }
