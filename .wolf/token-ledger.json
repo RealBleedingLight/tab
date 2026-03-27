@@ -2,14 +2,14 @@
   "version": 1,
   "created_at": "2026-03-26T15:29:14.376Z",
   "lifetime": {
-    "total_tokens_estimated": 123703,
-    "total_reads": 144,
-    "total_writes": 107,
+    "total_tokens_estimated": 81939,
+    "total_reads": 128,
+    "total_writes": 106,
     "total_sessions": 5,
-    "anatomy_hits": 61,
-    "anatomy_misses": 73,
-    "repeated_reads_blocked": 27,
-    "estimated_savings_vs_bare_cli": 29301
+    "anatomy_hits": 53,
+    "anatomy_misses": 66,
+    "repeated_reads_blocked": 22,
+    "estimated_savings_vs_bare_cli": 27701
   },
   "sessions": [
     {
@@ -1444,172 +1444,6 @@
         "writes_count": 16,
         "repeated_reads_blocked": 4,
         "anatomy_lookups": 4
-      }
-    },
-    {
-      "id": "session-2026-03-26-0233",
-      "started": "2026-03-26T21:03:10.911Z",
-      "ended": "2026-03-26T21:06:49.263Z",
-      "reads": [
-        {
-          "file": "/Users/leo/hobby/tab/guitar-teacher/README.md",
-          "tokens_estimated": 831,
-          "was_repeated": false,
-          "anatomy_had_description": false
-        },
-        {
-          "file": "/Users/leo/hobby/tab/guitar-teacher/DOCS.md",
-          "tokens_estimated": 5091,
-          "was_repeated": false,
-          "anatomy_had_description": false
-        },
-        {
-          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/app.py",
-          "tokens_estimated": 0,
-          "was_repeated": false,
-          "anatomy_had_description": false
-        }
-      ],
-      "writes": [],
-      "totals": {
-        "input_tokens_estimated": 5922,
-        "output_tokens_estimated": 0,
-        "reads_count": 3,
-        "writes_count": 0,
-        "repeated_reads_blocked": 0,
-        "anatomy_lookups": 2
-      }
-    },
-    {
-      "id": "session-2026-03-26-0233",
-      "started": "2026-03-26T21:03:10.911Z",
-      "ended": "2026-03-26T21:13:02.607Z",
-      "reads": [
-        {
-          "file": "/Users/leo/hobby/tab/guitar-teacher/README.md",
-          "tokens_estimated": 831,
-          "was_repeated": false,
-          "anatomy_had_description": false
-        },
-        {
-          "file": "/Users/leo/hobby/tab/guitar-teacher/DOCS.md",
-          "tokens_estimated": 5091,
-          "was_repeated": false,
-          "anatomy_had_description": false
-        },
-        {
-          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/app.py",
-          "tokens_estimated": 0,
-          "was_repeated": false,
-          "anatomy_had_description": false
-        }
-      ],
-      "writes": [],
-      "totals": {
-        "input_tokens_estimated": 5922,
-        "output_tokens_estimated": 0,
-        "reads_count": 3,
-        "writes_count": 0,
-        "repeated_reads_blocked": 0,
-        "anatomy_lookups": 2
-      }
-    },
-    {
-      "id": "session-2026-03-26-0233",
-      "started": "2026-03-26T21:03:10.911Z",
-      "ended": "2026-03-26T21:15:29.008Z",
-      "reads": [
-        {
-          "file": "/Users/leo/hobby/tab/guitar-teacher/README.md",
-          "tokens_estimated": 831,
-          "was_repeated": false,
-          "anatomy_had_description": false
-        },
-        {
-          "file": "/Users/leo/hobby/tab/guitar-teacher/DOCS.md",
-          "tokens_estimated": 5091,
-          "was_repeated": false,
-          "anatomy_had_description": false
-        },
-        {
-          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/app.py",
-          "tokens_estimated": 0,
-          "was_repeated": false,
-          "anatomy_had_description": false
-        }
-      ],
-      "writes": [],
-      "totals": {
-        "input_tokens_estimated": 5922,
-        "output_tokens_estimated": 0,
-        "reads_count": 3,
-        "writes_count": 0,
-        "repeated_reads_blocked": 0,
-        "anatomy_lookups": 2
-      }
-    },
-    {
-      "id": "session-2026-03-26-0233",
-      "started": "2026-03-26T21:03:10.911Z",
-      "ended": "2026-03-26T21:28:20.577Z",
-      "reads": [
-        {
-          "file": "/Users/leo/hobby/tab/guitar-teacher/README.md",
-          "tokens_estimated": 831,
-          "was_repeated": false,
-          "anatomy_had_description": false
-        },
-        {
-          "file": "/Users/leo/hobby/tab/guitar-teacher/DOCS.md",
-          "tokens_estimated": 5091,
-          "was_repeated": false,
-          "anatomy_had_description": false
-        },
-        {
-          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/api/app.py",
-          "tokens_estimated": 0,
-          "was_repeated": false,
-          "anatomy_had_description": false
-        },
-        {
-          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/core/theory.py",
-          "tokens_estimated": 0,
-          "was_repeated": true,
-          "anatomy_had_description": false
-        },
-        {
-          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/core/models.py",
-          "tokens_estimated": 0,
-          "was_repeated": true,
-          "anatomy_had_description": false
-        },
-        {
-          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/core/analyzer.py",
-          "tokens_estimated": 0,
-          "was_repeated": false,
-          "anatomy_had_description": false
-        },
-        {
-          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/config.py",
-          "tokens_estimated": 0,
-          "was_repeated": false,
-          "anatomy_had_description": false
-        }
-      ],
-      "writes": [
-        {
-          "file": "/Users/leo/hobby/tab/docs/superpowers/plans/2026-03-27-guitar-teacher-web.md",
-          "tokens_estimated": 18076,
-          "action": "create"
-        }
-      ],
-      "totals": {
-        "input_tokens_estimated": 5922,
-        "output_tokens_estimated": 18076,
-        "reads_count": 7,
-        "writes_count": 1,
-        "repeated_reads_blocked": 5,
-        "anatomy_lookups": 2
       }
     }
   ],

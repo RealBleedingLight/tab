@@ -1,7 +1,7 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-03-26T21:28:09.891Z
-> Files: 697 tracked | Anatomy hits: 0 | Misses: 0
+> Auto-maintained by OpenWolf. Last scanned: 2026-03-26T16:57:46.028Z
+> Files: 696 tracked | Anatomy hits: 0 | Misses: 0
 
 ## ../../../kazam/.claude/projects/-Users-leo-hobby-tab/memory/
 
@@ -36,7 +36,6 @@
 - `2026-03-24-guitar-teacher.md` — Guitar Teacher Implementation Plan (~17339 tok)
 - `2026-03-25-fastapi-backend.md` — FastAPI Backend Implementation Plan (~15320 tok)
 - `2026-03-26-nextjs-frontend.md` — Next.js Frontend Implementation Plan (~16212 tok)
-- `2026-03-27-guitar-teacher-web.md` — Guitar Teacher Web Implementation Plan (~15816 tok)
 
 ## docs/superpowers/specs/
 
