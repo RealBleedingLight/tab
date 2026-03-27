@@ -3,6 +3,8 @@
 > Chronological action log. Hooks and AI append to this file automatically.
 > Old sessions are consolidated by the daemon weekly.
 
+| 03:12 | Task 1: scaffold web/backend (FastAPI + stubs) and web/frontend (Next.js 14 + shadcn) | web/backend/, web/frontend/ | committed c07ac4f | ~2500 |
+
 | 2026-03-26 | batch commit: replaced per-file GitHub writes with Git Trees API (commit_files_batch) | github_client.py, queue.py | single commit for all lesson files | ~300 tok |
 | 2026-03-26 | delete song: added delete_directory + DELETE /songs/{artist}/{song} endpoint + UI delete button | github_client.py, songs.py, page.tsx, api.ts | songs can now be deleted from dashboard | ~200 tok |
 | 2026-03-26 | fix blank practice page: handle old context format, graceful no-lesson state | practice/page.tsx, page.tsx | shows helpful message instead of blank/error | ~150 tok |
@@ -77,3 +79,5 @@
 |------|--------|---------|---------|--------|
 | 02:58 | Created docs/superpowers/plans/2026-03-27-guitar-teacher-web.md | — | ~16871 |
 | 02:58 | Session end: 1 writes across 1 files (2026-03-27-guitar-teacher-web.md) | 7 reads | ~23998 tok |
+| 22:45 | Task 6: created types.ts, api.ts, updated layout.tsx, env files | web/frontend/src/lib/, web/frontend/src/app/layout.tsx | build clean, committed | ~800 |
+| 11:48 | Task 10: created Dockerfile (web.backend.main:app), railway.json, .env.production.example; Docker daemon unavailable so build untested | Dockerfile, railway.json, web/frontend/.env.production.example | committed feat: Docker and Railway/Vercel deployment config | ~400 |

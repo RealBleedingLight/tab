@@ -10,7 +10,16 @@ guitar_teacher.egg-info/entry_points.txt
 guitar_teacher.egg-info/requires.txt
 guitar_teacher.egg-info/top_level.txt
 guitar_teacher/api/__init__.py
+guitar_teacher/api/app.py
+guitar_teacher/api/auth.py
+guitar_teacher/api/deps.py
+guitar_teacher/api/github_client.py
+guitar_teacher/api/jobs.py
 guitar_teacher/api/routers/__init__.py
+guitar_teacher/api/routers/analysis.py
+guitar_teacher/api/routers/queue.py
+guitar_teacher/api/routers/songs.py
+guitar_teacher/api/routers/theory.py
 guitar_teacher/core/__init__.py
 guitar_teacher/core/analyzer.py
 guitar_teacher/core/fretboard.py

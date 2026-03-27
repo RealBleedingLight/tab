@@ -8,12 +8,35 @@
 - `MEMORY.md` — Memory Index (~182 tok)
 - `project_web_platform.md` — Architecture (~977 tok)
 
+## web/backend/
+
+- `__init__.py` — empty package marker (~1 tok)
+- `config.py` — DATA_DIR, SONGS_DIR, ALLOWED_ORIGINS, THEORY_DIR from env/guitar_teacher (~25 tok)
+- `main.py` — FastAPI app factory with CORS, health endpoint, routers mounted (~30 tok)
+- `requirements.txt` — fastapi, uvicorn, pydantic, pytest, httpx, python-multipart (~10 tok)
+
+## web/backend/routers/
+
+- `theory.py` — stub: `router = APIRouter()` (~5 tok)
+- `songs.py` — stub: `router = APIRouter()` (~5 tok)
+- `upload.py` — stub: `router = APIRouter()` (~5 tok)
+
+## web/frontend/
+
+- `.env.production.example` — documents NEXT_PUBLIC_API_URL for Railway deployment (~2 tok)
+- `package.json` — Next.js 14 App Router, TypeScript, Tailwind, shadcn/ui (~50 tok)
+- `src/app/layout.tsx` — root layout (~30 tok)
+- `src/app/page.tsx` — default home page (~20 tok)
+- `src/components/ui/` — shadcn components: button, card, badge, tabs, separator, scroll-area (~200 tok)
+- `src/lib/utils.ts` — cn() utility (~10 tok)
+
 ## ./
 
 - `.DS_Store` (~1640 tok)
 - `.gitignore` — Git ignore rules (~8 tok)
 - `CLAUDE.md` — OpenWolf (~2397 tok)
-- `Dockerfile` — Docker container definition (~108 tok)
+- `Dockerfile` — python:3.11-slim; installs gp2tab+guitar-teacher editable, backend deps, runs web.backend.main:app on port 8000 (~30 tok)
+- `railway.json` — Railway deployment config: DOCKERFILE builder, /health healthcheck, ON_FAILURE restart (~10 tok)
 - `INDEX.md` — Guitar Tab Workspace (~465 tok)
 - `UPGRADE_ROADMAP.md` — Guitar Teacher — Upgrade Roadmap (~477 tok)
 
