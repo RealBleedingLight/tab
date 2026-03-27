@@ -67,8 +67,9 @@ def parse_gp5(filepath: str, track_index: int = 0) -> Song:
 
         all_notes.sort(key=lambda n: (n.beat, n.string))
         tempo_change = None
-        if measure_header.tempo and measure_header.tempo.value != tempo:
-            tempo_change = measure_header.tempo.value
+        mh_tempo = getattr(measure_header, 'tempo', None)
+        if mh_tempo and getattr(mh_tempo, 'value', None) and mh_tempo.value != tempo:
+            tempo_change = mh_tempo.value
 
         bars.append(Bar(
             number=bar_num,
