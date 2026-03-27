@@ -124,7 +124,11 @@
       "Bash(/Users/leo/hobby/tab/guitar-teacher/.venv/bin/python -m pytest web/backend/tests/ -q 2>&1)",
       "Bash(ls:*)",
       "Bash(find /Users/leo/hobby/tab -name *.json -path */songs/*)",
-      "Bash(railway up:*)"
+      "Bash(railway up:*)",
+      "Bash(railway logs:*)",
+      "Bash(railway domain:*)",
+      "Bash(curl:*)",
+      "Bash(vercel --yes -e NEXT_PUBLIC_API_URL=https://string-theory-production.up.railway.app)"
     ]
   }
 }
