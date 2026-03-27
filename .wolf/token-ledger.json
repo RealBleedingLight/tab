@@ -2,14 +2,14 @@
   "version": 1,
   "created_at": "2026-03-26T15:29:14.376Z",
   "lifetime": {
-    "total_tokens_estimated": 410930,
-    "total_reads": 532,
-    "total_writes": 191,
+    "total_tokens_estimated": 417816,
+    "total_reads": 535,
+    "total_writes": 193,
     "total_sessions": 11,
-    "anatomy_hits": 354,
+    "anatomy_hits": 357,
     "anatomy_misses": 140,
-    "repeated_reads_blocked": 233,
-    "estimated_savings_vs_bare_cli": 1775426
+    "repeated_reads_blocked": 234,
+    "estimated_savings_vs_bare_cli": 1776503
   },
   "sessions": [
     {
@@ -4964,6 +4964,51 @@
       "id": "session-2026-03-27-1751",
       "started": "2026-03-27T12:21:58.814Z",
       "ended": "2026-03-27T12:42:43.185Z",
+      "reads": [
+        {
+          "file": "/Users/leo/hobby/tab/UPGRADE_ROADMAP.md",
+          "tokens_estimated": 477,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/INDEX.md",
+          "tokens_estimated": 465,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/DOCS.md",
+          "tokens_estimated": 5091,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/Users/leo/hobby/tab/UPGRADE_ROADMAP.md",
+          "tokens_estimated": 686,
+          "action": "create"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/DOCS.md",
+          "tokens_estimated": 167,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 6033,
+        "output_tokens_estimated": 853,
+        "reads_count": 3,
+        "writes_count": 2,
+        "repeated_reads_blocked": 1,
+        "anatomy_lookups": 3
+      }
+    },
+    {
+      "id": "session-2026-03-27-1751",
+      "started": "2026-03-27T12:21:58.814Z",
+      "ended": "2026-03-27T12:44:03.477Z",
       "reads": [
         {
           "file": "/Users/leo/hobby/tab/UPGRADE_ROADMAP.md",
