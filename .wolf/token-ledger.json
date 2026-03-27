@@ -2,14 +2,14 @@
   "version": 1,
   "created_at": "2026-03-26T15:29:14.376Z",
   "lifetime": {
-    "total_tokens_estimated": 397255,
-    "total_reads": 455,
+    "total_tokens_estimated": 397287,
+    "total_reads": 459,
     "total_writes": 171,
     "total_sessions": 9,
-    "anatomy_hits": 309,
-    "anatomy_misses": 124,
+    "anatomy_hits": 311,
+    "anatomy_misses": 125,
     "repeated_reads_blocked": 216,
-    "estimated_savings_vs_bare_cli": 1757981
+    "estimated_savings_vs_bare_cli": 1758381
   },
   "sessions": [
     {
@@ -4124,6 +4124,46 @@
       "id": "session-2026-03-27-1448",
       "started": "2026-03-27T09:18:42.508Z",
       "ended": "2026-03-27T10:40:55.661Z",
+      "reads": [
+        {
+          "file": "/Users/kazam/.claude/projects/-Users-leo-hobby-tab/memory/project_web_platform.md",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/railway.json",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/Dockerfile",
+          "tokens_estimated": 30,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/web/frontend/.env.production.example",
+          "tokens_estimated": 2,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [],
+      "totals": {
+        "input_tokens_estimated": 32,
+        "output_tokens_estimated": 0,
+        "reads_count": 4,
+        "writes_count": 0,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 2
+      }
+    },
+    {
+      "id": "session-2026-03-27-1448",
+      "started": "2026-03-27T09:18:42.508Z",
+      "ended": "2026-03-27T10:42:25.043Z",
       "reads": [
         {
           "file": "/Users/kazam/.claude/projects/-Users-leo-hobby-tab/memory/project_web_platform.md",
