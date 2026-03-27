@@ -39,3 +39,4 @@
 | — | Archived completed plan + spec files | docs/archive/plans/, docs/archive/specs/ | 5 plans + 3 specs moved | ~200 |
 | — | Updated UPGRADE_ROADMAP.md (Phase 2 done) + added web platform note to DOCS.md | UPGRADE_ROADMAP.md, guitar-teacher/DOCS.md | current state reflected | ~300 |
 | — | Consolidated duplicate session-end entries in memory.md | .wolf/memory.md | cleaner log | ~100 |
+| 18:12 | Session end: 2 writes across 2 files (UPGRADE_ROADMAP.md, DOCS.md) | 3 reads | ~6886 tok |
