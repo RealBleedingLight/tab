@@ -1,7 +1,7 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-03-27T07:25:29.254Z
-> Files: 743 tracked | Anatomy hits: 0 | Misses: 0
+> Auto-maintained by OpenWolf. Last scanned: 2026-03-27T07:52:43.059Z
+> Files: 745 tracked | Anatomy hits: 0 | Misses: 0
 
 ## ../../../kazam/.claude/projects/-Users-leo-hobby-tab/memory/
 
@@ -991,3 +991,11 @@
 - `src/app/page.tsx` — default home page (~20 tok)
 - `src/components/ui/` — shadcn components: button, card, badge, tabs, separator, scroll-area (~200 tok)
 - `src/lib/utils.ts` — cn() utility (~10 tok)
+
+## web/frontend/src/app/songs/[id]/
+
+- `page.tsx` — SongPage (~1130 tok)
+
+## web/frontend/src/components/
+
+- `SectionContent.tsx` — Parse "E minor pentatonic" → { root: "E", scaleType: "minor_pentatonic" } (~1702 tok)

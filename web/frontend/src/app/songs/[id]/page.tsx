@@ -108,7 +108,7 @@ export default function SongPage() {
 
           <div>
             {selectedSection
-              ? <SectionContent section={selectedSection} />
+              ? <SectionContent section={selectedSection} fullTab={song.full_tab} />
               : <p className="text-zinc-500">Select a section to begin.</p>
             }
           </div>

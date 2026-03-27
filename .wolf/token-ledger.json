@@ -2,14 +2,14 @@
   "version": 1,
   "created_at": "2026-03-26T15:29:14.376Z",
   "lifetime": {
-    "total_tokens_estimated": 394270,
-    "total_reads": 402,
-    "total_writes": 169,
-    "total_sessions": 8,
-    "anatomy_hits": 287,
-    "anatomy_misses": 104,
+    "total_tokens_estimated": 396935,
+    "total_reads": 414,
+    "total_writes": 171,
+    "total_sessions": 9,
+    "anatomy_hits": 289,
+    "anatomy_misses": 113,
     "repeated_reads_blocked": 216,
-    "estimated_savings_vs_bare_cli": 1753581
+    "estimated_savings_vs_bare_cli": 1753981
   },
   "sessions": [
     {
@@ -3621,6 +3621,121 @@
         "writes_count": 10,
         "repeated_reads_blocked": 23,
         "anatomy_lookups": 28
+      }
+    },
+    {
+      "id": "session-2026-03-27-1259",
+      "started": "2026-03-27T07:29:13.034Z",
+      "ended": "2026-03-27T07:33:56.144Z",
+      "reads": [
+        {
+          "file": "/Users/kazam/.claude/projects/-Users-leo-hobby-tab/memory/project_web_platform.md",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [],
+      "totals": {
+        "input_tokens_estimated": 0,
+        "output_tokens_estimated": 0,
+        "reads_count": 1,
+        "writes_count": 0,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 0
+      }
+    },
+    {
+      "id": "session-2026-03-27-1259",
+      "started": "2026-03-27T07:29:13.034Z",
+      "ended": "2026-03-27T07:53:08.723Z",
+      "reads": [
+        {
+          "file": "/Users/kazam/.claude/projects/-Users-leo-hobby-tab/memory/project_web_platform.md",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/web/frontend/src/app/songs/[id]/page.tsx",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/web/frontend/src/components/SectionContent.tsx",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/web/backend/models.py",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/web/frontend/src/lib/types.ts",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/web/backend/services/processor.py",
+          "tokens_estimated": 890,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/web/backend/services/storage.py",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/web/backend/routers/theory.py",
+          "tokens_estimated": 5,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/web/frontend/src/lib/api.ts",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/web/frontend/src/components/FretboardDiagram.tsx",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/web/frontend/src/components/TabViewer.tsx",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/Users/leo/hobby/tab/web/frontend/src/app/songs/[id]/page.tsx",
+          "tokens_estimated": 68,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/web/frontend/src/components/SectionContent.tsx",
+          "tokens_estimated": 1702,
+          "action": "create"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 895,
+        "output_tokens_estimated": 1770,
+        "reads_count": 11,
+        "writes_count": 2,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 2
       }
     }
   ],
