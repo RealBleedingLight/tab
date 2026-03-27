@@ -1,6 +1,6 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-03-27T07:52:43.059Z
+> Auto-maintained by OpenWolf. Last scanned: 2026-03-27T10:55:25.236Z
 > Files: 745 tracked | Anatomy hits: 0 | Misses: 0
 
 ## ../../../kazam/.claude/projects/-Users-leo-hobby-tab/memory/
@@ -13,7 +13,7 @@
 - `.DS_Store` (~1640 tok)
 - `.gitignore` — Git ignore rules (~8 tok)
 - `CLAUDE.md` — OpenWolf (~2397 tok)
-- `Dockerfile` — python:3.11-slim; installs gp2tab+guitar-teacher editable, backend deps, runs web.backend.main:app on port 8000 (~30 tok)
+- `Dockerfile` — Docker container definition (~203 tok)
 - `INDEX.md` — Guitar Tab Workspace (~465 tok)
 - `railway.json` — Railway deployment config: DOCKERFILE builder, /health healthcheck, ON_FAILURE restart (~10 tok)
 - `UPGRADE_ROADMAP.md` — Guitar Teacher — Upgrade Roadmap (~477 tok)

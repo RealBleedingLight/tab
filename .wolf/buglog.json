@@ -232,10 +232,31 @@
       "file": "web/backend/services/processor.py",
       "root_cause": "subprocess.run used hardcoded 'python' which doesn't exist on macOS (python3 only). Also fails in venv environments.",
       "fix": "import sys; use sys.executable instead of 'python' — always points to the running interpreter",
-      "tags": ["subprocess", "python-executable", "upload", "gp2tab"],
+      "tags": [
+        "subprocess",
+        "python-executable",
+        "upload",
+        "gp2tab"
+      ],
       "related_bugs": [],
       "occurrences": 1,
       "last_seen": "2026-03-27T07:17:38.610Z"
+    },
+    {
+      "id": "bug-016",
+      "timestamp": "2026-03-27T10:55:25.256Z",
+      "error_message": "Wrong reference: 8000 should be $",
+      "file": "Dockerfile",
+      "root_cause": "Used \"8000\" instead of \"$\"",
+      "fix": "Changed 8000 → $",
+      "tags": [
+        "auto-detected",
+        "wrong-reference",
+        "unknown"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-03-27T10:55:25.256Z"
     }
   ]
 }
