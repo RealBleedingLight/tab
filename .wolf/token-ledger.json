@@ -2,14 +2,14 @@
   "version": 1,
   "created_at": "2026-03-26T15:29:14.376Z",
   "lifetime": {
-    "total_tokens_estimated": 362383,
-    "total_reads": 369,
-    "total_writes": 159,
-    "total_sessions": 6,
-    "anatomy_hits": 259,
-    "anatomy_misses": 99,
-    "repeated_reads_blocked": 193,
-    "estimated_savings_vs_bare_cli": 1538096
+    "total_tokens_estimated": 394270,
+    "total_reads": 402,
+    "total_writes": 169,
+    "total_sessions": 8,
+    "anatomy_hits": 287,
+    "anatomy_misses": 104,
+    "repeated_reads_blocked": 216,
+    "estimated_savings_vs_bare_cli": 1753581
   },
   "sessions": [
     {
@@ -3354,6 +3354,271 @@
         "output_tokens_estimated": 776,
         "reads_count": 32,
         "writes_count": 9,
+        "repeated_reads_blocked": 23,
+        "anatomy_lookups": 28
+      }
+    },
+    {
+      "id": "session-2026-03-27-1151",
+      "started": "2026-03-27T06:21:04.210Z",
+      "ended": "2026-03-27T07:25:39.942Z",
+      "reads": [
+        {
+          "file": "/Users/leo/hobby/tab/docs/superpowers/plans/2026-03-27-guitar-teacher-web.md",
+          "tokens_estimated": 15816,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/backend/main.py",
+          "tokens_estimated": 207,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/backend/config.py",
+          "tokens_estimated": 113,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/backend/models.py",
+          "tokens_estimated": 400,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/backend/services/storage.py",
+          "tokens_estimated": 442,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/backend/services/processor.py",
+          "tokens_estimated": 885,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/backend/routers/theory.py",
+          "tokens_estimated": 1333,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/backend/routers/songs.py",
+          "tokens_estimated": 384,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/backend/routers/upload.py",
+          "tokens_estimated": 302,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/backend/requirements.txt",
+          "tokens_estimated": 28,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/backend/tests/test_storage.py",
+          "tokens_estimated": 608,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/backend/tests/test_theory_router.py",
+          "tokens_estimated": 423,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/backend/tests/test_processor.py",
+          "tokens_estimated": 374,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/backend/tests/test_songs_router.py",
+          "tokens_estimated": 690,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/frontend/src/lib/types.ts",
+          "tokens_estimated": 387,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/frontend/src/lib/api.ts",
+          "tokens_estimated": 451,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/frontend/src/app/layout.tsx",
+          "tokens_estimated": 347,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/frontend/src/app/page.tsx",
+          "tokens_estimated": 365,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/frontend/src/app/theory/page.tsx",
+          "tokens_estimated": 1920,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/frontend/src/app/songs/[id]/page.tsx",
+          "tokens_estimated": 1069,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/frontend/src/components/FretboardDiagram.tsx",
+          "tokens_estimated": 785,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/frontend/src/components/SongCard.tsx",
+          "tokens_estimated": 528,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/frontend/src/components/SectionSidebar.tsx",
+          "tokens_estimated": 469,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/frontend/src/components/SectionContent.tsx",
+          "tokens_estimated": 700,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/frontend/src/components/TabViewer.tsx",
+          "tokens_estimated": 101,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/frontend/src/components/UploadZone.tsx",
+          "tokens_estimated": 626,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/Dockerfile",
+          "tokens_estimated": 108,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/railway.json",
+          "tokens_estimated": 67,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/frontend/.env.local.example",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/frontend/.env.production.example",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/guitar_teacher/core/models.py",
+          "tokens_estimated": 0,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/web/backend/services/processor.py",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/kazam/.claude/projects/-Users-leo-hobby-tab/memory/project_web_platform.md",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/backend/services/storage.py",
+          "tokens_estimated": 155,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/backend/routers/songs.py",
+          "tokens_estimated": 141,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/backend/routers/theory.py",
+          "tokens_estimated": 123,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/frontend/src/components/UploadZone.tsx",
+          "tokens_estimated": 43,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/frontend/src/app/songs/[id]/page.tsx",
+          "tokens_estimated": 136,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/.dockerignore",
+          "tokens_estimated": 111,
+          "action": "create"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/.worktrees/guitar-teacher-web/web/backend/tests/test_theory_router.py",
+          "tokens_estimated": 26,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/web/backend/services/processor.py",
+          "tokens_estimated": 16,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/web/backend/services/processor.py",
+          "tokens_estimated": 25,
+          "action": "edit"
+        },
+        {
+          "file": "/Users/kazam/.claude/projects/-Users-leo-hobby-tab/memory/project_web_platform.md",
+          "tokens_estimated": 1183,
+          "action": "create"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 29928,
+        "output_tokens_estimated": 1959,
+        "reads_count": 33,
+        "writes_count": 10,
         "repeated_reads_blocked": 23,
         "anatomy_lookups": 28
       }
