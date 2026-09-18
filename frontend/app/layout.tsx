@@ -6,8 +6,8 @@ import BottomNav from "@/components/BottomNav";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Guitar Teacher",
-  description: "Leo's guitar practice platform",
+  title: "Guitar Tab Engine",
+  description: "Algorithmic music theory analysis for guitar — parse tabs, detect keys, explore scales and chords",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

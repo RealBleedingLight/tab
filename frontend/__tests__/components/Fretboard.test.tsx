@@ -3,9 +3,9 @@ import Fretboard from "@/components/Fretboard";
 import type { FretboardPosition } from "@/lib/types";
 
 const positions: FretboardPosition[] = [
-  { string: 0, fret: 5, note: "A", is_root: true },
-  { string: 0, fret: 7, note: "B", is_root: false },
-  { string: 1, fret: 5, note: "D", is_root: false },
+  { string: 0, fret: 5, note: "A", isRoot: true },
+  { string: 0, fret: 7, note: "B", isRoot: false },
+  { string: 1, fret: 5, note: "D", isRoot: false },
 ];
 
 describe("Fretboard", () => {

@@ -1,4 +1,4 @@
-import type { FretboardPosition } from "@/lib/types";
+import type { FretboardPosition } from "@/lib/engine";
 
 interface Props {
   positions: FretboardPosition[];
@@ -80,12 +80,12 @@ export default function Fretboard({ positions, fretRange = [0, 15] }: Props) {
       {positions.map((pos, idx) => (
         <g key={idx}>
           <circle
-            className={pos.is_root ? "root-note" : "scale-note"}
+            className={pos.isRoot ? "root-note" : "scale-note"}
             cx={x(pos.fret)}
             cy={y(pos.string)}
             r={CIRCLE_R}
-            fill={pos.is_root ? "#f4f4f5" : "none"}
-            stroke={pos.is_root ? "#f4f4f5" : "#a1a1aa"}
+            fill={pos.isRoot ? "#f4f4f5" : "none"}
+            stroke={pos.isRoot ? "#f4f4f5" : "#a1a1aa"}
             strokeWidth={1.5}
           />
           <text
@@ -94,7 +94,7 @@ export default function Fretboard({ positions, fretRange = [0, 15] }: Props) {
             textAnchor="middle"
             dominantBaseline="central"
             fontSize="8"
-            fill={pos.is_root ? "#09090b" : "#a1a1aa"}
+            fill={pos.isRoot ? "#09090b" : "#a1a1aa"}
             style={{ pointerEvents: "none" }}
           >
             {pos.note}

@@ -2,14 +2,14 @@
   "version": 1,
   "created_at": "2026-03-26T15:29:14.376Z",
   "lifetime": {
-    "total_tokens_estimated": 417816,
-    "total_reads": 535,
-    "total_writes": 193,
-    "total_sessions": 11,
-    "anatomy_hits": 357,
-    "anatomy_misses": 140,
-    "repeated_reads_blocked": 234,
-    "estimated_savings_vs_bare_cli": 1776503
+    "total_tokens_estimated": 455594,
+    "total_reads": 571,
+    "total_writes": 197,
+    "total_sessions": 14,
+    "anatomy_hits": 360,
+    "anatomy_misses": 173,
+    "repeated_reads_blocked": 235,
+    "estimated_savings_vs_bare_cli": 1777580
   },
   "sessions": [
     {
@@ -5048,6 +5048,293 @@
         "writes_count": 2,
         "repeated_reads_blocked": 1,
         "anatomy_lookups": 3
+      }
+    },
+    {
+      "id": "session-2026-03-27-1751",
+      "started": "2026-03-27T12:21:58.814Z",
+      "ended": "2026-09-16T15:50:42.583Z",
+      "reads": [
+        {
+          "file": "/Users/leo/hobby/tab/UPGRADE_ROADMAP.md",
+          "tokens_estimated": 477,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/INDEX.md",
+          "tokens_estimated": 465,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/DOCS.md",
+          "tokens_estimated": 5091,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/CLAUDE.md",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/frontend/package.json",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/frontend/app/page.tsx",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/frontend/vercel.json",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/frontend/lib/api.ts",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/frontend/lib/types.ts",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/frontend/app/theory/page.tsx",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/frontend/components/Fretboard.tsx",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/guitar-teacher/guitar_teacher/core/theory.py",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/guitar-teacher/guitar_teacher/core/note_utils.py",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/guitar-teacher/guitar_teacher/core/analyzer.py",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/guitar-teacher/guitar_teacher/api/app.py",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/guitar-teacher/guitar_teacher/api/routers/theory.py",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/guitar-teacher/pyproject.toml",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/Dockerfile",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/Users/leo/hobby/tab/UPGRADE_ROADMAP.md",
+          "tokens_estimated": 686,
+          "action": "create"
+        },
+        {
+          "file": "/Users/leo/hobby/tab/guitar-teacher/DOCS.md",
+          "tokens_estimated": 167,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 6033,
+        "output_tokens_estimated": 853,
+        "reads_count": 18,
+        "writes_count": 2,
+        "repeated_reads_blocked": 1,
+        "anatomy_lookups": 3
+      }
+    },
+    {
+      "id": "session-2026-09-18-1546",
+      "started": "2026-09-18T10:16:10.397Z",
+      "ended": "2026-09-18T10:22:31.850Z",
+      "reads": [
+        {
+          "file": "C:/claude_builds/gtab/guitar-teacher/guitar_teacher/core/models.py",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/guitar-teacher/theory/scales.yaml",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/guitar-teacher/theory/chords.yaml",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/guitar-teacher/theory/intervals.yaml",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/guitar-teacher/guitar_teacher/core/fretboard.py",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/frontend/app/layout.tsx",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/frontend/next.config.ts",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/frontend/components/BottomNav.tsx",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/frontend/middleware.ts",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "C:/claude_builds/gtab/docs/superpowers/plans/2026-09-18-algorithmic-tab-engine.md",
+          "tokens_estimated": 15446,
+          "action": "create"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 0,
+        "output_tokens_estimated": 15446,
+        "reads_count": 9,
+        "writes_count": 1,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 0
+      }
+    },
+    {
+      "id": "session-2026-09-18-1546",
+      "started": "2026-09-18T10:16:10.397Z",
+      "ended": "2026-09-18T10:24:52.955Z",
+      "reads": [
+        {
+          "file": "C:/claude_builds/gtab/guitar-teacher/guitar_teacher/core/models.py",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/guitar-teacher/theory/scales.yaml",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/guitar-teacher/theory/chords.yaml",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/guitar-teacher/theory/intervals.yaml",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/guitar-teacher/guitar_teacher/core/fretboard.py",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/frontend/app/layout.tsx",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/frontend/next.config.ts",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/frontend/components/BottomNav.tsx",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "C:/claude_builds/gtab/frontend/middleware.ts",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "C:/claude_builds/gtab/docs/superpowers/plans/2026-09-18-algorithmic-tab-engine.md",
+          "tokens_estimated": 15446,
+          "action": "create"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 0,
+        "output_tokens_estimated": 15446,
+        "reads_count": 9,
+        "writes_count": 1,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 0
       }
     }
   ],
