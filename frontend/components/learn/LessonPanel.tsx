@@ -5,6 +5,7 @@ import type { LessonProgress, SongProgress } from "@/lib/storage/library";
 import type { TechniqueId } from "@/lib/song/types";
 import { usePlayer, type ScorePlayer } from "@/lib/alphatab/player";
 import { DifficultyDots, TechniqueChip, TechniqueGuideCard, formatDuration } from "./bits";
+import { ChordGuideList, sourceNote } from "./ChordGuides";
 
 const KIND_LABEL: Record<Lesson["kind"], string> = {
   overview: "Start here",
@@ -77,6 +78,19 @@ export default function LessonPanel({ plan, lesson, progress, player, onSelect, 
             </div>
             {openTech && <TechniqueGuideCard id={openTech} />}
           </div>
+        )}
+
+        {lesson.chords && lesson.chords.length > 0 && (
+          <details className="group rounded-lg border border-sky-900/60 bg-sky-950/20 p-3" open={lesson.kind === "section"}>
+            <summary className="cursor-pointer list-none flex items-baseline justify-between gap-2">
+              <span className="text-sm font-medium text-sky-200">Harmony &amp; what to play</span>
+              <span className="text-xs text-zinc-500 truncate">{lesson.progression}</span>
+            </summary>
+            <div className="mt-2 space-y-2">
+              <p className="text-[11px] text-zinc-500">{sourceNote(plan.harmony)} Key: {plan.harmony.key.name}.</p>
+              <ChordGuideList guides={lesson.chords} harmony={plan.harmony} initiallyOpen={lesson.kind === "section" ? 4 : 2} />
+            </div>
+          </details>
         )}
 
         <ol className="space-y-2.5">

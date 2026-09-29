@@ -279,7 +279,7 @@ export default function SongWorkspace({ id }: { id: string }) {
         <div className={`${mobileTab ? "" : "h-0 overflow-hidden lg:h-auto lg:overflow-visible"} min-w-0 space-y-3`}>
           {song && lesson && (
             <div className="sticky top-14 z-20">
-              <LiveFretboard song={song} player={player} bars={lesson.bars} />
+              <LiveFretboard song={song} harmony={plan!.harmony} player={player} bars={lesson.bars} />
             </div>
           )}
           <div className="relative rounded-xl border border-zinc-800 bg-zinc-900/40 min-h-[300px] overflow-hidden">

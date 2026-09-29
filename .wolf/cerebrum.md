@@ -38,6 +38,8 @@
 - **Player state**: `ScorePlayer` is an external store; read with `usePlayer(player, selector)` (useSyncExternalStore). Position updates are throttled to 200 ms.
 - **Key detection for songs**: use `detectWeightedKey` (duration-weighted, common-scale priors) in `lib/song/analysis.ts`, not engine `detectKey` — the latter favours 8-note diminished scales on solos with chromatic passing tones.
 
+- **Harmony layer (lib/song/harmony.ts)**: chords per bar from (1) GP chord symbols, (2) accompaniment = all other pitched tracks (bass track's first note in the window = root), (3) implied from the melody (triads only, diatonic bonus). Key from lead+accompaniment profile + chord diatonic fit (+minor V) + tonic first/last chord. Chord→scale by minimal alteration of the key scale (F#7 in Bm → Phrygian Dominant, E in Bm → Mixolydian). `SongBar` now has `start`, `duration`, `accompaniment`, `chordSymbols`. User wants the app to algorithmically explain underlying scale/chords and give playing suggestions, not just list notes.
+
 ## Do-Not-Repeat
 
 <!-- Mistakes made and corrected. Each entry prevents the same mistake recurring. -->

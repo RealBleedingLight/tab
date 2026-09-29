@@ -1,7 +1,7 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-09-29T21:43:04.401Z
-> Files: 43 tracked | Anatomy hits: 0 | Misses: 0
+> Auto-maintained by OpenWolf. Last scanned: 2026-09-29T21:59:56.689Z
+> Files: 47 tracked | Anatomy hits: 0 | Misses: 0
 
 ## ../../../kazam/.claude/projects/-Users-leo-hobby-tab/memory/
 
@@ -10,6 +10,8 @@
 
 - `e2e.mjs` — Declares require (~680 tok)
 - `e2e2.mjs` — Declares require (~652 tok)
+- `e2e3.mjs` — Declares require (~464 tok)
+- `harm.js` — Declares at (~403 tok)
 - `tex.js` — Declares at (~229 tok)
 
 ## ./
@@ -66,6 +68,7 @@
 ## frontend/components/learn/
 
 - `bits.tsx` — DIFFICULTY_LABEL (~788 tok)
+- `ChordGuides.tsx` — SHARPS (~937 tok)
 - `Insights.tsx` — Insights (~1929 tok)
 - `LessonPanel.tsx` — KIND_LABEL (~2823 tok)
 
@@ -110,6 +113,7 @@
 
 - `analysis.ts` — Attacked (non-tied) notes. (~2936 tok)
 - `extract.ts` — MIDI ticks per quarter note used by alphaTab. (~2005 tok)
+- `harmony.ts` — Harmony analysis: which chord is sounding under each part of the solo, (~5790 tok)
 - `lessons.ts` — Bars to loop (inclusive, 0-based). (~2876 tok)
 - `techniques.ts` — Relative difficulty weight, 0 (trivial) – 3 (advanced). (~3880 tok)
 - `types.ts` — Instrument-agnostic song model extracted from an alphaTab Score. (~547 tok)

@@ -30,6 +30,8 @@ export interface PlayerSnapshot {
   trainer: TrainerConfig | null;
   activeNotes: ActiveFret[];
   currentBar: number;
+  /** Start tick of the beat that's sounding. */
+  currentTick: number;
   guitarMuted: boolean;
   guitarSolo: boolean;
   notation: boolean;
@@ -38,7 +40,7 @@ export interface PlayerSnapshot {
 const INITIAL: PlayerSnapshot = {
   status: "idle", error: null, soundReady: false, playing: false,
   currentTime: 0, endTime: 0, speed: 100, looping: false, metronome: false, countIn: false,
-  range: null, loops: 0, trainer: null, activeNotes: [], currentBar: 0,
+  range: null, loops: 0, trainer: null, activeNotes: [], currentBar: 0, currentTick: 0,
   guitarMuted: false, guitarSolo: false, notation: false,
 };
 
@@ -204,7 +206,7 @@ export class ScorePlayer {
     const activeNotes = beat.notes
       .filter(n => n.fret >= 0 && !n.isTieDestination)
       .map(n => ({ string: n.string - 1, fret: n.fret }));
-    this.set({ activeNotes, currentBar: beat.voice.bar.index });
+    this.set({ activeNotes, currentBar: beat.voice.bar.index, currentTick: beat.absolutePlaybackStart });
   }
 
   private ticksToBars(startTick: number, endTick: number): [number, number] | null {

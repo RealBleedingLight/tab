@@ -6,6 +6,8 @@ import type { SongProgress } from "@/lib/storage/library";
 import { keyLabel } from "@/lib/song/analysis";
 import { getFretboardPositions, getScale } from "@/lib/engine";
 import Fretboard from "@/components/Fretboard";
+import { ChordGuideList, sourceNote } from "./ChordGuides";
+import { progressionLabel } from "@/lib/song/harmony";
 import { DIFFICULTY_LABEL, TechniqueChip, TechniqueGuideCard, difficultyBg, formatDuration } from "./bits";
 
 interface Props {
@@ -18,16 +20,16 @@ interface Props {
 export default function Insights({ song, plan, progress, onSelectLesson }: Props) {
   const [openTech, setOpenTech] = useState<TechniqueId | null>(null);
   const a = plan.overall;
+  const h = plan.harmony;
   const key = a.keyMatches[0];
 
   const lo = Math.max(0, a.fretRange[0] - 1);
   const hi = Math.min(24, Math.max(a.fretRange[1] + 1, lo + 11));
-  // The detected scale laid out over the part of the neck the song uses.
+  // The song's key scale laid out over the part of the neck the song uses.
   const positions = useMemo(() => {
-    if (!key) return [];
-    const scale = getScale(key.root, key.scale.key);
-    return scale ? getFretboardPositions(scale.notes, key.root, song.tuning, [lo, hi]) : [];
-  }, [key, song.tuning, lo, hi]);
+    const scale = getScale(h.key.root, h.key.scale.key);
+    return scale ? getFretboardPositions(scale.notes, h.key.root, song.tuning, [lo, hi]) : [];
+  }, [h.key, song.tuning, lo, hi]);
 
   const sections = plan.regions.flatMap(r => r.sections);
   const totalBars = sections.reduce((n, s) => n + (s.endBar - s.startBar + 1), 0) || 1;
@@ -68,19 +70,17 @@ export default function Insights({ song, plan, progress, onSelectLesson }: Props
 
       <div className="rounded-xl border border-zinc-800 bg-zinc-900 p-4 space-y-3">
         <h3 className="font-semibold">Key &amp; scale</h3>
-        <p className="text-xl font-bold">{keyLabel(a)}</p>
-        {key?.scale.character && <p className="text-sm text-zinc-400">{key.scale.character}</p>}
-        {key?.outsideNotes.length ? (
-          <p className="text-xs text-zinc-500">Notes outside the scale (passing / chromatic): {key.outsideNotes.join(", ")}</p>
-        ) : null}
-        {a.keyMatches.length > 1 && (
-          <p className="text-xs text-zinc-500">
-            Also fits: {a.keyMatches.slice(1, 4).map(k => `${k.root} ${k.scale.name}`).join(" · ")}
-          </p>
+        <p className="text-xl font-bold">{h.key.name}</p>
+        {h.key.scale.character && <p className="text-sm text-zinc-400">{h.key.scale.character}</p>}
+        {key && `${key.root} ${key.scale.name}` !== h.key.name && (
+          <p className="text-xs text-zinc-500">The solo on its own reads as {keyLabel(a)}; the key above also weighs the backing and chords.</p>
         )}
+        {key?.outsideNotes.length ? (
+          <p className="text-xs text-zinc-500">Solo notes outside {keyLabel(a)} (passing / chromatic): {key.outsideNotes.join(", ")}</p>
+        ) : null}
         {positions.length > 0 && (
           <div>
-            <p className="text-xs text-zinc-500 mb-1">{keyLabel(a)} across frets {lo}–{hi} (filled = root)</p>
+            <p className="text-xs text-zinc-500 mb-1">{h.key.name} across frets {lo}–{hi} (filled = root)</p>
             <div className="overflow-x-auto">
               <div className="min-w-[520px]">
                 <Fretboard positions={positions} fretRange={[lo, hi]} stringCount={song.tuning.length} tuning={song.tuning} />
@@ -88,8 +88,33 @@ export default function Insights({ song, plan, progress, onSelectLesson }: Props
             </div>
           </div>
         )}
-        {key?.scale.improvisationTip && <p className="text-sm text-zinc-300 italic">{key.scale.improvisationTip}</p>}
+        {h.key.scale.improvisationTip && <p className="text-sm text-zinc-300 italic">{h.key.scale.improvisationTip}</p>}
       </div>
+
+      {h.guides.length > 0 && (
+        <div className="rounded-xl border border-zinc-800 bg-zinc-900 p-4 space-y-3">
+          <h3 className="font-semibold">Harmony</h3>
+          <p className="text-xs text-zinc-500">{sourceNote(h)}</p>
+          <div className="space-y-1.5">
+            {plan.regions.map(r => {
+              const cs = h.chords.filter(c => c.bar >= r.startBar && c.bar <= r.endBar);
+              if (!cs.length) return null;
+              return (
+                <div key={r.name} className="text-sm">
+                  <span className="text-zinc-500 text-xs mr-2">{r.name}</span>
+                  <span className="text-sky-200">{progressionLabel(cs)}</span>
+                </div>
+              );
+            })}
+          </div>
+          <p className="text-sm text-zinc-300">
+            The solo plays chord tones on <b>{Math.round(h.chordToneRatio * 100)}%</b> of its notes
+            (<b>{Math.round(h.strongBeatChordToneRatio * 100)}%</b> on the beat). The higher the on-beat number, the more
+            the line is built by landing on chord notes — copy that when you improvise over these changes.
+          </p>
+          <ChordGuideList guides={h.guides} harmony={h} initiallyOpen={4} />
+        </div>
+      )}
 
       {techs.length > 0 && (
         <div className="rounded-xl border border-zinc-800 bg-zinc-900 p-4 space-y-3">

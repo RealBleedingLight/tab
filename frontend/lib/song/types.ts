@@ -56,14 +56,30 @@ export interface SongBeat {
   techniques: TechniqueId[];
 }
 
+export interface AccompanimentNote {
+  /** Absolute tick. */
+  start: number;
+  duration: number;
+  midi: number;
+  /** From a bass-register track — its notes define the chord root. */
+  bass?: boolean;
+}
+
 export interface SongBar {
   index: number;
+  /** Absolute start tick and length in ticks. */
+  start: number;
+  duration: number;
   timeSignature: [number, number];
   tempo: number;
   /** Length of the bar in seconds at 100% speed. */
   seconds: number;
   section: string | null;
   beats: SongBeat[];
+  /** Notes of every other pitched track (rhythm guitar, bass, keys…) — the harmony. */
+  accompaniment: AccompanimentNote[];
+  /** Chord symbols written in the file (any track). */
+  chordSymbols: { start: number; name: string }[];
 }
 
 export interface TrackInfo {

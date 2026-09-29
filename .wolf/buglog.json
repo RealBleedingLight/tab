@@ -404,6 +404,22 @@
       "related_bugs": [],
       "occurrences": 1,
       "last_seen": "2026-09-29T21:45:00Z"
+    },
+    {
+      "id": "bug-026",
+      "timestamp": "2026-09-29T22:30:00Z",
+      "error_message": "Live fretboard didn't follow the solo and showed no underlying scale/chord; theory ignored the backing tracks",
+      "file": "frontend/components/player/LiveFretboard.tsx, frontend/lib/song/harmony.ts",
+      "root_cause": "Fretboard showed only static frets of the selected range; analysis only looked at the lead track's pitch classes",
+      "fix": "Added harmony analysis from accompaniment/chord symbols/implied melody; fretboard now follows currentBar/currentTick during playback with chord-scale background + chord-tone rings + targets",
+      "tags": [
+        "harmony",
+        "fretboard",
+        "ux"
+      ],
+      "related_bugs": [],
+      "occurrences": 1,
+      "last_seen": "2026-09-29T22:30:00Z"
     }
   ]
 }

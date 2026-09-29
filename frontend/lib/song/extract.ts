@@ -1,6 +1,6 @@
 import type * as AlphaTab from "@coderline/alphatab";
 import { pitchClassToName } from "../engine/notes";
-import type { SongBar, SongBeat, SongModel, SongNote, TechniqueId, TrackInfo } from "./types";
+import type { AccompanimentNote, SongBar, SongBeat, SongModel, SongNote, TechniqueId, TrackInfo } from "./types";
 
 type Score = AlphaTab.model.Score;
 type Track = AlphaTab.model.Track;
@@ -140,6 +140,12 @@ export function extractSong(score: Score, trackIndex: number): SongModel {
 
   const bars: SongBar[] = [];
   let tempo = score.tempo || 120;
+  // Bass-register tracks: named bass, ≤5 strings, or lowest open string at/below E1.
+  const bassTracks = new Set(score.tracks.filter(t => {
+    const st = t.staves[0];
+    if (!st || st.isPercussion || t.index === index) return false;
+    return /bass/i.test(t.name) || (st.tuning.length > 0 && st.tuning.length <= 5) || Math.min(...st.tuning) <= 28;
+  }).map(t => t.index));
 
   for (const bar of staff.bars) {
     const mb = score.masterBars[bar.index];
@@ -178,19 +184,44 @@ export function extractSong(score: Score, trackIndex: number): SongModel {
     }
     beats.sort((a, b) => a.start - b.start);
 
+    // Harmony context from the other pitched tracks, plus any chord symbols.
+    const accompaniment: AccompanimentNote[] = [];
+    const chordSymbols: { start: number; name: string }[] = [];
+    for (const other of score.tracks) {
+      const os = other.staves[0];
+      const ob = os?.bars[bar.index];
+      if (!os || !ob) continue;
+      for (const voice of ob.voices) for (const beat of voice.beats) {
+        if (beat.hasChord && beat.chord?.name) chordSymbols.push({ start: beat.absolutePlaybackStart, name: beat.chord.name });
+        if (other.index === index || os.isPercussion) continue;
+        for (const n of beat.notes) {
+          if (n.fret < 0 || n.isTieDestination || n.isDead) continue;
+          accompaniment.push({
+            start: beat.absolutePlaybackStart, duration: beat.playbackDuration, midi: n.realValueWithoutHarmonic,
+            bass: bassTracks.has(other.index) || undefined,
+          });
+        }
+      }
+    }
+
     bars.push({
       index: bar.index,
+      start: mb.start,
+      duration: mb.calculateDuration(),
       timeSignature: [num, den],
       tempo,
       seconds: (quarters * 60) / tempo,
       section: mb.section ? (mb.section.text || mb.section.marker || "Section") : null,
       beats,
+      accompaniment,
+      chordSymbols,
     });
   }
 
   return {
     title: score.title || "Untitled",
-    artist: score.artist || "",
+    // Some files stash a URL in the artist field — don't show that as a name.
+    artist: /^(https?:|www\.)/i.test(score.artist ?? "") ? "" : score.artist || "",
     album: score.album || "",
     tempo: score.tempo || bars[0]?.tempo || 120,
     tracks,

@@ -36,7 +36,7 @@ export default function UploadDropzone({ onAdded }: { onAdded?: () => void }) {
         id,
         fileName: file.name,
         title: score.title || file.name.replace(/\.[^.]+$/, ""),
-        artist: score.artist || "",
+        artist: /^(https?:|www\.)/i.test(score.artist ?? "") ? "" : score.artist || "",
         trackCount: score.tracks.length,
         bars: score.masterBars.length,
         addedAt: now,
