@@ -26,3 +26,22 @@ describe("Fretboard", () => {
     expect(rootCircles.length).toBeGreaterThan(0);
   });
 });
+
+describe("Fretboard live notes", () => {
+  it("highlights active notes that are on the map", () => {
+    const { container } = render(<Fretboard positions={positions} active={[{ string: 0, fret: 5 }]} />);
+    const lit = [...container.querySelectorAll("circle")].filter(c => c.getAttribute("fill") === "#f59e0b");
+    expect(lit).toHaveLength(1);
+  });
+
+  it("draws active notes outside the map too", () => {
+    const { container } = render(<Fretboard positions={positions} active={[{ string: 3, fret: 9 }]} />);
+    const lit = [...container.querySelectorAll("circle")].filter(c => c.getAttribute("fill") === "#f59e0b");
+    expect(lit).toHaveLength(1);
+  });
+
+  it("supports 7-string layouts with tuning labels", () => {
+    render(<Fretboard positions={[]} stringCount={7} tuning={["B", "E", "A", "D", "G", "B", "E"]} />);
+    expect(screen.getAllByText("B").length).toBe(2);
+  });
+});

@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Static vendor files copied from node_modules (alphaTab runtime).
+    "public/**",
   ]),
 ]);
 

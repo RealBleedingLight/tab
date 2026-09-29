@@ -30,6 +30,14 @@
 - **Engine module structure**: `lib/engine/` has: `notes.ts` (pitch class math), `data/scales.ts` (21 scales), `data/chords.ts` (22 chords), `data/intervals.ts` (12 intervals), `theory.ts` (getScale, getChord, detectKey, chordsInKey, suggestScales, getInterval, getFretboardPositions), `tab-parser.ts` (ASCII tab → ParsedNote[]), `analyzer.ts` (tab → full analysis), `types.ts` (all interfaces), `index.ts` (barrel). 54 tests total.
 - **Fretboard uses camelCase**: `FretboardPosition.isRoot` not `is_root`. Changed from snake_case in the engine rewrite.
 
+- **GP learning app (2026-09-29)**: `/` = library + upload (IndexedDB), `/song?id=<hash>` = workspace (alphaTab tab + player + lesson plan + live fretboard + insights), `/song?id=demo` = built-in alphaTex demo. `/tab` = ASCII analyzer only (GP mode removed), `/theory` unchanged. BottomNav + /settings removed in favour of top `Header`.
+- **alphaTab loading**: UMD `alphaTab.min.js` + Bravura font + `sonivox.sf3` are copied to `public/alphatab/` by `scripts/copy-alphatab.mjs` (postinstall/predev/prebuild, git-ignored) and loaded via script tag in `lib/alphatab/loader.ts`. Never `import` alphaTab at runtime in app code — only `import type`. Tests use `require("@coderline/alphatab")` with `@jest-environment node`.
+- **alphaTab string numbering**: `Note.string` 1 = lowest string; `staff.tuning` is high → low. Engine/SongModel use 1 = highest, tuning low → high. Fretboard component uses 0 = lowest.
+- **alphaTex strings**: `fret.string` with string 1 = high e (opposite of alphaTab's model). Hammer `{h}` only links to the next note on the SAME string.
+- **alphaTab settings JSON**: Map-typed options (e.g. `notation.elements`) accept plain objects at runtime; cast `as unknown as SettingsJson`.
+- **Player state**: `ScorePlayer` is an external store; read with `usePlayer(player, selector)` (useSyncExternalStore). Position updates are throttled to 200 ms.
+- **Key detection for songs**: use `detectWeightedKey` (duration-weighted, common-scale priors) in `lib/song/analysis.ts`, not engine `detectKey` — the latter favours 8-note diminished scales on solos with chromatic passing tones.
+
 ## Do-Not-Repeat
 
 <!-- Mistakes made and corrected. Each entry prevents the same mistake recurring. -->
@@ -40,9 +48,15 @@
 - [2026-03-27] **Roman numerals in key endpoint must use _QUALITY_NUMERAL** — was returning all uppercase (I II III...) regardless of chord quality. Fixed to use `cr.chord.key` lookup.
 - [2026-03-27] **File input must reset after upload** — `inputRef.current.value = ""` after success, otherwise same file can't be re-uploaded via click (onChange doesn't fire if value unchanged).
 - [2026-03-27] **Never hardcode Railway port** — use `CMD uvicorn ... --port ${PORT:-8000}` shell form in Dockerfile. JSON array form `["uvicorn", "--port", "8000"]` won't expand env vars and healthcheck will fail.
+- [2026-09-29] **Don't `pkill -f "next start"` / `pgrep -f next-server` in a compound bash command** — the pattern matches the shell's own command line and kills it (exit 144, can leave a half-written .next). Use `kill $(pgrep -f "^next-server")` on its own.
+- [2026-09-29] **Never hide the alphaTab container with display:none** — it renders at width 0. Use zero height + overflow hidden.
+- [2026-09-29] **alphaTab loop wrap is reported as a seek** — detect loops by end→start tick jump, not `!isSeek`.
 - [2026-03-27] **pyguitarpro NoteEffect.deadNote missing** — not present in all file versions. Use `getattr(eff, 'deadNote', False)`. Same pattern for `MeasureHeader.tempo` — use `getattr(measure_header, 'tempo', None)`.
 
 ## Decision Log
+
+- **2026-09-29 alphaTab via public/ UMD instead of bundled ESM**: keeps ~1.2 MB out of Next chunks, cached independently, and lets alphaTab spawn render/synth workers from `core.scriptFile` without a bundler plugin (Next 16 uses Turbopack).
+- **2026-09-29 Lesson plan structure** mirrors the repo's lesson methodology (CLAUDE.md): technique prerequisites → 1–4 bar chunks → connect/assembly lessons → final performance, with speed ladders from a computed start speed (busiest bar ≈ 4 notes/sec) to 100%.
 
 <!-- Significant technical decisions with rationale. Why X was chosen over Y. -->
 

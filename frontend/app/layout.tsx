@@ -1,21 +1,25 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import BottomNav from "@/components/BottomNav";
+import Header from "@/components/Header";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
-  title: "Guitar Tab Engine",
-  description: "Algorithmic music theory analysis for guitar — parse tabs, detect keys, explore scales and chords",
+  title: "Tab Engine — learn solos from Guitar Pro files",
+  description: "Open a Guitar Pro file to see the tab, hear it, slow it down, and follow a step-by-step lesson plan. Runs entirely in your browser.",
+};
+
+export const viewport: Viewport = {
+  themeColor: "#09090b",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-zinc-950 text-zinc-100 min-h-screen pb-20`}>
-        <main className="max-w-2xl mx-auto px-4 py-6">{children}</main>
-        <BottomNav />
+      <body className={`${inter.className} bg-zinc-950 text-zinc-100 min-h-screen antialiased`}>
+        <Header />
+        <main>{children}</main>
       </body>
     </html>
   );

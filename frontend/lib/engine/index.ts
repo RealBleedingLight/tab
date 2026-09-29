@@ -3,8 +3,6 @@ export * from "./notes";
 export * from "./theory";
 export * from "./tab-parser";
 export * from "./analyzer";
-export { parseGpFile } from "./gp-parser";
-export type { GpParseResult } from "./gp-parser";
 export { SCALES, resolveScale } from "./data/scales";
 export { CHORDS, resolveChord } from "./data/chords";
 export { INTERVALS } from "./data/intervals";

@@ -16,7 +16,7 @@ export default function TheoryPage() {
   const [tab, setTab] = useState<Tab>("scale");
 
   return (
-    <div className="space-y-4">
+    <div className="max-w-2xl mx-auto px-4 py-6 space-y-4">
       <h1 className="text-2xl font-bold">Theory</h1>
 
       <div className="flex gap-1 bg-zinc-900 rounded-lg p-1">
@@ -91,7 +91,7 @@ function ScaleLookup() {
               <span key={n} className="px-2 py-1 bg-zinc-800 rounded text-sm font-mono">{n}</span>
             ))}
           </div>
-          {positions.length > 0 && <Fretboard positions={positions} />}
+          {positions.length > 0 && <Fretboard positions={positions} tuning={["E", "A", "D", "G", "B", "E"]} />}
           {result.scale.improvisationTip && (
             <p className="text-sm text-zinc-400 italic">{result.scale.improvisationTip}</p>
           )}
