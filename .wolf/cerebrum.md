@@ -8,6 +8,8 @@
 
 <!-- How the user likes things done. Code style, tools, patterns, communication. -->
 
+- **Subagent-driven execution**: User prefers parallel subagent dispatch for multi-task plans. Fork agents for independent tasks, wait for completion, then dispatch next wave.
+
 ## Key Learnings
 
 - **Project:** tab
@@ -24,6 +26,9 @@
 - **Frontend local dev**: `cd web/frontend && npm install && npm run dev` — must run `npm install` first on a fresh clone. Defaults to port 3000, points to localhost:8000 via NEXT_PUBLIC_API_URL default.
 - **Storage is ephemeral locally**: Uploaded songs stored as JSON in `data/songs/` (created automatically). Cleared on restart only if the directory is deleted.
 - **Monkeypatching SONGS_DIR in tests**: All router calls must use `storage_mod.SONGS_DIR` at call time (not default arg), so pytest monkeypatch of `storage_mod.SONGS_DIR` takes effect. This pattern is used throughout songs router.
+- **Frontend is standalone Next.js**: As of 2026-09-18, `frontend/` is a self-contained Next.js 16 app. No Python backend, no API keys, no auth. All music theory logic runs client-side in `frontend/lib/engine/`. Routes: `/` (landing), `/tab` (ASCII tab analysis), `/theory` (scale/chord/key/interval lookup), `/settings` (about).
+- **Engine module structure**: `lib/engine/` has: `notes.ts` (pitch class math), `data/scales.ts` (21 scales), `data/chords.ts` (22 chords), `data/intervals.ts` (12 intervals), `theory.ts` (getScale, getChord, detectKey, chordsInKey, suggestScales, getInterval, getFretboardPositions), `tab-parser.ts` (ASCII tab → ParsedNote[]), `analyzer.ts` (tab → full analysis), `types.ts` (all interfaces), `index.ts` (barrel). 54 tests total.
+- **Fretboard uses camelCase**: `FretboardPosition.isRoot` not `is_root`. Changed from snake_case in the engine rewrite.
 
 ## Do-Not-Repeat
 
@@ -43,7 +48,7 @@
 
 - **gitignore .env.local.example**: The `web/frontend/.gitignore` uses `.env*` glob which also blocks `.env.local.example`. Use `git add -f` to force-add the example file — it's safe documentation, no secrets.
 - **Next.js 16 layout**: Standard App Router layout.tsx pattern unchanged from training data — html/body wrapper, Inter font, dark mode via className on html element.
-- **Web platform architecture**: FastAPI backend (`web/backend/`) + Next.js 16 frontend (`web/frontend/`). Backend runs on port 8000, frontend on 3000. Backend module path: `web.backend.main:app`. Storage: JSON files at `data/songs/`. Deploy: Railway (backend via Dockerfile) + Vercel (frontend).
+- **Web platform architecture (SUPERSEDED 2026-09-18)**: The old FastAPI backend + Railway deployment is no longer used. Frontend is now standalone — see "Frontend is standalone Next.js" above.
 - **Web platform stack summary**: 19 backend tests (pytest), routes: GET/POST /songs, DELETE /songs/{id}, POST /songs/{id}/sections/{sid}/complete, GET /theory/scales|chords|keys. Frontend routes: `/` (home+upload), `/theory` (3 tabs: scales/chords/keys), `/songs/[id]` (section viewer + full tab).
 - **gp2tab integration**: Called as `subprocess.run([sys.executable, "-m", "gp2tab", path, "-o", outdir, "--format", "tab"])`. Produces `tab.txt` in outdir. Then `analyze_file(path)` from `guitar_teacher.core.analyzer` for section/technique analysis.
 - **JSON upload limitation**: When uploading a `.json` file, `full_tab` is empty because `tab.txt` is expected as a sibling file — but upload saves to a temp path. This is a known limitation; app degrades gracefully ("No tab available").

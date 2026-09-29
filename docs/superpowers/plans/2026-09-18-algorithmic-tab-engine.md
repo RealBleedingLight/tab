@@ -1,6 +1,6 @@
 # Algorithmic Guitar Tab Engine — Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [x]`) syntax for tracking.
 
 **Goal:** Port the Python TheoryEngine to TypeScript, add an ASCII tab parser, remove all Python backend dependency so the app runs as a standalone Next.js site on Vercel with zero LLM keys.
 
@@ -40,7 +40,7 @@ Port `guitar-teacher/guitar_teacher/core/note_utils.py` to TypeScript.
   - `intervalSemitones(note1: string, note2: string): number`
   - `STANDARD_TUNING: string[]` (constant `["E", "A", "D", "G", "B", "E"]`)
 
-- [ ] **Step 1: Write failing tests**
+- [x] **Step 1: Write failing tests**
 
 ```typescript
 // frontend/lib/engine/__tests__/notes.test.ts
@@ -84,12 +84,12 @@ describe("intervalSemitones", () => {
 });
 ```
 
-- [ ] **Step 2: Run tests to verify they fail**
+- [x] **Step 2: Run tests to verify they fail**
 
 Run: `cd frontend && npx jest lib/engine/__tests__/notes.test.ts`
 Expected: FAIL — module not found
 
-- [ ] **Step 3: Implement notes.ts**
+- [x] **Step 3: Implement notes.ts**
 
 ```typescript
 // frontend/lib/engine/notes.ts
@@ -129,12 +129,12 @@ export function intervalSemitones(note1: string, note2: string): number {
 }
 ```
 
-- [ ] **Step 4: Run tests to verify they pass**
+- [x] **Step 4: Run tests to verify they pass**
 
 Run: `cd frontend && npx jest lib/engine/__tests__/notes.test.ts`
 Expected: PASS
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 cd frontend && git add lib/engine/notes.ts lib/engine/__tests__/notes.test.ts
@@ -164,7 +164,7 @@ Port the YAML knowledge base to static TypeScript. Create types and data objects
   - `CHORDS: Record<string, Chord>`
   - `INTERVALS: IntervalInfo[]`
 
-- [ ] **Step 1: Create types.ts**
+- [x] **Step 1: Create types.ts**
 
 ```typescript
 // frontend/lib/engine/types.ts
@@ -261,7 +261,7 @@ export interface TabAnalysis {
 }
 ```
 
-- [ ] **Step 2: Create scales data**
+- [x] **Step 2: Create scales data**
 
 Port all entries from `guitar-teacher/theory/scales.yaml` to `frontend/lib/engine/data/scales.ts`. Each scale entry maps directly — convert snake_case YAML keys to camelCase TS properties. There are 20 scales total. Write them all out as a `Record<string, Scale>`.
 
@@ -304,7 +304,7 @@ export function resolveScale(scaleType: string): Scale | undefined {
 }
 ```
 
-- [ ] **Step 3: Create chords data**
+- [x] **Step 3: Create chords data**
 
 Port all entries from `guitar-teacher/theory/chords.yaml` to `frontend/lib/engine/data/chords.ts`. There are 22 chords. Convert `common_voicings` keys from `E_shape`/`A_shape` to `eShape`/`aShape`, and `root_string` to `rootString`.
 
@@ -346,7 +346,7 @@ export function resolveChord(chordType: string): Chord | undefined {
 }
 ```
 
-- [ ] **Step 4: Create intervals data**
+- [x] **Step 4: Create intervals data**
 
 ```typescript
 // frontend/lib/engine/data/intervals.ts
@@ -368,7 +368,7 @@ export const INTERVALS: IntervalInfo[] = [
 ];
 ```
 
-- [ ] **Step 5: Write data validation tests**
+- [x] **Step 5: Write data validation tests**
 
 ```typescript
 // frontend/lib/engine/__tests__/data.test.ts
@@ -413,12 +413,12 @@ describe("intervals data", () => {
 });
 ```
 
-- [ ] **Step 6: Run tests**
+- [x] **Step 6: Run tests**
 
 Run: `cd frontend && npx jest lib/engine/__tests__/data.test.ts`
 Expected: PASS
 
-- [ ] **Step 7: Commit**
+- [x] **Step 7: Commit**
 
 ```bash
 cd frontend && git add lib/engine/types.ts lib/engine/data/ lib/engine/__tests__/data.test.ts
@@ -446,7 +446,7 @@ Port `TheoryEngine` class methods to standalone TypeScript functions.
   - `getInterval(note1: string, note2: string): IntervalInfo`
   - `getFretboardPositions(notes: string[], root?: string, tuning?: string[], fretRange?: [number, number]): FretboardPosition[]`
 
-- [ ] **Step 1: Write failing tests**
+- [x] **Step 1: Write failing tests**
 
 ```typescript
 // frontend/lib/engine/__tests__/theory.test.ts
@@ -543,12 +543,12 @@ describe("getFretboardPositions", () => {
 });
 ```
 
-- [ ] **Step 2: Run tests to verify they fail**
+- [x] **Step 2: Run tests to verify they fail**
 
 Run: `cd frontend && npx jest lib/engine/__tests__/theory.test.ts`
 Expected: FAIL
 
-- [ ] **Step 3: Implement theory.ts**
+- [x] **Step 3: Implement theory.ts**
 
 Port the Python `TheoryEngine` methods. Key logic:
 
@@ -750,12 +750,12 @@ export function getFretboardPositions(
 }
 ```
 
-- [ ] **Step 4: Run tests to verify they pass**
+- [x] **Step 4: Run tests to verify they pass**
 
 Run: `cd frontend && npx jest lib/engine/__tests__/theory.test.ts`
 Expected: PASS
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 cd frontend && git add lib/engine/theory.ts lib/engine/__tests__/theory.test.ts
@@ -796,7 +796,7 @@ The parser:
 3. Scans left-to-right, extracting fret numbers at each column position
 4. Returns `ParsedNote[]` ordered by position (left-to-right sequence)
 
-- [ ] **Step 1: Write failing tests**
+- [x] **Step 1: Write failing tests**
 
 ```typescript
 // frontend/lib/engine/__tests__/tab-parser.test.ts
@@ -929,12 +929,12 @@ E|---------|`;
 });
 ```
 
-- [ ] **Step 2: Run tests to verify they fail**
+- [x] **Step 2: Run tests to verify they fail**
 
 Run: `cd frontend && npx jest lib/engine/__tests__/tab-parser.test.ts`
 Expected: FAIL
 
-- [ ] **Step 3: Implement tab-parser.ts**
+- [x] **Step 3: Implement tab-parser.ts**
 
 ```typescript
 // frontend/lib/engine/tab-parser.ts
@@ -1033,12 +1033,12 @@ function parseGroup(group: TabLine[], positionOffset: number): ParsedNote[] {
 }
 ```
 
-- [ ] **Step 4: Run tests to verify they pass**
+- [x] **Step 4: Run tests to verify they pass**
 
 Run: `cd frontend && npx jest lib/engine/__tests__/tab-parser.test.ts`
 Expected: PASS
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 cd frontend && git add lib/engine/tab-parser.ts lib/engine/__tests__/tab-parser.test.ts
@@ -1062,7 +1062,7 @@ Combines tab parser output with theory engine to produce analysis.
   - `analyzeTab(input: string): TabAnalysis`
   - Barrel export from `index.ts` re-exports everything
 
-- [ ] **Step 1: Write failing tests**
+- [x] **Step 1: Write failing tests**
 
 ```typescript
 // frontend/lib/engine/__tests__/analyzer.test.ts
@@ -1107,12 +1107,12 @@ E|-----|`;
 });
 ```
 
-- [ ] **Step 2: Run tests to verify they fail**
+- [x] **Step 2: Run tests to verify they fail**
 
 Run: `cd frontend && npx jest lib/engine/__tests__/analyzer.test.ts`
 Expected: FAIL
 
-- [ ] **Step 3: Implement analyzer.ts**
+- [x] **Step 3: Implement analyzer.ts**
 
 ```typescript
 // frontend/lib/engine/analyzer.ts
@@ -1204,7 +1204,7 @@ function detectPatterns(pitchClasses: number[]): string[] {
 }
 ```
 
-- [ ] **Step 4: Create barrel export**
+- [x] **Step 4: Create barrel export**
 
 ```typescript
 // frontend/lib/engine/index.ts
@@ -1218,12 +1218,12 @@ export { CHORDS, resolveChord } from "./data/chords";
 export { INTERVALS } from "./data/intervals";
 ```
 
-- [ ] **Step 5: Run all engine tests**
+- [x] **Step 5: Run all engine tests**
 
 Run: `cd frontend && npx jest lib/engine/`
 Expected: ALL PASS
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 cd frontend && git add lib/engine/analyzer.ts lib/engine/index.ts lib/engine/__tests__/analyzer.test.ts
@@ -1244,7 +1244,7 @@ Remove API dependency from the Theory page. Use the TypeScript engine directly.
 - Consumes: `getScale`, `getChord`, `chordsInKey`, `getInterval`, `getFretboardPositions`, `suggestScales`, `detectKey` from `lib/engine`
 - Produces: updated Theory page, no API calls
 
-- [ ] **Step 1: Update lib/types.ts**
+- [x] **Step 1: Update lib/types.ts**
 
 Add re-exports from the engine so existing components work. The Fretboard component uses `FretboardPosition` with `is_root` (snake_case). The new engine uses `isRoot` (camelCase). Update the Fretboard component to accept the new shape. Modify `frontend/lib/types.ts` to re-export engine types:
 
@@ -1257,7 +1257,7 @@ export type {
 } from "./engine";
 ```
 
-- [ ] **Step 2: Update Fretboard component for camelCase**
+- [x] **Step 2: Update Fretboard component for camelCase**
 
 In `frontend/components/Fretboard.tsx`, change the Props interface to use the engine's `FretboardPosition` type (which uses `isRoot` not `is_root`). Update references from `pos.is_root` to `pos.isRoot`:
 
@@ -1265,7 +1265,7 @@ In `frontend/components/Fretboard.tsx`:
 - Change import to: `import type { FretboardPosition } from "@/lib/engine";`
 - Replace all `pos.is_root` with `pos.isRoot` (4 occurrences)
 
-- [ ] **Step 3: Rewrite theory page to use local engine**
+- [x] **Step 3: Rewrite theory page to use local engine**
 
 Replace the Theory page to call engine functions directly instead of `api.*`. Key changes:
 - Remove `import { api }` 
@@ -1276,7 +1276,7 @@ Replace the Theory page to call engine functions directly instead of `api.*`. Ke
 - In `IntervalLookup`: replace `api.getInterval(note1, note2)` with `getInterval(note1, note2)`.
 - All calls become synchronous (no async/await, no try/catch for fetch errors). Set result directly.
 
-- [ ] **Step 4: Verify theory page renders**
+- [x] **Step 4: Verify theory page renders**
 
 Start dev server and check:
 - Scale lookup works (select A, pentatonic-minor, click Look up)
@@ -1288,7 +1288,7 @@ Start dev server and check:
 Run: `cd frontend && npm run dev`
 Open: `http://localhost:3000/theory`
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 cd frontend && git add lib/types.ts components/Fretboard.tsx app/theory/page.tsx
@@ -1309,7 +1309,7 @@ New page where users paste ASCII tab and see analysis.
 - Consumes: `analyzeTab` from `lib/engine`; `Fretboard` component
 - Produces: `/tab` route with textarea input and analysis output
 
-- [ ] **Step 1: Create tab page**
+- [x] **Step 1: Create tab page**
 
 ```tsx
 // frontend/app/tab/page.tsx
@@ -1450,7 +1450,7 @@ export default function TabPage() {
 }
 ```
 
-- [ ] **Step 2: Update BottomNav**
+- [x] **Step 2: Update BottomNav**
 
 In `frontend/components/BottomNav.tsx`, add the Tab route between Theory and remove Queue:
 
@@ -1462,14 +1462,14 @@ const tabs = [
 ];
 ```
 
-- [ ] **Step 3: Verify tab page works**
+- [x] **Step 3: Verify tab page works**
 
 Run: `cd frontend && npm run dev`
 Open: `http://localhost:3000/tab`
 - Paste example tab, click Analyze
 - Should see: detected key, notes, fretboard, patterns, stats
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 cd frontend && git add app/tab/page.tsx components/BottomNav.tsx
@@ -1496,11 +1496,11 @@ Strip out Python backend coupling: remove auth middleware, remove API client, si
 - Consumes: nothing from backend
 - Produces: standalone app with only Tab and Theory pages
 
-- [ ] **Step 1: Delete auth middleware**
+- [x] **Step 1: Delete auth middleware**
 
 Delete `frontend/middleware.ts` — this redirects to `/login` without a token cookie, which blocks the entire app.
 
-- [ ] **Step 2: Delete backend-dependent pages and API client**
+- [x] **Step 2: Delete backend-dependent pages and API client**
 
 Delete these files:
 - `frontend/app/login/page.tsx`
@@ -1509,7 +1509,7 @@ Delete these files:
 - `frontend/app/songs/[artist]/[song]/page.tsx`
 - `frontend/lib/api.ts`
 
-- [ ] **Step 3: Simplify home page**
+- [x] **Step 3: Simplify home page**
 
 Replace `frontend/app/page.tsx` with a simple landing that links to Tab and Theory:
 
@@ -1551,26 +1551,26 @@ export default function HomePage() {
 }
 ```
 
-- [ ] **Step 4: Simplify or remove settings page**
+- [x] **Step 4: Simplify or remove settings page**
 
 Replace `frontend/app/settings/page.tsx` with a minimal about page or delete it. If keeping, remove any backend references.
 
-- [ ] **Step 5: Remove SWR dependency**
+- [x] **Step 5: Remove SWR dependency**
 
 SWR was used for API data fetching, no longer needed:
 
 Run: `cd frontend && npm uninstall swr`
 
-- [ ] **Step 6: Clean up unused components**
+- [x] **Step 6: Clean up unused components**
 
 Check if `ProgressBar.tsx`, `SaveIndicator.tsx`, `MarkdownLesson.tsx` are still used. If they reference backend APIs or are only used by deleted pages, delete them.
 
-- [ ] **Step 7: Verify app builds**
+- [x] **Step 7: Verify app builds**
 
 Run: `cd frontend && npm run build`
 Expected: Build succeeds with no errors.
 
-- [ ] **Step 8: Commit**
+- [x] **Step 8: Commit**
 
 ```bash
 cd frontend && git add -A
@@ -1591,7 +1591,7 @@ Ensure the app deploys to Vercel as a standalone Next.js app.
 - Consumes: working Next.js app from previous tasks
 - Produces: deployable app on Vercel
 
-- [ ] **Step 1: Verify vercel.json**
+- [x] **Step 1: Verify vercel.json**
 
 The existing `frontend/vercel.json` should work as-is:
 ```json
@@ -1605,17 +1605,17 @@ The existing `frontend/vercel.json` should work as-is:
 
 No changes needed unless build fails.
 
-- [ ] **Step 2: Verify build succeeds locally**
+- [x] **Step 2: Verify build succeeds locally**
 
 Run: `cd frontend && npm run build`
 Expected: Build completes. No errors about missing modules, API calls, or auth.
 
-- [ ] **Step 3: Run all tests**
+- [x] **Step 3: Run all tests**
 
 Run: `cd frontend && npm test`
 Expected: All engine tests pass. Any tests referencing deleted files (api.ts, backend routes) should have been removed.
 
-- [ ] **Step 4: Verify dev server works end-to-end**
+- [x] **Step 4: Verify dev server works end-to-end**
 
 Run: `cd frontend && npm run dev`
 Check these routes:
@@ -1623,14 +1623,14 @@ Check these routes:
 - `/tab` — paste tab, analyze, see results
 - `/theory` — scale/chord/key/interval lookups
 
-- [ ] **Step 5: Commit final state**
+- [x] **Step 5: Commit final state**
 
 ```bash
 cd frontend && git add -A
 git commit -m "chore: verify build and deploy readiness"
 ```
 
-- [ ] **Step 6: Push to GitHub and deploy**
+- [x] **Step 6: Push to GitHub and deploy**
 
 ```bash
 git push origin main
@@ -1649,7 +1649,7 @@ Remove any leftover dead code, fix lint warnings, update metadata.
 - Check: all remaining components for dead imports
 - Remove: any test files referencing deleted modules
 
-- [ ] **Step 1: Update app metadata**
+- [x] **Step 1: Update app metadata**
 
 In `frontend/app/layout.tsx`:
 ```typescript
@@ -1659,21 +1659,21 @@ export const metadata: Metadata = {
 };
 ```
 
-- [ ] **Step 2: Run lint**
+- [x] **Step 2: Run lint**
 
 Run: `cd frontend && npm run lint`
 Fix any warnings about unused imports or dead references.
 
-- [ ] **Step 3: Remove dead test files**
+- [x] **Step 3: Remove dead test files**
 
 Delete any test files under `frontend/` that reference `api.ts` or backend endpoints (check `frontend/__tests__/` or co-located test files).
 
-- [ ] **Step 4: Final build verification**
+- [x] **Step 4: Final build verification**
 
 Run: `cd frontend && npm run build && npm test`
 Expected: Both pass clean.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 cd frontend && git add -A

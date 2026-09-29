@@ -1,22 +1,20 @@
 import { parseTab } from "./tab-parser";
 import { detectKey, getFretboardPositions } from "./theory";
 import { fretToNote, noteToPitchClass } from "./notes";
-import type { TabAnalysis } from "./types";
+import type { ParsedNote, TabAnalysis } from "./types";
 
 export function analyzeTab(input: string): TabAnalysis {
   const parsed = parseTab(input);
-
   if (parsed.notes.length === 0) {
-    return {
-      key: "Unknown", notes: [], uniqueNotes: [],
-      keyMatches: [], fretboardPositions: [],
-      noteCount: 0, fretRange: [0, 0],
-      stringUsage: {}, patterns: [],
-    };
+    return emptyAnalysis();
   }
+  return analyzeNotes(parsed.notes, parsed.tuning);
+}
 
-  const tuning = parsed.tuning;
-  const noteNames = parsed.notes.map(n => fretToNote(n.string, n.fret, tuning));
+export function analyzeNotes(notes: ParsedNote[], tuning: string[]): TabAnalysis {
+  if (notes.length === 0) return emptyAnalysis();
+
+  const noteNames = notes.map(n => fretToNote(n.string, n.fret, tuning));
   const uniquePcs = new Set<number>();
   const uniqueNotes: string[] = [];
   for (const name of noteNames) {
@@ -32,7 +30,7 @@ export function analyzeTab(input: string): TabAnalysis {
     ? `${keyMatches[0].root} ${keyMatches[0].scale.name}`
     : "Unknown";
 
-  const frets = parsed.notes.map(n => n.fret);
+  const frets = notes.map(n => n.fret);
   const fretRange: [number, number] = [Math.min(...frets), Math.max(...frets)];
 
   const fretboardPositions = uniqueNotes.length > 0
@@ -45,18 +43,27 @@ export function analyzeTab(input: string): TabAnalysis {
     : [];
 
   const stringUsage: Record<number, number> = {};
-  for (const n of parsed.notes) {
+  for (const n of notes) {
     stringUsage[n.string] = (stringUsage[n.string] ?? 0) + 1;
   }
 
-  const patterns = detectPatterns(parsed.notes.map(n =>
+  const patterns = detectPatterns(notes.map(n =>
     noteToPitchClass(fretToNote(n.string, n.fret, tuning))
   ));
 
   return {
     key, notes: noteNames, uniqueNotes, keyMatches,
-    fretboardPositions, noteCount: parsed.notes.length,
+    fretboardPositions, noteCount: notes.length,
     fretRange, stringUsage, patterns,
+  };
+}
+
+function emptyAnalysis(): TabAnalysis {
+  return {
+    key: "Unknown", notes: [], uniqueNotes: [],
+    keyMatches: [], fretboardPositions: [],
+    noteCount: 0, fretRange: [0, 0],
+    stringUsage: {}, patterns: [],
   };
 }
 
