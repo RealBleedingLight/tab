@@ -136,3 +136,4 @@
 | 21:38 | Created ../../../tmp/claude-0/-home-user-tab/ccdd3ebf-9c18-5d5b-ae5a-ba8c28ce0411/scratchpad/e2e2.mjs | — | ~652 |
 | 21:43 | Created frontend/README.md | — | ~879 |
 | 21:45 | Session end: 22 writes across 21 files (tex.js, loader.ts, types.ts, extract.ts, techniques.ts) | 8 reads | ~37791 tok |
+| 21:48 | Session end: 22 writes across 21 files (tex.js, loader.ts, types.ts, extract.ts, techniques.ts) | 8 reads | ~37791 tok |
